@@ -2,7 +2,9 @@ package formula
 
 object protcol{
   import Utilty_formula._
+  import formula.Utilty_formula._
   import Layer._
+  import protcol._
   import Utilty.ML._
   import Activation._
   import Utilty.RichArray._
@@ -34,78 +36,4 @@ object protcol{
   val R = 0
   val G = 1
   val B = 2
-}
-
-object Utilty_formula{
-  import protcol._
-  def str(a:Int) = a.toString
-  def onehot(a:Int,size:Int) = {
-    var  R = Array.ofDim[Float](size)
-    R(a) = 1f
-    R
-  }
-  def load()={
-    val raw = scala.io.Source.fromFile(data_path).getLines.toArray.drop(2).map(_.split(","))
-    val name = raw.map(_(0).trim())
-    val result = Array.ofDim[Array[String]](raw.size)
-    for(i <- 0 until raw.size){
-      result(i)= raw(i)(1).split("#")
-    }
-    (name,result)
-  }
-
-
-  def texload(path:String)={
-    //  val raw = scala.io.Source.fromFile(path).getLines.toArray.filter{_.contains("""large""")}.toArray.split("""\item""").flatten.grouped(10).toArray
-    val raw = scala.io.Source.fromFile(path).getLines.toArray.filter{_.contains("""large""")}.toArray
-
-    raw.map(_.replace("""\item"""," ")).grouped(10).toArray
-  }
-
-  def question_load(path:String)={
-    scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
-  }
-
-  def question_load2(path:String)={
-    val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
-    var x = st.map(_.replace("""\frac""","f"))
-    for(i <- 0 until x.size){
-
-      x(i) =x(i) + " " * (50 - x(i).size)
-    }
-    x
-  }
-  def question_load3(path:String)={
-    val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
-    var x = st.map(_.replace("""\frac""","f"))
-    for(i <- 0 until x.size){
-
-      x(i) =x(i)
-    }
-    x
-  }
-
-
-  def string2onehot(st:String)={
-
-    val t = st.replace("""\frac""","f")
-    //  println(t)
-    var return_st = Array.ofDim[Float](t.size,vec.size)
-    for(i <- 0 until t.size){
-      //println(t(i))
-      return_st(i)(vec.indexOf(t(i).toString)) = 1f
-
-    }
-    return_st
-  }
-
-  def onehot2string(ar:Array[Array[Float]])={
-
-    var reSt = ""
-    for(i <- 0 until ar.size){
-      reSt += vec(ar(i).indexOf(ar(i).max) )
-    }
-    reSt.replace("f","""\frac""")
-  }
-
 }

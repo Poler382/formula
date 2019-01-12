@@ -10,12 +10,14 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   val rho1: Float = 0.9f
   val rho2: Float = 0.999f
 
-  val rand = new scala.util.Random(0)
-  var Win =new Embedding(xn,hidden)
-  val Wout= new Embedding(hidden,xn)
-  val sig  = new Sigmoid()
+  val rand  = new scala.util.Random(0)
+  var Win   = new Embedding(xn,hidden)
+  val Wout  = new Embedding(hidden,xn)
+  val sig   = new Sigmoid()
   val stack = new Stack[List[Float]]()
   def load_word_count(words:Array[String])={
+    //自然言語のコーパスで使う
+    //同じ単語が何回出てきたかを数えることができる
     var word = List[String]()
     for(w <- words){
       if(!word.contains(w)){
@@ -24,10 +26,26 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     }
     word
   }
-  def train(){
+  def train_formula(numbers:Array[Array[Int]],epoch:Int){
+    for(i <- 0 until numbers.size){
+      val Contexts = Context_num(numbers(i),Windowsize)
+      val targets = numbers(i).init.tail //先頭と最後を落とす
+
+      for(j <- 0 until Contexts.size){
+        //positive
+        val h = (Win.forward(Contexts(j)(0)) + Win.forward(Contexts(j)(1)) ) * 0.5d
+        val positive_out =sig.forward(h dot Wout.forward(target(j)))
+
+        //Negative
+
+      }
+
+
+
+    }
 
   }
-  def forward(Contexts:Array[Int])={//数字のリストを受け取る(targetの周辺単語)
+  def forward(Contexts:Array[Int],target:Int)={//数字のリストを受け取る(targetの周辺単語)
 
   }
 
