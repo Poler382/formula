@@ -4,6 +4,8 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   import Utilty.RichArray._
   import Utilty.ML._
   import Utilty.Stack
+  import formula.Utilty_formula._
+  import Activation._
   val eps : Float = 0.001f
   val rho1: Float = 0.9f
   val rho2: Float = 0.999f
@@ -87,67 +89,4 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     loss.toFloat / a.size
   }
 
-  def trains(onehotss:Array[Array[Array[Float]]],epoch:Int)={
-    var lossList = List[String]()
-    for(i <- 0 until epoch){
-      for(onehots <- onehotss){
-        val number = onehots.map{a => a.indexOf(a.max)}.toArray
-        //  val CBOWModel = new CBOW(onehots(0).size,hidden,Windowsize*2,Windowsize)
-        val Contexts = Context_num(number,Windowsize)
-
-        var Loss = 0d; var cm = 0f; var all = 0f
-        var time = System.currentTimeMillis()
-        for(j <- 0 until Contexts.size){
-          val y = forward(Contexts(j))
-          if(onehots(j+1).indexOf(onehots(j+1).max) ==y.indexOf(y.max)){
-            cm+=1
-          }
-          Loss += crossEntropy(onehots(j+1),y)
-          all+=1
-          backward(y-onehots(j+1))
-
-        }
-        update()
-        if(i % 500 == 0){
-          save_Distributed_Representation()
-        }
-        if(i % 10 == 0){
-          println("epoch : "+i," count: "+cm/all," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+(System.currentTimeMillis()-time))
-        }
-        lossList ::= (math.exp(-Loss/all)).toString
-      }
-    }
-    savetxt_String(lossList,"perplexity","/Users/yuya/Programing/sbt/formula")
-  }
-
-
-  def train(onehots:Array[Array[Float]],epoch:Int)={
-    val number = onehots.map{a => a.indexOf(a.max)}.toArray
-    //  val CBOWModel = new CBOW(onehots(0).size,hidden,Windowsize*2,Windowsize)
-    val Contexts = Context_num(number,Windowsize)
-    var lossList = List[String]()
-    for(i <- 0 until epoch){
-      var Loss = 0d;var cm = 0f;var all =0f
-      var time = System.currentTimeMillis()
-      for(j <- 0 until Contexts.size){
-        val y = forward(Contexts(j))
-        if(onehots(j+1).indexOf(onehots(j+1).max) ==y.indexOf(y.max)){
-          cm+=1
-        }
-        Loss += crossEntropy(onehots(j+1),y)
-        all+=1
-        backward(y-onehots(j+1))
-
-      }
-      update()
-      if(i % 100 == 0){
-        save_Distributed_Representation()
-      }
-      if(i % 10 == 0){
-        println("epoch : "+i," count: "+cm/all," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+(System.currentTimeMillis()-time))
-      }
-      lossList ::= (math.exp(-Loss/all)).toString
-    }
-    savetxt_String(lossList,"perplexity","/Users/yuya/Programing/sbt/formula")
-  }
 }
