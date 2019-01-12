@@ -1,0 +1,2379 @@
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.11.10)  22 DEC 2018 14:47
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**question21-30ver2.tex
+(./question21-30ver2.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2018/03/11 jsclasses (okumura, texjporg)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2a Standard LaTeX option (flush left equations)
+\mathindent=\dimen118
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+\jsc@mpt=\dimen119
+\jsc@mmm=\dimen120
+\jsc@smallskipamount=\skip41
+LaTeX Info: Redefining \rmfamily on input line 466.
+LaTeX Info: Redefining \sffamily on input line 469.
+LaTeX Info: Redefining \ttfamily on input line 472.
+LaTeX Info: Redefining \textmc on input line 476.
+LaTeX Info: Redefining \textgt on input line 478.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 540.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 731.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 731.
+\fullwidth=\dimen121
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 884.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 884.
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\@abstractbox=\box42
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\jsc@tocl@width=\dimen122
+\@lnumwidth=\dimen123
+\bibindent=\dimen124
+ (/usr/local/texlive/2018/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2017/02/24 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 94.
+LaTeX Info: Redefining \LaTeX on input line 147.
+LaTeX Info: Redefining \LaTeXe on input line 200.
+)
+\heisei=\count91
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+
+LaTeX Warning: Unused global option(s):
+    [15pt].
+
+(./question21-30ver2.aux)
+\openout1 = `question21-30ver2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 15.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 15.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 17.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 17.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 24.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 24.
+
+./question21-30ver2.tex:24: Missing } inserted.
+<inserted text> 
+                }
+l.24 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %155
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:24: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.24 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %155
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:25: Missing } inserted.
+<inserted text> 
+                }
+l.25 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %89
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:25: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.25 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %89
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:26: Missing } inserted.
+<inserted text> 
+                }
+l.26 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %61
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:26: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.26 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %61
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:27: Missing } inserted.
+<inserted text> 
+                }
+l.27 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %18
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:27: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.27 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %18
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:28: Missing } inserted.
+<inserted text> 
+                }
+l.28 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %136
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:28: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.28 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %136
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:29: Missing } inserted.
+<inserted text> 
+                }
+l.29 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %13
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:29: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.29 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %13
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:30: Missing } inserted.
+<inserted text> 
+                }
+l.30 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %44
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:30: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.30 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %44
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:31: Missing } inserted.
+<inserted text> 
+                }
+l.31 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %126
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:31: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.31 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %126
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:32: Missing } inserted.
+<inserted text> 
+                }
+l.32 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %140
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:32: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.32 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %140
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %7
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:33: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.33 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %7
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[1
+
+]
+./question21-30ver2.tex:48: Missing } inserted.
+<inserted text> 
+                }
+l.48 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %112
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:48: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.48 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %112
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:49: Missing } inserted.
+<inserted text> 
+                }
+l.49 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %134
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:49: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.49 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %134
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:50: Missing } inserted.
+<inserted text> 
+                }
+l.50 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %159
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:50: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.50 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %159
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:51: Missing } inserted.
+<inserted text> 
+                }
+l.51 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %37
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:51: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.51 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %37
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:52: Missing } inserted.
+<inserted text> 
+                }
+l.52 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %55
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:52: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.52 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %55
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:53: Missing } inserted.
+<inserted text> 
+                }
+l.53 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %163
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:53: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.53 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %163
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:54: Missing } inserted.
+<inserted text> 
+                }
+l.54 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %114
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:54: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.54 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %114
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:55: Missing } inserted.
+<inserted text> 
+                }
+l.55 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %4
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:55: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.55 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %4
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:56: Missing } inserted.
+<inserted text> 
+                }
+l.56 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %39
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:56: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.56 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %39
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:57: Missing } inserted.
+<inserted text> 
+                }
+l.57 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %26
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:57: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.57 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %26
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[2
+
+]
+./question21-30ver2.tex:72: Missing } inserted.
+<inserted text> 
+                }
+l.72 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %53
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:72: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.72 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %53
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:73: Missing } inserted.
+<inserted text> 
+                }
+l.73 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %2
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:73: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.73 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %2
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:74: Missing } inserted.
+<inserted text> 
+                }
+l.74 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %148
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:74: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.74 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %148
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:75: Missing } inserted.
+<inserted text> 
+                }
+l.75 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %77
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:75: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.75 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %77
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:76: Missing } inserted.
+<inserted text> 
+                }
+l.76 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %31
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:76: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.76 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %31
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:77: Missing } inserted.
+<inserted text> 
+                }
+l.77 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %29
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:77: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.77 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %29
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:78: Missing } inserted.
+<inserted text> 
+                }
+l.78 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %94
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:78: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.78 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %94
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:79: Missing } inserted.
+<inserted text> 
+                }
+l.79 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %1
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:79: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.79 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %1
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:80: Missing } inserted.
+<inserted text> 
+                }
+l.80 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %90
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:80: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.80 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %90
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:81: Missing } inserted.
+<inserted text> 
+                }
+l.81 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %116
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:81: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.81 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %116
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[3
+
+]
+./question21-30ver2.tex:96: Missing } inserted.
+<inserted text> 
+                }
+l.96 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %113
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:96: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.96 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %113
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:97: Missing } inserted.
+<inserted text> 
+                }
+l.97 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %101
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:97: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.97 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %101
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:98: Missing } inserted.
+<inserted text> 
+                }
+l.98 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %42
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:98: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.98 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %42
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:99: Missing } inserted.
+<inserted text> 
+                }
+l.99 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %118
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:99: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.99 ...box[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %118
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %86
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:100: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.100 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %86
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:101: Missing } inserted.
+<inserted text> 
+                }
+l.101 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %49
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:101: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.101 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %49
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:102: Missing } inserted.
+<inserted text> 
+                }
+l.102 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %98
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:102: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.102 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %98
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:103: Missing } inserted.
+<inserted text> 
+                }
+l.103 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %105
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:103: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.103 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %105
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:104: Missing } inserted.
+<inserted text> 
+                }
+l.104 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %157
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:104: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.104 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %157
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:105: Missing } inserted.
+<inserted text> 
+                }
+l.105 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %3
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:105: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.105 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %3
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[4
+
+]
+./question21-30ver2.tex:120: Missing } inserted.
+<inserted text> 
+                }
+l.120 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %59
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:120: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.120 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %59
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:121: Missing } inserted.
+<inserted text> 
+                }
+l.121 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %16
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:121: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.121 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %16
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:122: Missing } inserted.
+<inserted text> 
+                }
+l.122 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %146
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:122: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.122 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %146
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:123: Missing } inserted.
+<inserted text> 
+                }
+l.123 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %164
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:123: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.123 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %164
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:124: Missing } inserted.
+<inserted text> 
+                }
+l.124 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %34
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:124: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.124 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %34
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:125: Missing } inserted.
+<inserted text> 
+                }
+l.125 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %84
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:125: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.125 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %84
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:126: Missing } inserted.
+<inserted text> 
+                }
+l.126 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %135
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:126: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.126 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %135
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:127: Missing } inserted.
+<inserted text> 
+                }
+l.127 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %43
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:127: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.127 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %43
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:128: Missing } inserted.
+<inserted text> 
+                }
+l.128 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %66
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:128: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.128 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %66
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:129: Missing } inserted.
+<inserted text> 
+                }
+l.129 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %38
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:129: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.129 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %38
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[5
+
+]
+./question21-30ver2.tex:144: Missing } inserted.
+<inserted text> 
+                }
+l.144 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %154
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:144: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.144 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %154
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:145: Missing } inserted.
+<inserted text> 
+                }
+l.145 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %46
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:145: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.145 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %46
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:146: Missing } inserted.
+<inserted text> 
+                }
+l.146 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %65
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:146: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.146 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %65
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:147: Missing } inserted.
+<inserted text> 
+                }
+l.147 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %147
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:147: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.147 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %147
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:148: Missing } inserted.
+<inserted text> 
+                }
+l.148 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %107
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:148: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.148 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %107
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:149: Missing } inserted.
+<inserted text> 
+                }
+l.149 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %97
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:149: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.149 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %97
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:150: Missing } inserted.
+<inserted text> 
+                }
+l.150 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %20
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:150: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.150 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %20
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:151: Missing } inserted.
+<inserted text> 
+                }
+l.151 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %22
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:151: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.151 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %22
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:152: Missing } inserted.
+<inserted text> 
+                }
+l.152 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %93
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:152: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.152 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %93
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:153: Missing } inserted.
+<inserted text> 
+                }
+l.153 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %130
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:153: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.153 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %130
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[6
+
+]
+./question21-30ver2.tex:168: Missing } inserted.
+<inserted text> 
+                }
+l.168 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %88
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:168: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.168 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %88
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:169: Missing } inserted.
+<inserted text> 
+                }
+l.169 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %143
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:169: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.169 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %143
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:170: Missing } inserted.
+<inserted text> 
+                }
+l.170 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %102
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:170: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.170 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %102
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:171: Missing } inserted.
+<inserted text> 
+                }
+l.171 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %127
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:171: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.171 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %127
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:172: Missing } inserted.
+<inserted text> 
+                }
+l.172 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %145
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:172: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.172 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %145
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:173: Missing } inserted.
+<inserted text> 
+                }
+l.173 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %47
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:173: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.173 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %47
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:174: Missing } inserted.
+<inserted text> 
+                }
+l.174 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %25
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:174: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.174 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %25
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:175: Missing } inserted.
+<inserted text> 
+                }
+l.175 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %62
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:175: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.175 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %62
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:176: Missing } inserted.
+<inserted text> 
+                }
+l.176 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %99
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:176: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.176 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %99
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:177: Missing } inserted.
+<inserted text> 
+                }
+l.177 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %27
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:177: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.177 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %27
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[7
+
+]
+./question21-30ver2.tex:192: Missing } inserted.
+<inserted text> 
+                }
+l.192 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %24
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:192: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.192 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %24
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:193: Missing } inserted.
+<inserted text> 
+                }
+l.193 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %80
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:193: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.193 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %80
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:194: Missing } inserted.
+<inserted text> 
+                }
+l.194 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %40
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:194: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.194 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %40
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:195: Missing } inserted.
+<inserted text> 
+                }
+l.195 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %128
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:195: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.195 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %128
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:196: Missing } inserted.
+<inserted text> 
+                }
+l.196 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %36
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:196: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.196 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %36
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:197: Missing } inserted.
+<inserted text> 
+                }
+l.197 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %11
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:197: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.197 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %11
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:198: Missing } inserted.
+<inserted text> 
+                }
+l.198 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %69
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:198: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.198 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %69
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:199: Missing } inserted.
+<inserted text> 
+                }
+l.199 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %92
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:199: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.199 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %92
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:200: Missing } inserted.
+<inserted text> 
+                }
+l.200 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %108
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:200: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.200 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %108
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:201: Missing } inserted.
+<inserted text> 
+                }
+l.201 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %68
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:201: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.201 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %68
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[8
+
+]
+./question21-30ver2.tex:216: Missing } inserted.
+<inserted text> 
+                }
+l.216 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %82
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:216: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.216 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %82
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:217: Missing } inserted.
+<inserted text> 
+                }
+l.217 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %149
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:217: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.217 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %149
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:218: Missing } inserted.
+<inserted text> 
+                }
+l.218 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %95
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:218: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.218 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %95
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:219: Missing } inserted.
+<inserted text> 
+                }
+l.219 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %124
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:219: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.219 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %124
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:220: Missing } inserted.
+<inserted text> 
+                }
+l.220 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %63
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:220: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.220 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %63
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:221: Missing } inserted.
+<inserted text> 
+                }
+l.221 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %23
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:221: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.221 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %23
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:222: Missing } inserted.
+<inserted text> 
+                }
+l.222 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %129
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:222: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.222 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %129
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:223: Missing } inserted.
+<inserted text> 
+                }
+l.223 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %85
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:223: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.223 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %85
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:224: Missing } inserted.
+<inserted text> 
+                }
+l.224 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %158
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:224: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.224 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %158
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:225: Missing } inserted.
+<inserted text> 
+                }
+l.225 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %79
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:225: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.225 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %79
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[9
+
+]
+./question21-30ver2.tex:240: Missing } inserted.
+<inserted text> 
+                }
+l.240 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %91
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:240: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.240 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %91
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:241: Missing } inserted.
+<inserted text> 
+                }
+l.241 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %141
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:241: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.241 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %141
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:242: Missing } inserted.
+<inserted text> 
+                }
+l.242 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %123
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:242: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.242 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %123
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:243: Missing } inserted.
+<inserted text> 
+                }
+l.243 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %165
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:243: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.243 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %165
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:244: Missing } inserted.
+<inserted text> 
+                }
+l.244 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %142
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:244: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.244 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %142
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:245: Missing } inserted.
+<inserted text> 
+                }
+l.245 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %153
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:245: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.245 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %153
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:246: Missing } inserted.
+<inserted text> 
+                }
+l.246 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %74
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:246: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.246 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %74
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:247: Missing } inserted.
+<inserted text> 
+                }
+l.247 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %50
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:247: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.247 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %50
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:248: Missing } inserted.
+<inserted text> 
+                }
+l.248 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %8
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:248: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.248 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %8
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./question21-30ver2.tex:249: Missing } inserted.
+<inserted text> 
+                }
+l.249 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %121
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./question21-30ver2.tex:249: Extra }, or forgotten \endgroup.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.249 ...ox[8em]{\rule{0pt}{6ex}}\end{flushright}}
+                                                   \vfill %121
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[10
+
+] (./question21-30ver2.aux) ) 
+Here is how much of TeX's memory you used:
+ 706 strings out of 493281
+ 8643 string characters out of 6145040
+ 76948 words of memory out of 5000000
+ 4689 multiletter control sequences out of 15000+600000
+ 12190 words of font info for 54 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 24i,6n,25p,204b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on question21-30ver2.dvi (10 pages, 31884 bytes).

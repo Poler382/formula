@@ -1,0 +1,18 @@
+# Fdb version 3
+["dvipdf"] 0 "page_header.dvi" "page_header.pdf" "page_header" 0
+  "page_header.dvi" 0 -1 0 "latex"
+  (generated)
+  "page_header.pdf"
+["latex"] 1544498174 "page_header.tex" "page_header.dvi" "page_header" 1544498174
+  "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm" 1480098701 1116 4e6ba9d7914baa6482fd69f67d126380 ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd" 1523050425 2472 aa08940f0a4dc6c24ae9f943b04ae0b9 ""
+  "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
+  "/usr/local/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541781259 4475038 06209996e7e239c20246cace1e3abf34 ""
+  "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
+  "page_header.aux" 1544498174 8 a94a2480d3289e625eea47cd1b285758 ""
+  "page_header.tex" 1544498174 291 17ac81c29abd2721fc9034d1c1fa37b7 ""
+  (generated)
+  "page_header.log"
+  "page_header.dvi"

@@ -1,0 +1,227 @@
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.11.10)  11 DEC 2018 12:16
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**page_header.tex
+(./page_header.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+
+./page_header.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1  \begin{center}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--1
+[] 
+ []
+
+./page_header.tex:2: Undefined control sequence.
+l.2    \LARGE
+             \textbf{宮プリ　~一次方程式特訓編~\textcircled{\scriptsize 11}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 2.
+
+./page_header.tex:2: Undefined control sequence.
+<argument> ...ext@encoding \@curr@enc \scriptsize 
+                                                  11}\hfil \crcr \char 13 
+l.2 ...方程式特訓編~\textcircled{\scriptsize 11}}
+                                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 宮 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 プ 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 リ 
+ []
+
+
+Overfull \hbox (21.79987pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 　 一 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 次 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 方 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 程 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 式 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 特 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 訓 
+ []
+
+
+Overfull \hbox (23.67764pt too wide) in paragraph at lines 2--3
+ \JY1/gt/m/n/10 編 [] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 4--5
+ \JY1/mc/m/n/10 名
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 4--5
+ \JY1/mc/m/n/10 前
+ []
+
+
+Overfull \hbox (76.9773pt too wide) in paragraph at lines 4--5
+ []$[]$[]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--8
+[] 
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 次
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 一
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 次
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 方
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 程
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 式
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (5.2778pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/n/10 x
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 つ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 解
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 9--10
+\JY1/mc/m/n/10 け 
+ []
+
+)
+! Emergency stop.
+<*> page_header.tex
+                   
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 34 strings out of 493281
+ 504 string characters out of 6145040
+ 62201 words of memory out of 5000000
+ 4060 multiletter control sequences out of 15000+600000
+ 8074 words of font info for 33 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 19i,5n,16p,164b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
