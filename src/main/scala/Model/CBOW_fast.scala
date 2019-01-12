@@ -24,7 +24,9 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     }
     word
   }
+  def train(){
 
+  }
   def forward(Contexts:Array[Int])={//数字のリストを受け取る(targetの周辺単語)
 
   }
@@ -47,12 +49,12 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
 
   }
   def load_Enbedding()={
-    val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
+    val pathName = "Emvedding/CBOWfast_"+title+"_"+xn+"x"+hidden+".txt"
     val f = scala.io.Source.fromFile(pathName).getLines.toArray
     Win.W = f(0).split(",").map(_.toFloat).toArray
   }
   def save_Distributed_Representation()={
-    val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
+    val pathName = "Emvedding/CBOWfast_"+title+"_"+xn+"x"+hidden+".txt"
     val writer =  new java.io.PrintWriter(pathName)
     val ys1 = Win.W.mkString(",")
 
