@@ -54,7 +54,6 @@ object Utilty_formula{
     val t = st.replace("""\frac""","f")
     var return_st = Array.ofDim[Int](t.size)
     for(i <- 0 until t.size){
-      println(t(i),vec.indexOf(t(i).toString))
       return_st(i) = vec.indexOf(t(i).toString)
     }
     return_st

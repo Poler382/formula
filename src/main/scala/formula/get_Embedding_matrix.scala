@@ -5,7 +5,7 @@ object Word2vec{
   import Utilty.ML._
   import Utilty.call_py._
   import Utilty.RichArray._
-  import Utilty_formula._
+  import formula.Utilty_formula._
   import word2vec._
   val eps = 1e-5d
 

@@ -6,6 +6,7 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   import Utilty.Stack
   import formula.Utilty_formula._
   import Activation._
+  import formula.protcol._
   val eps : Float = 0.001f
   val rho1: Float = 0.9f
   val rho2: Float = 0.999f
@@ -14,7 +15,7 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   var Win   = new Embedding(xn,hidden)
   val Wout  = new Embedding(hidden,xn)
   val sig   = new Sigmoid()
-  val stack = new Stack[List[Float]]()
+
   def load_word_count(words:Array[String])={
     //自然言語のコーパスで使う
     //同じ単語が何回出てきたかを数えることができる
@@ -26,17 +27,31 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     }
     word
   }
-  def train_formula(numbers:Array[Array[Int]],epoch:Int){
+  def get_Probability_Distribution(st:String)={
+    var ProbabilityDistribution = Array.ofDim[Float](vec.size)
+    for(i <- 0 until st.size){
+      ProbabilityDistribution(vec.indexOf(st(i).toString)) +=1f
+    }
+    val newP = ProbabilityDistribution.map(_/ProbabilityDistribution.sum).map(math.pow(_,0.75).toFloat)
+    newP.map(_/newP.sum)
+  }
+  val PositiveStack = new Stack[List[Float]]()
+  val NegativeStack = new Stack[List[Float]]()
+  def train_formula(path:String,epoch:Int){
+    val ProbabilityDistribution = question_load3(path).flatten.mkString("")
+    val numbers =  question_load3(path).map(string2vecnumber(_))
+
     for(i <- 0 until numbers.size){
       val Contexts = Context_num(numbers(i),Windowsize)
-      val targets = numbers(i).init.tail //先頭と最後を落とす
-
+      val targets = numbers(i).init.tail.map(_.toFloat) //先頭と最後を落とす
+      var loss = 0f
       for(j <- 0 until Contexts.size){
         //positive
-        val h = (Win.forward(Contexts(j)(0)) + Win.forward(Contexts(j)(1)) ) * 0.5d
-        val positive_out =sig.forward(h dot Wout.forward(target(j)))
-
+        val posi = forward(Contexts(j),targets(j))
         //Negative
+        val samplelist = vec.toList.filter(_ != target(j))
+        val negaSample =　Range(0, 2).map().toArray
+        val nega = forward(Contexts(j),)
 
       }
 
@@ -45,8 +60,15 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     }
 
   }
-  def forward(Contexts:Array[Int],target:Int)={//数字のリストを受け取る(targetの周辺単語)
-
+  def forward(Contexts:Array[Int],target:Int)={
+    //targetは正例の時は真ん中の対象単語
+    //負例の時は確率分布からサンプリングした間違ったもの
+    val W1 = Array.ofDim[Float](hidden)
+    for(i <- 0 until Contexts.size){
+      W1 += Win.forward(Array(Contexts(i)))
+    }
+    val W2 = Wout.forward(target)
+    sig.forward(Array(W1 dot W2))
   }
 
   def backward(ds:Array[Float])={
