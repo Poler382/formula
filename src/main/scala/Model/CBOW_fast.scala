@@ -50,8 +50,11 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
         val posi = forward(Contexts(j),targets(j))
         //Negative
         val samplelist = vec.toList.filter(_ != target(j))
-        val negaSample =　Range(0, 2).map().toArray
-        val nega = forward(Contexts(j),)
+        val negaSample =　Range(0, 2).map(samplelist(rand.nextInt(samplelist.size))).toArray
+        for(k <- 0 until negaSample.size){
+          val nega = forward(Contexts(j),negaSample(k))
+          loss +=0
+        }
 
       }
 
