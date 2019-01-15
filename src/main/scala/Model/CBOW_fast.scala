@@ -47,16 +47,18 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
       var loss = 0f
       for(j <- 0 until Contexts.size){
         //positive
-        val posi = forward(Contexts(j),targets(j))
+        val posi = forward(Contexts(j),targets(j).toInt)
+        //loss = 1f - posi
         //Negative
-        val samplelist = vec.toList.filter(_ != target(j))
-        val negaSample =　Range(0, 2).map(samplelist(rand.nextInt(samplelist.size))).toArray
+        val samplelist = vec.toList.filter(_ != targets(j))
+        val negaSample = Range(0, 2).map(i => samplelist(rand.nextInt(samplelist.size))).toArray
         for(k <- 0 until negaSample.size){
-          val nega = forward(Contexts(j),negaSample(k))
-          loss +=0
+        //  val nega = forward(Contexts(j),negaSample(k))
+    //      loss = 0f - nega
         }
-
       }
+
+      //backward
 
 
 
@@ -66,11 +68,11 @@ class CBOWfast(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   def forward(Contexts:Array[Int],target:Int)={
     //targetは正例の時は真ん中の対象単語
     //負例の時は確率分布からサンプリングした間違ったもの
-    val W1 = Array.ofDim[Float](hidden)
+    var W1 = Array.ofDim[Float](hidden)
     for(i <- 0 until Contexts.size){
-      W1 += Win.forward(Array(Contexts(i)))
+      W1 = W1 + Win.forward(Array(Contexts(i).toFloat))
     }
-    val W2 = Wout.forward(target)
+    val W2 = Wout.forward(Array(target.toFloat))
     sig.forward(Array(W1 dot W2))
   }
 

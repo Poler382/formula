@@ -6,9 +6,10 @@ object timer{
     s = System.currentTimeMillis()
   }
   def finish()={
-    val tm = (System.currentTimeMillis() - s)
+    val tm = (System.currentTimeMillis() - s)/1000d
     s = 0d
     timestack.push(tm)
-    println("time: "+tm / 1000d+" s")
+    println("time: "+tm  +" s")
+    tm
   }
 }
