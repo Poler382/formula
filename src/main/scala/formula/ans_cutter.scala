@@ -1,19 +1,47 @@
 package formula
 
 object AnsCutter{
-  import protcol._
+  import formula.protcol._
   import Layer._
   import Utilty.Image
   import Utilty.RichCal._
   import Utilty_formula._
   val Image = new Image()
+  //答えのボックスの位置座標
+  var start_Coordinate = (350,1202)//start
+  var ansbox = (105,224) // kaitou kuurann
+  var nextbox = (74,0) // next box
+  var Coordinate = (0,0) // shokika
+  var ans_start = (0,0)
+
+  def cut(filename:String)={
+    var img = Image.read(filename)
+    val H = img.size
+    val W = img(0).size
+    var ansimg = Array.ofDim[Int](10,ansbox._1,ansbox._2,3)
+    var flagcounter = 0
+    var start_CoordinateList = List[(Int,Int)]()
+    Coordinate = start_Coordinate
+    for(i <- 0 until H; j <- 0 until W ){
+
+      if(img(i)(j).sum / 3f  <  50){ //平均から黒か判断する
+        if(flagcounter == 0) Coordinate = (i,j)
+        flagcounter  +=1
+      }else{
+        flagcounter = 0
+      }
+
+      if(flagcounter > 200){
+        start_CoordinateList ::= Coordinate
+
+        flagcounter = 0
+      }
+    }
+    ansimg
+  }
   def main(args: Array[String]): Unit = {
 
-    val filename = sys.process.Process("ls "+uchinagirei_d).lineStream.toArray.map{a => uchinagirei_d+a}
-    var start_Coordinate = (350,1202)
-    var ansbox = (105,224)
-    var nextbox = (74,0)
-    var Coordinate = (0,0)
+    val filename = sys.process.Process("ls marutuke/").lineStream.toArray.map{a => uchinagirei_d+a}
     var img = Image.read(filename(0))
     var ansimg = Array.ofDim[Float](filename.size,10,ansbox._1,ansbox._2,3)
 

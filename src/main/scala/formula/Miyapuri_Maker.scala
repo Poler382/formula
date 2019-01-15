@@ -1,9 +1,8 @@
 package formula
 
 object miyapuri_maker{
-  import protcol._
+  import formula.protcol._
   import Utilty.ML._
-  import protcol._
   import Layer._
   def load(dir:String) =  scala.io.Source.fromFile(dir).getLines.toArray.mkString("\n")
 
