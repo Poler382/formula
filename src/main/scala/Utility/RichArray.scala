@@ -71,6 +71,7 @@ object RichArray {
             def / (y:(Int,Int)) = (x._1 / y._1, x._2 / y._2)
             def getone () = x._1
             def gettwo () = x._2
+            def sum = x._1+x._2
 
           }
           implicit class RichFloatTaple(val x:(Float,Float) )extends AnyVal {
@@ -80,7 +81,7 @@ object RichArray {
             def / (y:(Float,Float)) = (x._1 / y._1, x._2 / y._2)
             def getone () = x._1
             def gettwo () = x._2
-
+            def sum = x._1+x._2
           }
           implicit class RichDoubleTaple(val x:(Double,Double) )extends AnyVal {
             def + (y:(Double,Double)) = (x._1 + y._1, x._2 + y._2)
@@ -89,6 +90,6 @@ object RichArray {
             def / (y:(Double,Double)) = (x._1 / y._1, x._2 / y._2)
             def getone () = x._1
             def gettwo () = x._2
-
+            def sum = x._1+x._2
           }
         }
