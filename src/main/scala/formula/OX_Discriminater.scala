@@ -47,15 +47,16 @@ object  OX_Discriminater {
         val Collect_ans = lines(printnumber).toArray.map{a => if(a == 'o') 1f else 0f }.toArray
         val Cutting_ans =formula.AnsCutter.cut(blackimg2(i)).map(formula.AnsCutter.getbox(blackimg2(i),_)).toArray
         var (loss,count) = learning(network,Collect_ans,Cutting_ans)
-
+        LOSS += loss
+        COUNT += count
       }
-      println(s"epoch: ${ep} loss: ${LOSS}  count: ${COUNT/10*fn.size} time: ${timer.finish}")
+      println(s"epoch: ${ep} loss: ${LOSS}  Acc: ${COUNT/10f*fn.size} time: ${timer.finish}")
       saves(network,"OX_defo")
       LOSSLIST.push(LOSS)
-      ACCLIST.push(COUNT/10*fn.size)
+      ACCLIST.push(COUNT/10f*fn.size)
     }
-    savetxt_Float(LOSSLIST.full,"OX_LOSS_"+timer.date,"")
-    savetxt_Float(ACCLIST.full,"OX_ACC_"+timer.date,"")
+    savetxt_Float(LOSSLIST.full,"OX_LOSS_"+timer.date,"txt")
+    savetxt_Float(ACCLIST.full,"OX_ACC_"+timer.date,"txt")
   }
 
   def select_Net(mode:String = "defo",H:Int=90,W:Int=240) = {
