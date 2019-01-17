@@ -113,6 +113,7 @@ object  OX_Discriminater {
     val targetlist = List[String]()
     val yList = List[String]()
     var count = 0
+    
     for(i <- 0 until imgSet.size){
 
       val img = Image.RGBto3DArray(flat_and_float(imgSet(i)),h,w).flatten

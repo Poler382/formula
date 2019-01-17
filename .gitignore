@@ -2,3 +2,4 @@ target/*
 project/*
 .DS_Store
 */target/*
+*/project/*

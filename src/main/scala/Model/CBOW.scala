@@ -47,11 +47,13 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     Wout.reset
 
   }
+
   def load_Enbedding()={
     val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
     val f = scala.io.Source.fromFile(pathName).getLines.toArray
     Win.W = f(0).split(",").map(_.toFloat).toArray
   }
+  
   def save_Distributed_Representation()={
     val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
     val writer =  new java.io.PrintWriter(pathName)
