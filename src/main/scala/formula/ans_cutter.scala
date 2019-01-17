@@ -13,6 +13,7 @@ object AnsCutter{
   var nextbox = (74,0) // next box
   var Coordinate = (0,0) // shokika
   var ans_start = (0,0)
+  val averageCoordnate = Array((1165,383), (1165,529), (1165,675), (1165,823), (1165,972), (1165,1120), (1165,1270), (1165,1416), (1165,1563),(1165,1709))
   def isBlack(img: Array[Int],lim : Int = 90) ={
     if(img(0) < lim && img(1) < lim && img(2) < lim ){
       true
@@ -97,7 +98,7 @@ object AnsCutter{
     val ar = Array(fn0)
     for(fn <- fn0){
       Image.write("aftercut/"+fn+"_black.png",make_black_paper("marutuke_set/"+fn))
-      val m =formula.AnsCutter.cut("aftercut/"+fn+"_black.png")
+      val m =formula.AnsCutter.cut2("aftercut/"+fn+"_black.png")
       Image.write("aftercut/"+fn+"_check.png",m)
       //sys.process.Process("rm aftercut/*black*.png").run
     }
@@ -137,7 +138,7 @@ object AnsCutter{
         //col2_250row70_2_120_120_last3
         val row = Range(-2,5).map(l => get_rowband_black(img,(i+l,j),2,250)).toArray.sorted.take(2).sum / 2f
         val col = Range(-2,5).map(l => get_colband_black(img,(i,j+l),50,2)).toArray.sorted.take(2).sum / 2f
-      //  val col_last = Range(-2,5).map(l => get_colband_black(img,(i,j+245+l),30,3)).toArray.sorted.take(3).sum / 3f
+        //  val col_last = Range(-2,5).map(l => get_colband_black(img,(i,j+245+l),30,3)).toArray.sorted.take(3).sum / 3f
         if( row < 160f && col  < 160f ){
 
           if(flagcounter == 0 ){
@@ -191,6 +192,68 @@ object AnsCutter{
     img2
   }
 
+  def cut2(filename:String)={
+    var color = Array(Array(152,52,255),Array(0,255,0),Array(255,0,0),Array(0,0,255),Array(0,255,0),Array(255,0,0),Array(0,0,255),Array(0,255,0),Array(255,0,0),Array(0,0,255),Array(0,255,0),Array(255,0,0),Array(0,0,255),Array(0,255,0),Array(255,0,0),Array(0,0,255),Array(0,255,0),Array(255,0,0))
+    var img = Image.read(filename)
+    var img2 = Image.read(filename)
+
+    val H = img.size
+    val W = img(0).size
+    var ansimg = Array.ofDim[Int](10,ansbox._1,ansbox._2,3)
+    var flagcounter = 0
+    var isok = false
+    var Window = 20
+    var start_CoordinateList = List[(Int,Int)]()
+    Coordinate = start_Coordinate
+    val file = rand.nextInt(1000)
+    for((j,i) <- averageCoordnate  ){
+      println(j,i)
+      val range = 50
+      //col2_250row70_2_120_120_last3
+      var row = (Float.PositiveInfinity,(0,0))//黒の値，その時の座標
+      var col = (Float.PositiveInfinity,(0,0))
+      for(k <- -range/2 until range; l<- -range until range){
+        if(row._1 > get_rowband_black(img,(i+k,j+l),1,250) && col._1 > get_colband_black(img,(i+k,j+l),80,1)){
+          row = (get_rowband_black(img,(i+k,j+l),1,250),(i+k,j+l))
+          col = (get_colband_black(img,(i+k,j+l),80,1),(i+k,j+l))
+        }
+      }
+
+
+
+      Coordinate = row._2
+      print(filename,flagcounter)
+      print(i,j)//," color -> ",lookRGB(color(flagcounter)))
+      println( "  => " +lookRGB(img(i)(j))+", row : "+row+", col: "+col)
+
+      start_CoordinateList ::= Coordinate
+
+      val mm = getbox(img,Coordinate)
+      //  Image.write(filename+"_"+flagcounter+".png",mm)
+      flagcounter +=1
+
+
+
+      //  色変えて角を見てた
+      for(l <- 0 until Window;m <- 0 until Window){
+        for(c <- 0 until 3){
+          img2(Coordinate._1+l)(Coordinate._2+m)(c) = color(0)(c)
+        }
+      }
+      for(l <- 0 until 5;m <- 0 until 5){
+        for(c <- 0 until 3){
+          img(Coordinate._1+l)(Coordinate._2+m)(c) = 255
+        }
+      }
+
+      img(Coordinate._1)(Coordinate._2) =Array(255,0,0)
+
+    }
+
+
+    //}
+    img2
+  }
 
 
 

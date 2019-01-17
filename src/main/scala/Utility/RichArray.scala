@@ -73,6 +73,7 @@ object RichArray {
             def gettwo () = x._2
             def sum = x._1+x._2
             def abs = (math.abs(x._1),math.abs(x._2))
+            
 
           }
           implicit class RichFloatTaple(val x:(Float,Float) )extends AnyVal {
