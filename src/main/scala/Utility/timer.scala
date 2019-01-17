@@ -1,5 +1,6 @@
 package Utilty
 object timer{
+  import java.util.Date
   val timestack = new  Stack[Double]()
   var s = 0d
   def start()={
@@ -9,7 +10,13 @@ object timer{
     val tm = (System.currentTimeMillis() - s)/1000d
     s = 0d
     timestack.push(tm)
-    println("time: "+tm  +" s")
     tm
+  }
+  def nowtime()={
+    "-%tm%<td-%<tHh"format new Date
+  }
+  def date()={
+    val n = new Date()
+    n.toString.replace(" ","_")
   }
 }

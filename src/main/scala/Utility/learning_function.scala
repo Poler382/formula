@@ -2,7 +2,7 @@ package Utilty
 object ML{
   import Layer._
   val rand = new scala.util.Random(0)
-
+  
   def print_result(
     num:Int,
     time:Double,
@@ -43,6 +43,7 @@ object ML{
 
     def forwards(layers:List[Layer],x:Array[Float])={
       var temp = x
+      var num=0
       for(lay <- layers){
         temp =lay.forward(temp)
       }

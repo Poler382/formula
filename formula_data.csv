@@ -1,23 +1,23 @@
-﻿,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,1234567890,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ichimura,ooxooooooo,oooooxxxoo,ooooooooox,oooooxxxxo,,,,,,,xoooxooxxo,ooooxxoxoo,ooxooxxooo,xooooxoooo,ooxooxxooo,xooooxoooo,ooooxooxoo,oxoxooooxo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-isii    ,,ooxxooxxxx,oooxooooxo,,ooxxoooooo,ooooooooxx,ooooooooxo,,,,,ooxoooxooo,oooxooooox,ooooxoxxxo,oxoooxxxoo,xoxooooooo,oxooooooxx,oxoooooooo,ooooooxooo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ootuki  ,ooxoooxoxo,ooxxxxxxxo,ooxooxxoxo,ooooxxxxxx,oooooooxoo,ooxooooxxo,ooooooxxoo,,,,oooooooxoo,oxooxooxoo,ooooxoooo,ooooxxoooo,oooooooooo,ooooooxooo,xxooxooooo,ooooooooox,oooooooxoo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ono     ,oxoooooooo,ooooooooxo,oooooooooo,ooooooooxo,ooxoxooxxo,ooxoxoxoox,ooxoooxxxx,,,,oooxoooooo,oooooooxoo,ooxxoxxooo,ooxoooooxx,ooooxooxoo,ooxxxoooxo,ooooooxooo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-okano   ,oooooooxoo,oooooooooo,oooxooooxo,oooooooooo,oooooooooo,ooxoooxoxo,oooxooooxo,ooxooxoooo,          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kuria   ,,,oooooxoxxo,ooooooxxoo,oooooooooo,ooooxoooxo,oooxoooxoo,,,oooooooooo,ooooooxooo,oooxoooxoo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+isii,,ooxxooxxxx,oooxooooxo,,ooxxoooooo,ooooooooxx,ooooooooxo,,,,,ooxoooxooo,oooxooooox,ooooxoxxxo,oxoooxxxoo,xoxooooooo,oxooooooxx,oxoooooooo,ooooooxooo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ootuki,ooxoooxoxo,ooxxxxxxxo,ooxooxxoxo,ooooxxxxxx,oooooooxoo,ooxooooxxo,ooooooxxoo,,,,oooooooxoo,oxooxooxoo,ooooxoooo,ooooxxoooo,oooooooooo,ooooooxooo,xxooxooooo,ooooooooox,oooooooxoo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+oono,oxoooooooo,ooooooooxo,oooooooooo,ooooooooxo,ooxoxooxxo,ooxoxoxoox,ooxoooxxxx,,,,oooxoooooo,oooooooxoo,ooxxoxxooo,ooxoooooxx,ooooxooxoo,ooxxxoooxo,ooooooxooo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+okano,oooooooxoo,oooooooooo,oooxooooxo,oooooooooo,oooooooooo,ooxoooxoxo,oooxooooxo,ooxooxoooo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+kuria,,,oooooxoxxo,ooooooxxoo,oooooooooo,ooooxoooxo,oooxoooxoo,,,oooooooooo,ooooooxooo,oooxoooxoo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 tukimori,ooooooooox,ooxxoxxxxo,oooxoxoxxx,ooooooxxxo,oxxooxxxoo,ooooooxoxx,,,,,,,,,,ooxooooooo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 watanabe,ooooooooxo,ooooooxxxx,oooooxooox,xoooooooox,,ooxooooooo,oooooxoxxo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 takimoto,ooooooooxo,ooooooooxo,oooooooooo,oooooooooo,xoooooooox,oooooooooo,oooooooooo,oooooooooo,oooooooooo,oooooooxoo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 nanasi,oxooxxxxxo,oooxoooxoo,oxooxxxxxo,xxxxxxxxxo,xxxxxxxxxx,xxxxxxxxxx,oooxooxxxx,xxoooooxxx,ooooxoxxxx,ooooxxxxox,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ichimura,ok,ok,ok,ok,0,0,0,0,0,0,ok,ok,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-isii    ,0,ok,ok,0,ok,ok,ok,0,0,0,0,ok,ok,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-ootuki  ,ok,ok,ok,ok,ok,ok,ok,0,0,0,ok,ok,9,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-ono     ,ok,ok,ok,ok,ok,ok,ok,0,0,0,ok,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-okano   ,ok,ok,ok,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-kuria   ,0,0,ok,ok,ok,ok,ok,0,0,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-tukimori,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-watanabe,ok,ok,ok,ok,0,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-takimoto,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-nanasi,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
