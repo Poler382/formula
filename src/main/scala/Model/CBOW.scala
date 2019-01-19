@@ -5,6 +5,9 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   import Utilty.ML._
   import Utilty.Stack
   import Utilty.timer._
+  import formula.protcol._
+  import Utilty.call_py._
+  import formula.Utilty_formula._
   //val Win = new Embedding(xn,hidden)
   val Win = new Linear(xn,hidden)
   val Wout= new Linear(hidden,xn)
@@ -31,7 +34,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
 
   def backward(ds:Array[Float])={
     val da = Wout.backward(ds) * 0.5f
-    for(i <- 0 until Layer_num){
+    for(i <- 0 until 2){
       Win.backward(da)
     }
   }
@@ -45,7 +48,6 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   def reset(){
     Win.reset
     Wout.reset
-
   }
 
   def load_Enbedding()={
@@ -53,7 +55,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     val f = scala.io.Source.fromFile(pathName).getLines.toArray
     Win.W = f(0).split(",").map(_.toFloat).toArray
   }
-  
+
   def save_Distributed_Representation()={
     val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
     val writer =  new java.io.PrintWriter(pathName)
@@ -91,6 +93,43 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     }
     loss.toFloat / a.size
   }
+  def train(path:String,epoch:Int)={
+    val q = question_load_nonnum(collection_path).map(string2vectorInt(_))
+    val CBOWModel = new CBOW(title,xn,hidden)
+    var lossList = List[String]()
+    for (ep <- 0 until epoch){
+      var Loss = 0d;var cm = 0f;var all =0f
+      start()
+      for(i <- 0 until q.size){
+        val formula_num = q(i) // 5x+1=2 のvecの数字
+        val Context = Context_num(q(i),2)
+        for(j <- 0 until Context.size){
+          val y =forward(Context(j))
+          val t = onehot(j,xn)
+          backward(t-y)
+          Loss += crossEntropy(t,y)
+          all+=1
+          if(t.indexOf(t.max) ==y.indexOf(y.max)){
+            cm+=1
+          }
+        }
+        update()
+        if(i % 100 == 0){
+          save_Distributed_Representation()
+        }
+        if(i % 10 == 0){
+          println("epoch : "+i," count: "+cm/all," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
+        }
+        lossList ::= (math.exp(-Loss/all)).toString
+
+      }
+
+
+    }
+
+    savetxt_String(lossList,"perplexity"+date,"txt")
+
+  }
 
   def trains(onehotss:Array[Array[Array[Float]]],epoch:Int)={
     var lossList = List[String]()
@@ -125,10 +164,8 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
       lossList ::= (math.exp(-Loss/all)).toString
 
     }
-    savetxt_String(lossList,"perplexity","Embedding")
+    savetxt_String(lossList,"perplexity"+date,"Embedding")
   }
-
-
   def train(onehots:Array[Array[Float]],epoch:Int)={
     val number = onehots.map{a => a.indexOf(a.max)}.toArray
     //  val CBOWModel = new CBOW(onehots(0).size,hidden,Windowsize*2,Windowsize)
@@ -156,6 +193,6 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
       }
       lossList ::= (math.exp(-Loss/all)).toString
     }
-    savetxt_String(lossList,"perplexity","/Users/yuya/Programing/sbt/formula")
+    savetxt_String(lossList,"perplexity"+date,"/Users/yuya/Programing/sbt/formula")
   }
 }

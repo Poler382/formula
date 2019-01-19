@@ -8,8 +8,9 @@ object FormulaVecter{
   import Activation._
   import Utilty.Stack
   import Utilty.timer
-  import Utilty_formula._
+  import formula.Utilty_formula._
   import word2vec._
+
   def learn(num:Int)={
     val in = 10
     val out = 64

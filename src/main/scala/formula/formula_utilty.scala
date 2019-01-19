@@ -42,11 +42,28 @@ object Utilty_formula{
   def question_load3(path:String)={
     val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
     var x = st.map(_.replace("""\frac""","f"))
-    for(i <- 0 until x.size){
 
-      x(i) =x(i)
-    }
     x
+  }
+  def question_load_nonnum(path:String)={
+    val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
+    var xf = st.map(_.replace("""\frac""","f"))
+    def strI(a : Int) = a.toString
+    def strD(a : Double) = a.toString
+    for(k <- 10 to 99){
+      xf = xf.map(_.replace(strI(k),"n"))
+    }
+
+    for(k <- 1000 until 0 by -1){
+      xf = xf.map(_.replace(strD(k/100d),"n"))
+    }
+
+    for(k <- 0 to 9){
+      xf = xf.map(_.replace(strI(k),"n"))
+    }
+
+
+    xf
   }
 
   def string2vecnumber(st:String)={
@@ -80,6 +97,15 @@ object Utilty_formula{
       reSt += vec(ar(i).indexOf(ar(i).max) )
     }
     reSt.replace("f","""\frac""")
+  }
+
+  def string2vectorInt(ar:String)={
+
+    var re = Array.ofDim[Int](ar.size)
+    for(i <- 0 until ar.size){
+      re(i) = vec.indexOf(ar(i).toString)
+    }
+    re
   }
 
 }
