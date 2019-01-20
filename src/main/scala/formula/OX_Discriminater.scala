@@ -21,12 +21,20 @@ object  OX_Discriminater {
     }
 
   }
+  def play()={
+    val fn = scala.sys.process.Process("ls testdate").lineStream.toArray
+    fn.map(a => test(Array("test",a,"OX_defo")))
+  }
+
 
   def main(args: Array[String]): Unit = {
+
     val mode = args(0)
     if(mode=="train"){
+      // mode epoch networkmode
       train(args)
     }else if(mode=="test"){
+      // mode inputfile networkmode
       test(args)
 
     }else{
@@ -35,12 +43,14 @@ object  OX_Discriminater {
   }
 
   def test(args: Array[String])={
-    val network = select_Net()
     val fn = args(1)
+    val networkmode = args(2)
+    val network = select_Net(networkmode)
+
     val csv = scala.io.Source.fromFile("formula_data.csv").getLines.toArray
     val blackimg2 = fn.map(a => Image.read("testdate/"+fn)).toArray
 
-    loads(network,"OX_defo")
+    loads(network,networkmode)
 
     val fnsplit = fn.dropRight(4).split("_")
     val name = fnsplit(0)
@@ -62,14 +72,15 @@ object  OX_Discriminater {
 
     def train(args: Array[String]): Unit = {
       //args(0) is mode.  args(1) is epoch
-      val network = select_Net()
+      val networkmode = args(2)
+      val network = select_Net(networkmode)
       val epoch = args(1).toInt
       val fn =scala.util.Random.shuffle(scala.sys.process.Process("ls black").lineStream.toList)
       val csv = scala.io.Source.fromFile("formula_data.csv").getLines.toArray
       val blackimg2 = fn.map(a => Image.read("black/"+a)).toArray
       var LOSSLIST = new Utilty.Stack[Float]()
       var ACCLIST = new Utilty.Stack[Float]()
-      loads(network,"OX_defo")
+      loads(network,networkmode)
       for(ep<- 0 until epoch){
         timer.start
         var LOSS  = 0f
@@ -89,7 +100,7 @@ object  OX_Discriminater {
           COUNT += count
         }
         println(s"epoch: ${ep} loss: ${LOSS} count: ${COUNT} / ${10f*fn.size} Acc: ${COUNT/10f*fn.size} time: ${timer.finish}")
-        saves(network,"OX_defo")
+        saves(network,networkmode)
         println("save bias")
         LOSSLIST.push(LOSS)
         ACCLIST.push(COUNT/10f*fn.size)
@@ -102,7 +113,7 @@ object  OX_Discriminater {
       var h = H
       var w = W
       val g = mode match {
-        case "defo" =>{
+        case "OX_defo" =>{
           val a = new Convolution_Matver(3,3,h,w,10)
           val b = new Pooling(2,10,h-3+1,w-3+1)
           val c = new ReLU()
@@ -139,6 +150,43 @@ object  OX_Discriminater {
           List(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3,af1,ac,af2,ac2)
         }
 
+        case "learning_rate_0.005" =>{
+          val a = new Convolution_Matver(3,3,h,w,10,0.05f)
+          val b = new Pooling(2,10,h-3+1,w-3+1)
+          val c = new ReLU()
+
+          h = (h-3+1)/2
+          w = (w-3+1)/2
+
+          val a1 = new Convolution_Matver(3,10,h,w,10,0.05f)
+          val b1 = new Pooling(2,10,h-3+1,w-3+1)
+          val c1 = new ReLU()
+
+          h = (h-3+1)/2
+          w = (w-3+1)/2
+
+          val a2 = new Convolution_Matver(3,10,h,w,10,0.05f)
+          val b2 = new Pooling(2,10,h-3+1,w-3+1)
+          val c2 = new ReLU()
+
+          h = (h-3+1)/2
+          w = (w-3+1)/2
+
+          val a3 = new Convolution_Matver(3,10,h,w,10,0.05f)
+          val b3 = new Pooling(2,10,h-3+1,w-3+1)
+          val c3 = new ReLU()
+
+          h = (h-3+1)/2
+          w = (w-3+1)/2
+
+          val af1 = new Affine(h*w*10,100,0.05f)
+          val ac  = new ReLU()
+          val af2 = new Affine(100,2,0.03f)
+          val ac2  = new SoftMax()
+
+          List(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3,af1,ac,af2,ac2)
+        }
+
       }
 
       g
@@ -161,7 +209,7 @@ object  OX_Discriminater {
         val t = onehot(target(i).toInt,2)
         //print(target(i),y.indexOf(y.max))
         if(y.indexOf(y.max) == t.indexOf(t.max)) count += 1
-        if(y.indexOf(y.max) == t.indexOf(t.max)) print(" o ") else print(" n ")
+      //  if(y.indexOf(y.max) == t.indexOf(t.max)) print(" o ") else print(" n ")
         loss += (t-y).sum
         backwards(Net.init,(y-t))
       }

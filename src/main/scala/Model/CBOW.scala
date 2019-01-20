@@ -104,7 +104,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
         val formula_num = q(i) // 5x+1=2 のvecの数字
         val Context = Context_num(q(i),2)
         for(j <- 0 until Context.size){
-          val y =forward(Context(j))
+          val y = forward(Context(j))
           val t = onehot(j,xn)
           backward(t-y)
           Loss += crossEntropy(t,y)
