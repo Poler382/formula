@@ -11,6 +11,22 @@ object  OX_Discriminater {
   import Utilty.ML._
   import Utilty.timer
   val Image = new Image()
+
+  def main(args: Array[String]): Unit = {
+
+    val mode = args(0)
+    if(mode=="train"){
+      // mode epoch networkmode
+      train(args)
+    }else if(mode=="test"){
+      // mode inputfile networkmode
+      test(args)
+
+    }else {
+    println("other input ")
+    }
+  }
+
   def mkblack={
     val fn =scala.sys.process.Process("ls marutuke_set").lineStream.toArray
     for(filename <- fn){
@@ -25,21 +41,87 @@ object  OX_Discriminater {
     val fn = scala.sys.process.Process("ls testdate").lineStream.toArray
     fn.map(a => test(Array("test",a,"OX_defo")))
   }
+  def select_Net(mode:String = "OX_defo",H:Int=90,W:Int=240) = {
+    var h = H
+    var w = W
+    val g = mode match {
+      case "OX_defo" =>{
+        val a = new Convolution_Matver(3,3,h,w,10)
+        val b = new Pooling(2,10,h-3+1,w-3+1)
+        val c = new ReLU()
 
+        h = (h-3+1)/2
+        w = (w-3+1)/2
 
-  def main(args: Array[String]): Unit = {
+        val a1 = new Convolution_Matver(3,10,h,w,10)
+        val b1 = new Pooling(2,10,h-3+1,w-3+1)
+        val c1 = new ReLU()
 
-    val mode = args(0)
-    if(mode=="train"){
-      // mode epoch networkmode
-      train(args)
-    }else if(mode=="test"){
-      // mode inputfile networkmode
-      test(args)
+        h = (h-3+1)/2
+        w = (w-3+1)/2
 
-    }else{
-      println("Other input")
+        val a2 = new Convolution_Matver(3,10,h,w,10)
+        val b2 = new Pooling(2,10,h-3+1,w-3+1)
+        val c2 = new ReLU()
+
+        h = (h-3+1)/2
+        w = (w-3+1)/2
+
+        val a3 = new Convolution_Matver(3,10,h,w,10)
+        val b3 = new Pooling(2,10,h-3+1,w-3+1)
+        val c3 = new ReLU()
+
+        h = (h-3+1)/2
+        w = (w-3+1)/2
+
+        val af1 = new Affine(h*w*10,100)
+        val ac  = new ReLU()
+        val af2 = new Affine(100,2)
+        val ac2  = new SoftMax()
+
+        List(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3,af1,ac,af2,ac2)
+      }
+
+      case "learning_rate_0.005" =>{
+        val a = new Convolution_Matver(3,3,h,w,10,0.05f)
+        val b = new Pooling(2,10,h-3+1,w-3+1)
+        val c = new ReLU()
+
+        h = (h-3+1)/2
+        w = (w-3+1)/2
+
+        val a1 = new Convolution_Matver(3,10,h,w,10,0.05f)
+        val b1 = new Pooling(2,10,h-3+1,w-3+1)
+        val c1 = new ReLU()
+
+        h = (h-3+1)/2
+        w = (w-3+1)/2
+
+        val a2 = new Convolution_Matver(3,10,h,w,10,0.05f)
+        val b2 = new Pooling(2,10,h-3+1,w-3+1)
+        val c2 = new ReLU()
+
+        h = (h-3+1)/2
+        w = (w-3+1)/2
+
+        val a3 = new Convolution_Matver(3,10,h,w,10,0.05f)
+        val b3 = new Pooling(2,10,h-3+1,w-3+1)
+        val c3 = new ReLU()
+
+        h = (h-3+1)/2
+        w = (w-3+1)/2
+
+        val af1 = new Affine(h*w*10,100,0.05f)
+        val ac  = new ReLU()
+        val af2 = new Affine(100,2,0.03f)
+        val ac2  = new SoftMax()
+
+        List(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3,af1,ac,af2,ac2)
+      }
+
     }
+
+    g
   }
 
   def test(args: Array[String])={
@@ -80,7 +162,7 @@ object  OX_Discriminater {
       val blackimg2 = fn.map(a => Image.read("black/"+a)).toArray
       var LOSSLIST = new Utilty.Stack[Float]()
       var ACCLIST = new Utilty.Stack[Float]()
-      loads(network,networkmode)
+      loads(network,"OX_defo")
       for(ep<- 0 until epoch){
         timer.start
         var LOSS  = 0f
@@ -109,88 +191,7 @@ object  OX_Discriminater {
       savetxt_Float(ACCLIST.full,"OX_ACC_"+timer.date,"txt")
     }
 
-    def select_Net(mode:String = "defo",H:Int=90,W:Int=240) = {
-      var h = H
-      var w = W
-      val g = mode match {
-        case "OX_defo" =>{
-          val a = new Convolution_Matver(3,3,h,w,10)
-          val b = new Pooling(2,10,h-3+1,w-3+1)
-          val c = new ReLU()
 
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val a1 = new Convolution_Matver(3,10,h,w,10)
-          val b1 = new Pooling(2,10,h-3+1,w-3+1)
-          val c1 = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val a2 = new Convolution_Matver(3,10,h,w,10)
-          val b2 = new Pooling(2,10,h-3+1,w-3+1)
-          val c2 = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val a3 = new Convolution_Matver(3,10,h,w,10)
-          val b3 = new Pooling(2,10,h-3+1,w-3+1)
-          val c3 = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val af1 = new Affine(h*w*10,100)
-          val ac  = new ReLU()
-          val af2 = new Affine(100,2)
-          val ac2  = new SoftMax()
-
-          List(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3,af1,ac,af2,ac2)
-        }
-
-        case "learning_rate_0.005" =>{
-          val a = new Convolution_Matver(3,3,h,w,10,0.05f)
-          val b = new Pooling(2,10,h-3+1,w-3+1)
-          val c = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val a1 = new Convolution_Matver(3,10,h,w,10,0.05f)
-          val b1 = new Pooling(2,10,h-3+1,w-3+1)
-          val c1 = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val a2 = new Convolution_Matver(3,10,h,w,10,0.05f)
-          val b2 = new Pooling(2,10,h-3+1,w-3+1)
-          val c2 = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val a3 = new Convolution_Matver(3,10,h,w,10,0.05f)
-          val b3 = new Pooling(2,10,h-3+1,w-3+1)
-          val c3 = new ReLU()
-
-          h = (h-3+1)/2
-          w = (w-3+1)/2
-
-          val af1 = new Affine(h*w*10,100,0.05f)
-          val ac  = new ReLU()
-          val af2 = new Affine(100,2,0.03f)
-          val ac2  = new SoftMax()
-
-          List(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3,af1,ac,af2,ac2)
-        }
-
-      }
-
-      g
-    }
 
     def learning(Net:List[Layer],target:Array[Float],imgSet:Array[Array[Array[Array[Int]]]])={
       def flat_and_float(im: Array[Array[Array[Int]]]) = im.flatten.flatten.map(_.toFloat)
@@ -237,7 +238,6 @@ object  OX_Discriminater {
         }
 
       }
-
       yList.reverse
     }
 
