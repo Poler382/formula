@@ -15,8 +15,8 @@ object  OX_Discriminater {
   def para()={
     timer.start
     (1 to 10).map { i =>  //parでparallel collection に変換
-        println(i)
-        Thread.sleep(500) //1回の処理に500ミリ秒かかるとする
+      println(i)
+      Thread.sleep(500) //1回の処理に500ミリ秒かかるとする
     }
     timer.finish
   }
@@ -48,11 +48,11 @@ object  OX_Discriminater {
 
   }
   def play()={
-    val fn = scala.sys.process.Process("ls testdate").lineStream.toArray.take(5)
+    val fn = scala.sys.process.Process("ls testdate").lineStream.toArray
 
-    Range(0,fn.size-1).par.map{i=>
+    Range(0,fn.size).map{i=>
       test(Array("test",fn(i),"OX_defo"))
-     }
+    }
   }
   def select_Net(mode:String = "OX_defo",H:Int=90,W:Int=240) = {
     var h = H
@@ -141,10 +141,11 @@ object  OX_Discriminater {
   }
 
   def test(args:Array[String])={
+
     val fn = args(1)
     val networkmode = args(2)
     val network = select_Net(networkmode)
-
+    print("　test start　"+fn)
     //    val blackimg2 =  Image.read("testdate/"+fn)
     val blkpaper =  formula.AnsCutter.make_black_paper("testdate/"+fn)
     loads(network,networkmode)
@@ -156,6 +157,8 @@ object  OX_Discriminater {
     val Cutting_ans = formula.AnsCutter.cut(blkpaper).map(formula.AnsCutter.getbox(blkpaper,_)).toArray
 
     var yList = tester(network,Cutting_ans)
+    resets(network)
+
     savecsv_String(yList,name,printnumber)
 
     yList
@@ -170,12 +173,16 @@ object  OX_Discriminater {
 
     val csv = scala.io.Source.fromFile("formula_data.csv").getLines.toArray
     val blackimg2 = fn.map(a => Image.read("black/"+a)).toArray
+
+    val fn_test =scala.util.Random.shuffle(scala.sys.process.Process("ls testdate").lineStream.toList)
+    val test_blackimg = fn_test.map(a => Image.read("testdate/"+a)).toArray
+  
     var train_LOSSLIST = new Utilty.Stack[Float]()
     var train_ACCLIST  = new Utilty.Stack[Float]()
     var test_LOSSLIST  = new Utilty.Stack[Float]()
     var test_ACCLIST   = new Utilty.Stack[Float]()
 
-    loads(network,"OX_defo")
+    //loads(network,"OX_defo")
 
     for(ep<- 0 until epoch){
       timer.start
@@ -185,7 +192,7 @@ object  OX_Discriminater {
       for(i <- 0 until fn.size){
 
         val filename = fn(i)
-        val fnsplit = filename.dropRight(9).split("_")
+        val fnsplit = filename.dropRight(4).split("_")
         val name = fnsplit(0)
         val printnumber = fnsplit(1).toInt - 1
         //    print(s"epoch: ${ep} name: ${name} number: ${printnumber}  ")
@@ -193,21 +200,21 @@ object  OX_Discriminater {
         val Collect_ans = lines(printnumber).toArray.map{a => if(a == 'o') 1f else 0f }.toArray
         val Cutting_ans =formula.AnsCutter.cut(blackimg2(i)).map(formula.AnsCutter.getbox(blackimg2(i),_)).toArray
         var (loss,count) = learning(network,Collect_ans,Cutting_ans)
+        updates(network)
         LOSS += loss
         COUNT += count
       }
       val train_time =timer.finish
+      println(s"train => epoch: ${ep} loss: ${LOSS} count: ${COUNT} / ${10f*fn.size} Acc: ${COUNT/10f*fn.size} time: ${train_time}")
 
       //test
-      val fn_test =scala.util.Random.shuffle(scala.sys.process.Process("ls testdate").lineStream.toList).take(5)
-      val test_blackimg = fn_test.map(a => Image.read("testdate/"+a)).toArray
       var testLOSS  = 0f
       var testCOUNT = 0f
       timer.start
       for(i <- 0 until fn_test.size){
 
         val filename = fn_test(i)
-        val fnsplit = filename.dropRight(9).split("_")
+        val fnsplit = filename.dropRight(4).split("_")
         val name = fnsplit(0)
         val printnumber = fnsplit(1).toInt - 1
         //    print(s"epoch: ${ep} name: ${name} number: ${printnumber}  ")
@@ -222,7 +229,6 @@ object  OX_Discriminater {
       val test_time =timer.finish
 
 
-      println(s"train => epoch: ${ep} loss: ${LOSS} count: ${COUNT} / ${10f*fn.size} Acc: ${COUNT/10f*fn.size} time: ${train_time}")
       println(s"test  => epoch: ${ep} loss: ${testLOSS} count: ${testCOUNT} / ${10f*fn.size} Acc: ${testCOUNT/10f*fn.size} time: ${test_time}")
 
 
@@ -245,12 +251,11 @@ object  OX_Discriminater {
     var loss = 0f
     val h = imgSet(0).size
     val w = imgSet(0)(0).size
-    val targetlist = List[String]()
+    //  val targetlist = List[String]()
     val yList = List[String]()
     var count = 0
 
-    for(i <- 0 until imgSet.size){
-
+    Range(0 ,imgSet.size).map{ i =>
       val img = Image.RGBto3DArray(flat_and_float(imgSet(i)),h,w).flatten
 
       val y = forwards(Net,img)
@@ -271,7 +276,7 @@ object  OX_Discriminater {
     var loss = 0f
     val h = imgSet(0).size
     val w = imgSet(0)(0).size
-    val targetlist = List[String]()
+    //  val targetlist = List[String]()
     val yList = List[String]()
     var count = 0
 
@@ -296,32 +301,32 @@ object  OX_Discriminater {
     var loss = 0f
     val h = imgSet(0).size
     val w = imgSet(0)(0).size
-    var yList = List[String]()
+    var yList = Array.ofDim[String](10)
     var count = 0
 
     Range(0 ,imgSet.size).par.map{ i =>
+      println("tester => "+i)
       val img = Image.RGBto3DArray(flat_and_float(imgSet(i)),h,w).flatten
 
       var y = forwards(Net,img)
-      if(y.indexOf(y.max) == 0) yList ::= "x"
-      else yList ::= "o"
+      if(y.indexOf(y.max) == 0) yList(i) = "x"
+      else yList(i)= "o"
     }
-
-    yList.reverse
+    yList.reverse.toList
   }
 
   def tuner(network:List[Layer]){
     //起動時により良い性能を出すために　
+    print("　tune start　")
     val epoch = 1
-    val fn =scala.util.Random.shuffle(scala.sys.process.Process("ls black").lineStream.toList)
+    val fn =scala.util.Random.shuffle(scala.sys.process.Process("ls black").lineStream.toList).take(5)
     val csv = scala.io.Source.fromFile("formula_data.csv").getLines.toArray
     val blackimg2 = fn.map(a => Image.read("black/"+a)).toArray
     for(ep <- 0 until epoch){
       timer.start
       var LOSS  = 0f
       var COUNT = 0f
-      Range( 0 ,fn.size).par.map{ i =>
-
+      Range( 0 ,fn.size).map{ i =>
         val filename = fn(i)
         val fnsplit = filename.dropRight(9).split("_")
         val name = fnsplit(0)
@@ -334,6 +339,7 @@ object  OX_Discriminater {
         LOSS += loss
         COUNT += count
       }
+      updates(network)
       println(s"tuner -> epoch: ${ep} loss: ${LOSS} count: ${COUNT} / ${10f*fn.size} Acc: ${COUNT/10f*fn.size} time: ${timer.finish}")
     }
 
