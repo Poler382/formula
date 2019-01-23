@@ -38,12 +38,12 @@ object  OX_Discriminater {
   }
 
   def mkblack={
-    val fn =scala.sys.process.Process("ls marutuke_set").lineStream.toArray
+    val fn =scala.sys.process.Process("ls testdate").lineStream.toArray
     for(filename <- fn){
       val fnsplit = filename.dropRight(4).split("_")
       val name = fnsplit(0)
       val printnumber = fnsplit(1).toInt
-      Image.write("black/"+name+"_"+printnumber+"black.png",formula.AnsCutter.make_black_paper("marutuke_set/"+filename))
+      Image.write("black/"+name+"_"+printnumber+"black.png",formula.AnsCutter.make_black_paper("testdate/"+filename))
     }
 
   }
@@ -149,7 +149,7 @@ object  OX_Discriminater {
     //    val blackimg2 =  Image.read("testdate/"+fn)
     val blkpaper =  formula.AnsCutter.make_black_paper("testdate/"+fn)
     loads(network,networkmode)
-    tuner(network)//いい性能を出すためのチューニング
+    //tuner(network)//いい性能を出すためのチューニング
     val fnsplit = fn.dropRight(4).split("_")
     val name = fnsplit(0)
     val printnumber = fnsplit(1).toInt
@@ -176,7 +176,7 @@ object  OX_Discriminater {
 
     val fn_test =scala.util.Random.shuffle(scala.sys.process.Process("ls testdate").lineStream.toList)
     val test_blackimg = fn_test.map(a => Image.read("testdate/"+a)).toArray
-  
+
     var train_LOSSLIST = new Utilty.Stack[Float]()
     var train_ACCLIST  = new Utilty.Stack[Float]()
     var test_LOSSLIST  = new Utilty.Stack[Float]()
@@ -200,9 +200,9 @@ object  OX_Discriminater {
         val Collect_ans = lines(printnumber).toArray.map{a => if(a == 'o') 1f else 0f }.toArray
         val Cutting_ans =formula.AnsCutter.cut(blackimg2(i)).map(formula.AnsCutter.getbox(blackimg2(i),_)).toArray
         var (loss,count) = learning(network,Collect_ans,Cutting_ans)
-        updates(network)
         LOSS += loss
         COUNT += count
+        System.gc()
       }
       val train_time =timer.finish
       println(s"train => epoch: ${ep} loss: ${LOSS} count: ${COUNT} / ${10f*fn.size} Acc: ${COUNT/10f*fn.size} time: ${train_time}")
@@ -224,7 +224,7 @@ object  OX_Discriminater {
         var (loss,count) = forwarder(network,Collect_ans,Cutting_ans)
         testLOSS += loss
         testCOUNT += count
-
+        System.gc()
       }
       val test_time =timer.finish
 

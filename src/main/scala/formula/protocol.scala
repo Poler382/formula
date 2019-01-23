@@ -22,7 +22,7 @@ object protcol{
   val uchinagirei_d = "uchireinagi/"
 
   val tex_folder = "tex/"
-  val vec = Array("f","{","}","(",")","x","=","+","-","n")//".","0","1","2","3","4","5","6","7","8","9"
+  val vec = Array("f","{","}","(",")","x","=","+","-","n","s")//".","0","1","2","3","4","5","6","7","8","9"
   val vecw = Array("you","say","goodbye","and","I","hello")
   val vec2= Array(
     Array[Float](1,0,0,0,0,0,0,0),//you

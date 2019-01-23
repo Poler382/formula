@@ -18,4 +18,9 @@ object call_py{
     Process("ipython src/main/python/convert3.py "+path).run
   }
 
+  def TsneAndPcaPy(path:String,in:Int,out:Int,outfn:String)={
+    val hikisuu = String.format("%1s %1s %1s %1s",path,in.toString,out.toString,outfn)
+    Process("ipython src/main/python/tsne.py "+path).run
+  }
+
 }

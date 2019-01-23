@@ -34,15 +34,22 @@ def maindefo():
 
 
 def main():
-
-    fn = "/Users/yuya/SourceTree/sbt/formula/Emvedding/SkipGram_formula_20x10.txt"
+    args = sys.argv
+    fn = args[1]
+    print(fn)
+    innum = int(args[2])
+    outnum = int(args[3])
+    outputfn = args[4]
+#    fn = "/Users/yuya/SourceTree/sbt/formula/Emvedding/SkipGram_formula_20x10.txt"
     lines = open(fn).readlines()
     ps0 = [x.strip().split(",") for x in lines]
-    data = np.array(ps0).reshape(20,10)
-    target = np.arange(20)
-    plot_data(pca(data),target, "pca.png")
-    plot_data(tsne(data),target, "tsne.png")
+    #data = np.array(ps0).reshape(20,10)
+    #target = np.arange(20)
+    data = np.array(ps0).reshape(innum,outnum)
+    target = np.arange(innum)
 
+    plot_data(pca(data),target, "pca_"+outputfn+".png")
+    plot_data(tsne(data),target,"tsne_"+outputfn+".png")
 
 
 

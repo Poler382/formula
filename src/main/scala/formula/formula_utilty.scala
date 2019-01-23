@@ -50,13 +50,14 @@ object Utilty_formula{
     var xf = st.map(_.replace("""\frac""","f"))
     def strI(a : Int) = a.toString
     def strD(a : Double) = a.toString
-    for(k <- 10 to 99){
+    for(k <- 1000 until 0 by -1){
+      xf = xf.map(_.replace(strD(k/100d),"s"))
+    }
+
+    for(k <- 99 to 10 by -1){
       xf = xf.map(_.replace(strI(k),"n"))
     }
 
-    for(k <- 1000 until 0 by -1){
-      xf = xf.map(_.replace(strD(k/100d),"n"))
-    }
 
     for(k <- 0 to 9){
       xf = xf.map(_.replace(strI(k),"n"))

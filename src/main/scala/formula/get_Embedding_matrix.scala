@@ -11,12 +11,7 @@ object Word2vec{
 
   def main(args: Array[String]): Unit = {
     val q = question_load3(collection_path).map(string2onehot(_))
-    val SkipGramModel = new SkipGram("formula",q(0)(0).size,10)
-    SkipGramModel.trains(q,2000)
-
-    val CBOWModel = new CBOW("formula_t",q(0)(0).size,10)
-    CBOWModel.trains(q,2000)
-
+  
   }
 
   def t_SNE_vector()={

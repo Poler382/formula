@@ -8,7 +8,12 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   import formula.protcol._
   import Utilty.call_py._
   import formula.Utilty_formula._
-  //val Win = new Embedding(xn,hidden)
+  import scala.sys._
+  import java.util.Date
+  import java.io.File
+  import scala.io.Source
+
+  //  val Win = new Embedding(xn,hidden)
   val Win = new Linear(xn,hidden)
   val Wout= new Linear(hidden,xn)
   val sf  = new SoftMax()
@@ -97,16 +102,24 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     val q = question_load_nonnum(collection_path).map(string2vectorInt(_))
     val CBOWModel = new CBOW(title,xn,hidden)
     var lossList = List[String]()
+    var Loss = 0d;var cm = 0f;var all =0f
     for (ep <- 0 until epoch){
-      var Loss = 0d;var cm = 0f;var all =0f
       start()
       for(i <- 0 until q.size){
-        val formula_num = q(i) // 5x+1=2 のvecの数字
+        //  val formula_num = q(i) // 5x+1=2 のvecの数字
         val Context = Context_num(q(i),2)
         for(j <- 0 until Context.size){
+          /*    print("formula  => ")
+          formula_num.foreach{a => print(a+" ")}
+          println()
+          println("i "+i,"j "+j,Context.size,Context(0).size)
+          println()
+          println("Context(j)")
+          Context(j).foreach{a => print(a+" ")}
+          println("\n")*/
           val y = forward(Context(j))
-          val t = onehot(j,xn)
-          backward(t-y)
+          val t = onehot(q(i)(j+1),xn)
+          backward(y-t)
           Loss += crossEntropy(t,y)
           all+=1
           if(t.indexOf(t.max) ==y.indexOf(y.max)){
@@ -114,16 +127,25 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
           }
         }
         update()
-        if(i % 100 == 0){
-          save_Distributed_Representation()
-        }
-        if(i % 10 == 0){
-          println("epoch : "+i," count: "+cm/all," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
-        }
+
         lossList ::= (math.exp(-Loss/all)).toString
 
       }
+      if((ep % 500 == 0 && ep != 0) || (ep == epoch -1 )){
+        save_Distributed_Representation()
+      }
+      if(ep % 10 == 0){
+//        println("epoch : "+ep," count: "+cm/all*1000," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
+        var str_ep =String.format("ep:%5s ",ep.toString);
+        var str_count = String.format(" count: %-10s ",(cm/all*1000).toString)
+        var str_CE = String.format(" crossEntropy: %18s ",(-Loss).toString)
+        var str_time = String.format(" time: %6s",(finish()).toString)
 
+        println(str_ep+str_count+str_CE+str_time)
+        Loss = 0d
+        cm = 0f
+        all =0f
+      }
 
     }
 
@@ -131,68 +153,5 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
 
   }
 
-  def trains(onehotss:Array[Array[Array[Float]]],epoch:Int)={
-    var lossList = List[String]()
-    for(i <- 0 until epoch){
-      start()
-      var Loss = 0d; var cm = 0f; var all = 0f
-      for(onehots <- onehotss){
-        val number = onehots.map{a => a.indexOf(a.max)}.toArray
-        //  val CBOWModel = new CBOW(onehots(0).size,hidden,Windowsize*2,Windowsize)
-        val Contexts = Context_num(number,Windowsize)
 
-
-
-        for(j <- 0 until Contexts.size){
-          val y = forward(Contexts(j))
-          if(onehots(j+1).indexOf(onehots(j+1).max) ==y.indexOf(y.max)){
-            cm+=1
-          }
-          Loss += crossEntropy(onehots(j+1),y)
-          all+=1
-          backward(y-onehots(j+1))
-
-        }
-        update()
-      }
-      if(i % 500 == 0){
-        save_Distributed_Representation()
-      }
-      if(i % 10 == 0){
-        println("epoch : "+i," count: "+cm/all," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
-      }
-      lossList ::= (math.exp(-Loss/all)).toString
-
-    }
-    savetxt_String(lossList,"perplexity"+date,"Embedding")
-  }
-  def train(onehots:Array[Array[Float]],epoch:Int)={
-    val number = onehots.map{a => a.indexOf(a.max)}.toArray
-    //  val CBOWModel = new CBOW(onehots(0).size,hidden,Windowsize*2,Windowsize)
-    val Contexts = Context_num(number,Windowsize)
-    var lossList = List[String]()
-    for(i <- 0 until epoch){
-      var Loss = 0d;var cm = 0f;var all =0f
-      start()
-      for(j <- 0 until Contexts.size){
-        val y = forward(Contexts(j))
-        if(onehots(j+1).indexOf(onehots(j+1).max) ==y.indexOf(y.max)){
-          cm+=1
-        }
-        Loss += crossEntropy(onehots(j+1),y)
-        all+=1
-        backward(y-onehots(j+1))
-
-      }
-      update()
-      if(i % 100 == 0){
-        save_Distributed_Representation()
-      }
-      if(i % 10 == 0){
-        println("epoch : "+i," count: "+cm/all," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
-      }
-      lossList ::= (math.exp(-Loss/all)).toString
-    }
-    savetxt_String(lossList,"perplexity"+date,"/Users/yuya/Programing/sbt/formula")
-  }
 }
