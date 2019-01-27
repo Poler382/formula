@@ -17,6 +17,7 @@ class Stack[T]() {
   }
 
   def len() = x.size
+  def size() = x.size
   def head() = x.head
 
   def p(i: Int) = x(i)

@@ -1,0 +1,184 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/Miyapuri_Maker.scala:5:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.ML._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/Miyapuri_Maker.scala:6:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/analayze.scala:6:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/analayze.scala:8:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.RichArray._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:5:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:6:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.Image[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:7:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.RichCal._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:9:19: not found: type Image[0m
+[0m[[0m[31merror[0m] [0m[0m  val Image = new Image()[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:36:18: value += is not a member of (Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m  Expression does not convert to assignment because:[0m
+[0m[[0m[31merror[0m] [0m[0m    too many arguments (2) for method +: (other: String)String[0m
+[0m[[0m[31merror[0m] [0m[0m    expansion: AnsCutter.this.Coordinate = AnsCutter.this.Coordinate.$plus(nextbox.$plus(ansbox._1, 0))[0m
+[0m[[0m[31merror[0m] [0m[0m      Coordinate += nextbox+(ansbox._1,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:36:40: too many arguments (2) for method +: (other: String)String[0m
+[0m[[0m[31merror[0m] [0m[0m      Coordinate += nextbox+(ansbox._1,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:65:20: value += is not a member of (Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m  Expression does not convert to assignment because:[0m
+[0m[[0m[31merror[0m] [0m[0m    too many arguments (2) for method +: (other: String)String[0m
+[0m[[0m[31merror[0m] [0m[0m    expansion: AnsCutter.this.Coordinate = AnsCutter.this.Coordinate.$plus(nextbox.$plus(ansbox._1, 0))[0m
+[0m[[0m[31merror[0m] [0m[0m        Coordinate += nextbox+(ansbox._1,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/ans_cutter.scala:65:42: too many arguments (2) for method +: (other: String)String[0m
+[0m[[0m[31merror[0m] [0m[0m        Coordinate += nextbox+(ansbox._1,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:6:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:8:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.ML._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:9:10: not found: value Activation[0m
+[0m[[0m[31merror[0m] [0m[0m  import Activation._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:10:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.RichArray._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:13:10: not found: value word2vec[0m
+[0m[[0m[31merror[0m] [0m[0m  import word2vec._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:12:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.timer[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/protocol.scala:11:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.Stack[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:5:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:6:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.RichArray._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:7:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.ML._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:8:10: not found: value Activation[0m
+[0m[[0m[31merror[0m] [0m[0m  import Activation._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:9:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.Stack[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:10:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.timer[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:12:10: not found: value word2vec[0m
+[0m[[0m[31merror[0m] [0m[0m  import word2vec._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:18:29: not found: type SkipGram[0m
+[0m[[0m[31merror[0m] [0m[0m    val SkipGramModel = new SkipGram("formula",q(0)(0).size,in)[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:19:25: not found: type CBOW[0m
+[0m[[0m[31merror[0m] [0m[0m    val CBOWModel = new CBOW("formula",q(0)(0).size,in)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:24:20: not found: type LSTM2[0m
+[0m[[0m[31merror[0m] [0m[0m    val lstm = new LSTM2(in,out)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:25:18: not found: type Affine[0m
+[0m[[0m[31merror[0m] [0m[0m    val af = new Affine(out,vecsize)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:26:18: not found: type SoftMax[0m
+[0m[[0m[31merror[0m] [0m[0m    val sf = new SoftMax()[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:28:21: not found: type LSTM2[0m
+[0m[[0m[31merror[0m] [0m[0m    val lstm2 = new LSTM2(in,out)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:29:19: not found: type Affine[0m
+[0m[[0m[31merror[0m] [0m[0m    val af2 = new Affine(out,vecsize)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:30:19: not found: type Sigmoid[0m
+[0m[[0m[31merror[0m] [0m[0m    val sf2 = new Sigmoid()[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:37:7: not found: value timer[0m
+[0m[[0m[31merror[0m] [0m[0m      timer.start[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:47:32: not found: value forwards[0m
+[0m[[0m[31merror[0m] [0m[0m          val output_Encoder = forwards(Encoder,Embedding)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:54:25: not found: type Stack[0m
+[0m[[0m[31merror[0m] [0m[0m        val Stack = new Stack[Array[Float]]()[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:57:19: not found: value forwards[0m
+[0m[[0m[31merror[0m] [0m[0m          input = forwards(Decoder,Embedding)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:70:11: not found: value backwards[0m
+[0m[[0m[31merror[0m] [0m[0m          backwards(Decoder,formula(i)-Y_decoder(i))[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:70:39: value - is not a member of Array[Float][0m
+[0m[[0m[31merror[0m] [0m[0m          backwards(Decoder,formula(i)-Y_decoder(i))[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:79:11: not found: value backwards[0m
+[0m[[0m[31merror[0m] [0m[0m          backwards(Encoder,dh)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:83:7: not found: value updates[0m
+[0m[[0m[31merror[0m] [0m[0m      updates(Encoder)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:84:7: not found: value updates[0m
+[0m[[0m[31merror[0m] [0m[0m      updates(Decoder)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/formula_vecter.scala:85:7: not found: value timer[0m
+[0m[[0m[31merror[0m] [0m[0m      timer.finish[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:3:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:5:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.ML._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:6:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.call_py._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:7:10: not found: value Utilty[0m
+[0m[[0m[31merror[0m] [0m[0m  import Utilty.RichArray._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:9:10: not found: value word2vec[0m
+[0m[[0m[31merror[0m] [0m[0m  import word2vec._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:17:25: not found: type CBOW[0m
+[0m[[0m[31merror[0m] [0m[0m    val CBOWModel = new CBOW("formula_t",q(0)(0).size,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:24:29: not found: type SkipGram[0m
+[0m[[0m[31merror[0m] [0m[0m    val SkipGramModel = new SkipGram("formula",q(0)(0).size,10)[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:25:25: not found: type CBOW[0m
+[0m[[0m[31merror[0m] [0m[0m    val CBOWModel = new CBOW("formula",q(0)(0).size,10)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:61:18: not found: type SoftMax[0m
+[0m[[0m[31merror[0m] [0m[0m    val sf = new SoftMax()[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:64:25: not found: type CBOW[0m
+[0m[[0m[31merror[0m] [0m[0m    val CBOWModel = new CBOW("yousay",vec2(0).size,5,Windowsize*2,Windowsize)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:97:18: not found: type SoftMax[0m
+[0m[[0m[31merror[0m] [0m[0m    val sf = new SoftMax()[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:100:29: not found: type SkipGram[0m
+[0m[[0m[31merror[0m] [0m[0m    val SkipGramModel = new SkipGram("yousay",vec2(0).size,5,2,1)[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:140:5: not found: value savetxt_String[0m
+[0m[[0m[31merror[0m] [0m[0m    savetxt_String(lossList,"parprexcy","/Users/yuya/Programing/sbt/formula")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/get_Embedding_matrix.scala:142:5: not found: value plotPy[0m
+[0m[[0m[31merror[0m] [0m[0m    plotPy("/Users/yuya/Programing/sbt/formula/parprexcy.txt")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yuya/SourceTree/sbt/formula/src/main/scala/formula/solverz3py.scala:5:10: not found: value Layer[0m
+[0m[[0m[31merror[0m] [0m[0m  import Layer._[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m59 errors found[0m
