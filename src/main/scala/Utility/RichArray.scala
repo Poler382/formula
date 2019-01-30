@@ -19,8 +19,6 @@ object RichArray {
       output(i*height+j) = x(j*width+i)
       output
     }
-
-
   }
 
   implicit class RichArray2D(val xs:Array[Array[Float]]) extends AnyVal{
@@ -37,7 +35,7 @@ object RichArray {
 
         def * (ys:Array[Array[Float]]) =
           xs.zip(ys).map{
-            case (a, b) => a - b
+            case (a, b) => a * b
           }
 
           def / (ys:Array[Array[Float]]) =
@@ -73,7 +71,7 @@ object RichArray {
             def gettwo () = x._2
             def sum = x._1+x._2
             def abs = (math.abs(x._1),math.abs(x._2))
-            
+
 
           }
           implicit class RichFloatTaple(val x:(Float,Float) )extends AnyVal {

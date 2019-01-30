@@ -6,6 +6,7 @@ class Attention(){
   import java.util.Date
   import java.io.File
   import scala.io.Source
+  import Layer._
   val sf = new SoftMax()
   var hs_stack = new Stack[Array[Float]]()
   var ht_stack = new Stack[Array[Float]]()
@@ -47,6 +48,7 @@ class Attention(){
 
   def cal_score(encoder_hslist:Array[Array[Float]],h:Array[Float])={
     var InnerProduct = new Array[Float](encoder_hslist(0).size)
+    print(s"   encoder size ${encoder_hslist.size}   ")
     Range(0,encoder_hslist.size-1).map{ i =>
       InnerProduct(i) = encoder_hslist(i) dot h
     }
@@ -58,6 +60,7 @@ class Attention(){
     ht_stack.push(ht)
     val encoder_hslist = hs_stack.full.reverse.toArray
     val score = cal_score(encoder_hslist,ht)
+    println(s"score.size ${score.size}")
     score_stack.push(score)
     var ContextVector = Array.ofDim[Float](encoder_hslist(0).size)
     for(i <- 0 until hs_stack.len){

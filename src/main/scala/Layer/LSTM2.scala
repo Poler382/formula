@@ -8,6 +8,7 @@ class LSTM2(
   import Utilty.ML._
   import Utilty.Stack
 
+
   var pre_h = Array.ofDim[Float](Outputsize)
   val hiddenGate = new Tanh()
   val inputGate  = new Sigmoid()

@@ -12,15 +12,6 @@ object  OX_Discriminater {
   val timer= new Utilty.timer()
   val Image = new Image()
 
-  def para()={
-    timer.timestart
-    (1 to 10).map { i =>  //parでparallel collection に変換
-      println(i)
-      Thread.sleep(500) //1回の処理に500ミリ秒かかるとする
-    }
-    timer.timefinish
-  }
-
 
   def main(args: Array[String]): Unit = {
 
@@ -46,13 +37,6 @@ object  OX_Discriminater {
       Image.write("black/"+name+"_"+printnumber+"black.png",formula.AnsCutter.make_black_paper("testdate/"+filename))
     }
 
-  }
-  def play()={
-    val fn = scala.sys.process.Process("ls testdate").lineStream.toArray
-
-    Range(0,fn.size).map{i=>
-      test(Array("test",fn(i),"OX_defo"))
-    }
   }
   def select_Net(mode:String = "OX_defo",H:Int=90,W:Int=240) = {
     var h = H
@@ -182,7 +166,6 @@ object  OX_Discriminater {
 
     for(ep<- 0 until epoch){
       timer.timestart
-
       //train
       var Collect_ans = Array.ofDim[Float](fn.size)
       Range(0,fn.size-1).par.map{ i =>
@@ -243,7 +226,7 @@ object  OX_Discriminater {
       loss += (y(i) - t(i)).sum
     }
 
-    backwards(Net.init,(y-t))
+    backwards(Net.init,(y*y-t*t))
 
     updates(Net)
 
