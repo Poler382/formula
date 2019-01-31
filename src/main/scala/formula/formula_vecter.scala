@@ -19,6 +19,9 @@ object FormulaVecter{
     val SkipGramModel = new SkipGram("formula",q(0)(0).size,in)
     val CBOWModel = new CBOW("formula",q(0)(0).size,in)
 
+    val listSkip_formula_vecter = new Stack[String]()
+    val listCBOW_formula_vecter = new Stack[String])()
+
     SkipGramModel.load_Enbedding()
     CBOWModel.load_Enbedding()
 
@@ -37,17 +40,23 @@ object FormulaVecter{
       println(s"epoch ${epoch}")
       timer.timestart
       var loss = 0f
-      for (m <- 0 until q.size/10){
+      for (m <- 0 until 10){
         val formula = q(m)
-        var resultSkip = List[Float]()
-        var resultCBOW = List[Float]()
+        var resultSkip = new Array[Float](vecsize)
+        var resultCBOW = new Array[Float](vecsize)
 
         for(i <- 0 until formula.size){
-          val Embedding = SkipGramModel.Win.forward(formula(i))
-          // CBOWModel.Win.forward(formula(i)).toList
-          val output_Encoder = forwards(Encoder,Embedding)
+          val Skip_Embedding = SkipGramModel.Win.forward(formula(i))
+          val CBOW_EMbedding = CBOWModel.Win.forward(formula(i)).toList
+          val output_Encoder1 = forwards(Encoder,Skip_Embedding)
+          val output_Encoder2 = forwards(Encoder,CBOW_Embedding)
+          resultCBOW= output_Encoder2
+          resultSkip=output_Encoder1
           lstm2.SETpre_h(output_Encoder)//最終出力のこの値を式ベクトルとして使う？
         }
+
+        listSkip_formula_vecter.push()
+        listCBOW_formula_vecter.push()
 
         var input = Array.ofDim[Float](vecsize)
         var Output = ""

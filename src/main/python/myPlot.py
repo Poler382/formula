@@ -19,4 +19,4 @@ plt.xlabel(xlabel)
 plt.ylabel(ylabel)
 
 plt.legend()
-plt.savefig("plot.png")
+plt.savefig("LOSSplot.png")

@@ -21,6 +21,7 @@ class Stack[T]() {
   def head() = x.head
 
   def p(i: Int) = x(i)
+  def refer(i: Int) = x(i)
 
   def reset() {
     x = List[T]()

@@ -196,6 +196,10 @@ object  OX_Discriminater {
       if(ep % 50 == 0 || ep == epoch-1){
         saves(network,networkmode)
         println("save bias")
+        savetxt_Float(train_LOSSLIST.full,"train_OX_LOSS_mid","txt")
+        savetxt_Float(train_ACCLIST.full,"train_OX_ACC_mid","txt")
+        savetxt_Float(test_LOSSLIST.full,"test_OX_LOSS_mid","txt")
+        savetxt_Float(test_ACCLIST.full,"test_OX_ACC_mid","txt")
       }
 
       train_LOSSLIST.push(loss)
@@ -223,7 +227,7 @@ object  OX_Discriminater {
     //print(target(i),y.indexOf(y.max))
     Range(0 ,y.size-1).par.map{i =>
       if(y(i).indexOf(y(i).max) == t(i).indexOf(t(i).max)) count += 1f
-      loss += (y(i) - t(i)).sum
+      loss += (y(i)*y(i) - t(i)*t(i)).sum
     }
 
     backwards(Net.init,(y*y-t*t))
