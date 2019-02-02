@@ -21,15 +21,15 @@ class SkipGram(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     val words = load_word_count(path).toList
     val q = question_load_all2(path,words)
     var lossList = List[String]()
-    var Loss = 0d;var cm = 0f;var all =0f
-    Wout.load("biasdata/SkipGram.wout.txt")
+    var Loss = 0d;var cm = 0f;var all = 0f
+  //  Wout.load("biasdata/SkipGram.wout.txt")
 
     for (ep <- 0 until epoch){
       timer.timestart()
       for(i <- 0 until q.size){
         //  println("q(i) => "+q(i).mkString(" "))
 
-        val Context = Context_num(q(i),2)
+        val Context = Context_num(q(i),Windowsize)
 
         for(target <- 1 until Context.size){
           val y = forward(onehot(target,xn),Context(target-1))
@@ -49,7 +49,7 @@ class SkipGram(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
 
       }
       if((ep % 200 == 0 && ep != 0) || (ep == epoch -1 )){
-        val p = save_Distributed_Representation()
+        val p = save_Distributed_Representation(cm.toString())
         finalpathname = p
       }
       update()
@@ -127,14 +127,13 @@ class SkipGram(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     R(a) = 1f
     R
   }
-  def load_Enbedding(pathName:String="Emvedding/SkipGram_"+title+"_"+xn+"x"+hidden+".txt"
-  )={
+  def load_Enbedding(pathName:String = "Emvedding/SkipGram_"+title+"_"+xn+"x"+hidden+".txt")={
     val f = scala.io.Source.fromFile(pathName).getLines.toArray
     Win.W = f(0).split(",").map(_.toFloat).toArray
   }
 
-  def save_Distributed_Representation()={
-    val pathName = "Emvedding/SkipGram_"+title+"_"+xn+"x"+hidden+"_"+timer.date+".txt"
+  def save_Distributed_Representation(ACC:String="")={
+    val pathName = "Emvedding/SkipGram_"+title+"_"+xn+"x"+hidden+"_W"+Windowsize+"_"+timer.date+"Acc_"+ACC+".txt"
     val writer =  new java.io.PrintWriter(pathName)
     val ys1 = Win.W.mkString(",") + "\n"
     writer.write(ys1)

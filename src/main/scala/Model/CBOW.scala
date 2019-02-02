@@ -56,16 +56,17 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   def reset(){
     Win.reset
     Wout.reset
+    sf.reset
   }
 
-  def load_Enbedding(pathName:String="Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt")={
+  def load_Enbedding(pathName:String = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt") = {
   //  val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
     val f = scala.io.Source.fromFile(pathName).getLines.toArray
     Win.W = f(0).split(",").map(_.toFloat).toArray
   }
 
-  def save_Distributed_Representation()={
-    val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+"_"+timer.date+".txt"
+  def save_Distributed_Representation(Acc:String="")={
+    val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+"_W"+Windowsize+"_"+timer.date+"_Acc_"+Acc+".txt"
     val writer =  new java.io.PrintWriter(pathName)
     val ys1 = Win.W.mkString(",")
 
@@ -106,8 +107,8 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     val words = load_word_count(path).toList
     val q = question_load_all2(path,words)
     var lossList = List[String]()
-    var Loss = 0d;var cm = 0f;var all =0f
-    Wout.load("biasdata/cbow.wout.txt")
+    var Loss = 0d;var cm = 0f;var all = 0f
+  //  Wout.load("biasdata/cbow.wout.txt")
     for (ep <- 0 until epoch){
       timer.timestart()
       for(i <- 0 until q.size){
@@ -121,14 +122,14 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
           backward(y-t)
           Loss += crossEntropy(t,y)
           all+=1
-          if(t.indexOf(t.max) ==y.indexOf(y.max)){
+          if(t.indexOf(t.max) == y.indexOf(y.max)){
             cm+=1
           }
         }
 
       }
       if((ep % 200 == 0 && ep != 0) || (ep == epoch -1 )){
-        val p =save_Distributed_Representation()
+        val p =save_Distributed_Representation(cm.toString)
         finalpathname = p
       }
       update()
@@ -149,10 +150,11 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
         all =0f
       }
 
-      if(ep % 100 == 0 ){
+      if(ep % 500 == 0 && ep == epoch -1 ){
         savetxt_String(lossList,"perplexity"+timer.date(),"txt")
         Win.save("biasdata/cbow.win.txt")
         Wout.save("biasdata/cbow.wout.txt")
+
       }
 
     }
@@ -170,7 +172,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     for (ep <- 0 until epoch){
       timer.timestart()
       for(i <- 0 until q.size){
-        val Context = Context_num(q(i),2)
+        val Context = Context_num(q(i),Windowsize)
         for(j <- 0 until Context.size){
 
           val y = forward(Context(j))

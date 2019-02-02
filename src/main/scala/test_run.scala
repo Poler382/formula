@@ -11,30 +11,47 @@ object testrun{
   def  main(args: Array[String]): Unit = {
     args(0) match {
       case "CBOW" =>{
-        CBOW(args)
+        CBOW(args(1).toInt,args(2).toInt,args(3).toInt)
       }
       case "SkipGram" =>{
-        SkipGram(args)
+        SkipGram(args(1).toInt,args(2).toInt,args(3).toInt)
+      }
+      case "full" =>{
+
+        CBOW(3000,2,2)
+        CBOW(3000,4,2)
+        CBOW(3000,8,2)
+        CBOW(3000,16,2)
+
+        SkipGram(3000,2,2)
+        SkipGram(3000,4,2)
+        SkipGram(3000,8,2)
+        SkipGram(3000,16,2)
+      }
+      case "easy" =>{
+
+        CBOW(300,2,2)
+        CBOW(300,4,2)
+        CBOW(300,8,2)
+        CBOW(300,16,2)
+
+        SkipGram(300,2,2)
+        SkipGram(300,4,2)
+        SkipGram(300,8,2)
+        SkipGram(300,16,2)
       }
     }
   }
 
-  def CBOW(a: Array[String])={
-    val Cbow = new CBOW("cbow_vec",89,2)
-    if(a.size > 2){
-      Cbow.load_Enbedding(a(2))
-    }
-
-    var finalfn = Cbow.train("collection3.txt",a(1).toInt)
+  def CBOW(epoch:Int,out:Int,Windowsize:Int)={
+    val Cbow = new CBOW("cbow_vec",89,out,Windowsize:Int)
+    var finalfn = Cbow.train("collection3.txt",epoch)
 
   }
 
-  def SkipGram(a: Array[String])={
-    val Skip = new SkipGram("skip_vec",89,2)
-    if(a.size > 2){
-      Skip.load_Enbedding(a(2))
-    }
-    var finalfn = Skip.train("collection3.txt",a(1).toInt)
+  def SkipGram(epoch:Int,out:Int,Windowsize:Int)={
+    val Skip = new SkipGram("skip_vec",89,out,Windowsize:Int)
+    var finalfn = Skip.train("collection3.txt",epoch)
 
   }
 

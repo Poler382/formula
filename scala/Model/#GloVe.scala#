@@ -1,5 +1,0 @@
-package word2vec
-
-class GloVe(title:String,xn:Int,hidden:Int){
-  
-}
