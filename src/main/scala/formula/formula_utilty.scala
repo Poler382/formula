@@ -56,7 +56,14 @@ object Utilty_formula{
     def f (s :String) = v.indexOf(s)
     val st = scala.io.Source.fromFile(path).getLines.toArray
 
-    st.map(_.split(" ").map(f(_)))//文字をベムトルに対応する数字列で返す
+    st.map(  _.split(" ").map(f(_)) )  //文字をベムトルに対応する数字列で返す
+  }
+
+  def question_load_all2_2(path:String,v:List[String])={//一文字ずつよう
+    def f (s :Char) = v.indexOf(s.toString)
+    val st = scala.io.Source.fromFile(path).getLines.toArray
+
+    st.map( _.map( f(_) ) ).map(_.toArray)//文字をベムトルに対応する数字列で返す
   }
   def question_load_nonnum(path:String)={
     val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray

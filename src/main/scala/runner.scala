@@ -3,7 +3,7 @@ import java.util.Date
 import java.io.File
 import scala.io.Source
 object runner{
-   val condition1 = List(
+  val condition1 = List(
     "testrun CBOW 50 2 2 ",
     "testrun CBOW 50 4 2 ",
     "testrun CBOW 50 8 2 ",
@@ -107,6 +107,27 @@ object runner{
   val condition5_1 = condition5.take(7)
   val condition5_2 = condition5.drop(7)
 
+  val condition6 = List(
+    "testrun CBOW 5000 100 2",
+    "testrun CBOW 5000 200 2",
+    "testrun CBOW 5000 400 2",
+    "testrun CBOW 5000 800 2",
+    "testrun CBOW 5000 100 4",
+    "testrun CBOW 5000 200 4",
+    "testrun CBOW 5000 400 4",
+    "testrun CBOW 5000 800 4",
+    "testrun CBOW 5000 100 8",
+    "testrun CBOW 5000 200 8",
+    "testrun CBOW 5000 400 8",
+    "testrun CBOW 5000 800 8",
+  )
+  val condition6_1 = condition6.take(2)
+  val condition6_2 = condition6.drop(2).take(2)
+  val condition6_3 = condition6.drop(4).take(2)
+  val condition6_4 = condition6.drop(6).take(2)
+  val condition6_5 = condition6.drop(8)
+
+
 
 
   def main(args:Array[String]){
@@ -117,10 +138,10 @@ object runner{
 
     //args(1).toInt
     //val n = args(2).toInt
-    val condition = List(condition2_1,condition2_2,condition3_1,condition3_2)
+    val condition = List(condition6_1,condition6_2,condition6_3,condition6_4,condition6_5)
     val lnum = condition(0)(0).split(" ")(2).toInt /10
     println(lnum)
-   
+
     for(l <- condition){
       var resultlist = List[String]()
       var flist = List[String]()
@@ -142,7 +163,7 @@ object runner{
         resultlist :+= repath+c2+".txt"
         flist :+= c2+".txt"
         Thread.sleep(100)
-     
+
       }
 
 
@@ -182,6 +203,6 @@ object runner{
     }
 
     Thread.sleep(200)
-   // process.Process("pkill -KILL java").run
+    // process.Process("pkill -KILL java").run
   }
 }

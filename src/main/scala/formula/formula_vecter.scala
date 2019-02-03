@@ -11,28 +11,35 @@ object FormulaVecter{
   import formula.Utilty_formula._
   import word2vec._
 
+  def main(args: Array[String]): Unit = {
+    val num = args(0).toInt
+    //  val Embedding_path = args(1)
+    val in = args(1).toInt
+    val hidden = args(2).toInt
+    learn(num,in,hidden)
+  }
+
   def get_in_hidden(s:String)={
     val xx = s.split("_").filter(_.contains("89x"))
     val y = xx(0).split("x").map(_.toInt)
     (y(0)+2,y(1))
   }
-  def index(i:Int)={
-    if(i > 0) i else 90
+  def index(i:Int,max:Int)={
+    if(i < 0)  max else i
   }
 
   def learn(num:Int,in:Int,hidden:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
-    val out = 64
-    val path = "collection3.txt"
+    val path = "collection2.txt"
     val listCBOW_formula_vecter = new Stack[String]()
-
     val CBOWModel = new word2vec.CBOW("formula",in,hidden)
-    val Encoder = new Seq2Seq.Encoder(in,hidden,hidden,1)
-    val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
+    val Encoder = new Seq2Seq.Encoder(in,hidden,hidden,3)
+    val Decoder = new Seq2Seq.Decoder(in,hidden,in,3)
     //
-    var words = CBOWModel.load_word_count(path)
-    val Exercises = question_load_all2(path,words).take(10)
+    //出てきた物をベクトル化  var words = CBOWModel.load_word_count(path)
+    var words = vecnormal.toList
+    val Exercises = question_load_all2_2(path,words).take(3)
 
     //  Encoder.Embedding_load(Embedding_path)
     //  Decoder.Embedding_load(Embedding_path)
@@ -44,13 +51,13 @@ object FormulaVecter{
     for(epoch <- 0 until num){
       val ExercisesVecter = new Utilty.Stack[Array[Float]]()
       timer.timestart
-      val acc = 0
+      var acc = 0f
+      var partacc = 0f
       var clossentropy = 0f
 
       for(e <- 0 until Exercises.size){
         //println("\nencoder forward")
-
-        val onehots = Exercises(e).map(a => onehot(a,words.size))
+        val onehots = Exercises(e).map(a => onehot(a,words.size)).reverse
         var h = Array.ofDim[Float](hidden)
 
         for(i <- 0 until onehots.size){
@@ -82,55 +89,51 @@ object FormulaVecter{
           Encoder.backward(new Array[Float](hidden))
         }
 
-        if(epoch % 50  == 0){
-          print("  input: ")
-          Exercises(e).foreach{a => print(words(index(a)))}
-          println()
-          print("predict: ")
-          ys.foreach{a => print(words(index(a.indexOf(a.max))))}
-          println("\n")
+        Encoder.update
+        Decoder.update
 
-          
+        var inputExercises = ""
+        Exercises(e).map{a => inputExercises += words(index(a,words.size-1))}
+        var outputExercises = ""
+        ys.reverse.map{a => outputExercises += words(index(a.indexOf(a.max),words.size-1) )}
+        if(epoch % 5  == 0){
+          println("  input: " + inputExercises)
+          println("predict: " + outputExercises)
         }
 
 
-        if(Exercises(e) == ys){ acc +=1 }
+        if(inputExercises== outputExercises){
+          acc +=1f
+          sys.process.Process("say Hit").run
+        }
+
+        Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
+
       }
       println(
-        s"epoch ${epoch}
-        Xentropy ${clossentropy}
-        time:${timer.timefinish()}　
-        loss: ${clossentropy}
-        accrate: ${acc/10f}"
+        s"epoch ${epoch} Xentropy ${clossentropy} time:${timer.timefinish()} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises.size.toFloat} part accrate: ${partacc/Exercises.flatten.size.toFloat}"
       )
 
       XentropyList ::= clossentropy
-      AccList ::= acc/10f
+      AccList ::= acc/Exercises.size.toFloat
       //println{s"time:${timer.timefinish()}"}
-      Encoder.update
-      Decoder.update
+
 
       if(epoch % 100 == 0){
         savetxt_Float(XentropyList,"E2D_crossEntropy_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        savetxt_Float(ACCList,"E2D_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
+        savetxt_Float(AccList,"E2D_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
         Encoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
         Decoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
       }
     }
     savetxt_Float(XentropyList,"E2D_crossEntropy_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    savetxt_Float(ACCList,"E2D_AccRate_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    Encoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
-    Decoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
+    savetxt_Float(AccList,"E2D_AccRate_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
+    Encoder.save("E2D_final_"+in+"x"+hidden)
+    Decoder.save("E2D_final_"+in+"x"+hidden)
 
   }
 
-  def main(args: Array[String]): Unit = {
-    val num = args(0).toInt
-    //  val Embedding_path = args(1)
-    val in = args(1).toInt
-    val hidden = args(2).toInt
-    learn(num,in,hidden)
-  }
+
 
   def crossEntropy(a:Array[Float],b:Array[Float])={
     var loss = 0d

@@ -31,7 +31,7 @@ object ML{
       true
     }
 
-    def savetxt_Float(list:List[List[Float]],fn:String,path:String)={
+    def savetxt_Float2(list:List[List[Float]],fn:String,path:String)={
       val pathName = path+"/"+fn+".txt"
       val writer =  new java.io.PrintWriter(pathName)
 

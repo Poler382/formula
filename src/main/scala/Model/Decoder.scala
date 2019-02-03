@@ -15,17 +15,17 @@ class Decoder(in: Int, hidden: Int, out: Int, layernum: Int= 1){
     var Drop_Unit = new Stack[Dropout]()
 
     //  DLDLD こんな感じ
-    Drop_Unit.push(new Dropout(0.0f))
+    Drop_Unit.push(new Dropout(0.2f))
     Range(0,layernum).map{i =>
       LSTM_Unit.push(new LSTM2(hidden,hidden))
-      Drop_Unit.push(new Dropout(0.0f))
+      Drop_Unit.push(new Dropout(0.2f))
     }
 
     (LSTM_Unit.full.reverse,Drop_Unit.full.reverse)
   }
 
 
-  val Embedding = new Linear(in,hidden)
+  val Embedding = new Affine(in,hidden)
   var Unit = make_Unit(layernum)
   var LSTM_Unit = Unit._1
   var Drop_Unit = Unit._2

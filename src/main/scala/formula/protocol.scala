@@ -22,7 +22,7 @@ object protcol{
   val tex_folder = "tex/"
 
   val vec_trans = Array("f","{","}","(",")","x","=","+","-","n","s")//".","0","1","2","3","4","5","6","7","8","9"
-  val vecnormal = Array("f","{","}","(",")","x","=","+","-",".","0","1","2","3","4","5","6","7","8","9","<UKW>")
+  val vecnormal = Array("f","{","}","(",")","x","=","+","-",".","0","1","2","3","4","5","6","7","8","9","<EOS>","<UNK>")
   val vecw = Array("you","say","goodbye","and","I","hello")
   val vec_all = all_mk()
   val vec = vecnormal

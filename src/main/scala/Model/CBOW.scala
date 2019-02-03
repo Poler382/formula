@@ -59,7 +59,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   }
 
   def load_Enbedding(pathName:String = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt") = {
-  //  val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
+    //  val pathName = "Emvedding/CBOW_"+title+"_"+xn+"x"+hidden+".txt"
     val f = scala.io.Source.fromFile(pathName).getLines.toArray
     Win.W = f(0).split(",").map(_.toFloat).toArray
   }
@@ -107,7 +107,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     val q = question_load_all2(path,words)
     var lossList = List[String]()
     var Loss = 0d;var cm = 0f;var all = 0f
-  //  Wout.load("biasdata/cbow.wout.txt")
+    //  Wout.load("biasdata/cbow.wout.txt")
     for (ep <- 0 until epoch){
       timer.timestart()
       for(i <- 0 until q.size){
@@ -217,5 +217,67 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
     savetxt_String(lossList,"perplexity"+timer.date(),"txt")
 
   }
+
+  def train_one(path:String,epoch:Int)={
+    var finalpathname=""
+    val words = vecnormal.toList
+    val q = question_load_all2_2(path,words)
+    var lossList = List[String]()
+    var Loss = 0d;var cm = 0f;var all = 0f
+    //  Wout.load("biasdata/cbow.wout.txt")
+    for (ep <- 0 until epoch){
+      timer.timestart()
+      for(i <- 0 until q.size){
+        //  println("q(i) => "+q(i).mkString(" "))
+
+        val Context = Context_num(q(i),2)
+        for(j <- 0 until Context.size){
+
+          val y = forward(Context(j))
+          val t = onehot(q(i)(j+1),xn)
+          backward(y-t)
+          Loss += crossEntropy(t,y)
+          all+=1
+          if(t.indexOf(t.max) == y.indexOf(y.max)){
+            cm+=1
+          }
+        }
+
+      }
+      if((ep % 200 == 0 && ep != 0) || (ep == epoch -1 )){
+        val p =save_Distributed_Representation(cm.toString)
+        finalpathname = p
+      }
+      update()
+      System.gc()
+      lossList ::= (math.exp(-Loss/all)).toString
+
+      if(ep % 10 == 0){
+        //        println("epoch : "+ep," count: "+cm/all*1000," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
+        var str_ep =String.format("ep:%5s ",ep.toString);
+        var str_count = String.format(" count: %-10s",(cm/all*100).toString)
+        var str_CE = String.format(" crossEntropy: %18s ",(-Loss).toString)
+        var str_perplexity = String.format(" perplexity: %18s ",(lossList.head.toString))
+        var str_time = String.format(" time: %6s",(timer.timefinish).toString)
+
+        println(str_ep+str_count+str_CE+str_perplexity+str_time)
+        Loss = 0d
+        cm = 0f
+        all =0f
+      }
+
+      if(ep % 500 == 0 && ep == epoch -1 ){
+        savetxt_String(lossList,"perplexity"+timer.date(),"txt")
+        Win.save("biasdata/cbow.win.txt")
+        Wout.save("biasdata/cbow.wout.txt")
+
+      }
+
+    }
+
+    savetxt_String(lossList,"perplexity"+timer.date(),"txt")
+    finalpathname
+  }
+
 
 }
