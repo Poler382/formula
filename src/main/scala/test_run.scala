@@ -44,13 +44,13 @@ object testrun{
   }
 
   def CBOW(epoch:Int,out:Int,Windowsize:Int)={
-    val Cbow = new CBOW("cbow_vec",89,out,Windowsize:Int)
+    val Cbow = new CBOW("cbow_vec",91,out,Windowsize:Int)
     var finalfn = Cbow.train("collection3.txt",epoch)
 
   }
 
   def SkipGram(epoch:Int,out:Int,Windowsize:Int)={
-    val Skip = new SkipGram("skip_vec",89,out,Windowsize:Int)
+    val Skip = new SkipGram("skip_vec",91,out,Windowsize:Int)
     var finalfn = Skip.train("collection3.txt",epoch)
 
   }

@@ -31,6 +31,20 @@ object ML{
       true
     }
 
+    def savetxt_Float(list:List[List[Float]],fn:String,path:String)={
+      val pathName = path+"/"+fn+".txt"
+      val writer =  new java.io.PrintWriter(pathName)
+
+      for(i <- list.size-1 to 0 by -1){
+        val ys1 = list(i).mkString(",") + "\n"
+        writer.write(ys1)
+      }
+
+      writer.close()
+      println("success "+fn)
+      true
+    }
+
     def savetxt_String(list:List[String],fn:String,path:String)={
       val pathName = path+"/"+fn+".txt"
       val writer =  new java.io.PrintWriter(pathName)
@@ -60,7 +74,7 @@ object ML{
       var temp = x
       var num =0
       for(lay <- layers){
-      // print(" forward "+temp.size)
+        // print(" forward "+temp.size)
         temp =lay.forward(temp)
       }
       temp

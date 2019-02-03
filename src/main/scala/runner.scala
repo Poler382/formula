@@ -3,111 +3,185 @@ import java.util.Date
 import java.io.File
 import scala.io.Source
 object runner{
-
-  val condition1 = List(
-    "testrun  10000 100 lab",
-    "Batch 10000 100 lab",
-    "LRver 10000 100 lab",
-    "Dropout 10000 100 lab"
+   val condition1 = List(
+    "testrun CBOW 50 2 2 ",
+    "testrun CBOW 50 4 2 ",
+    "testrun CBOW 50 8 2 ",
+    "testrun CBOW 50 16 2 ",
+    "testrun CBOW 50 32 2 ",
+    "testrun CBOW 50 2 4 ",
+    "testrun CBOW 50 4 4 ",
+    "testrun CBOW 50 8 4 ",
+    "testrun CBOW 50 16 4 ",
+    "testrun CBOW 50 32 4 ",
+    "testrun CBOW 50 2 8 ",
+    "testrun CBOW 50 4 8 ",
+    "testrun CBOW 50 8 8 ",
+    "testrun CBOW 50 16 8 ",
+    "testrun CBOW 50 32 8 ",
   )
+  val condition1_1 = condition1.take(7)
+  val condition1_2 = condition1.drop(7)
+
   val condition2 = List(
     "testrun CBOW 5000 2 2 ",
     "testrun CBOW 5000 4 2 ",
     "testrun CBOW 5000 8 2 ",
     "testrun CBOW 5000 16 2 ",
-    "testrun CBOW 5000 32 2  ",
-    "testrun SkipGram 5000 2 2 ",
-    "testrun SkipGram 5000 4 2 ",
-    "testrun SkipGram 5000 8 2 ",
-    "testrun SkipGram 5000 16 2 ",
-    "testrun SkipGram 5000 16 2 ",
+    "testrun CBOW 5000 32 2 ",
     "testrun CBOW 5000 2 4 ",
     "testrun CBOW 5000 4 4 ",
     "testrun CBOW 5000 8 4 ",
     "testrun CBOW 5000 16 4 ",
-    "testrun CBOW 5000 32 4  ",
-    "testrun SkipGram 5000 2 4 ",
-    "testrun SkipGram 5000 4 4 ",
-    "testrun SkipGram 5000 8 4 ",
-    "testrun SkipGram 5000 16 4 ",
-    "testrun SkipGram 5000 16 4 ",
+    "testrun CBOW 5000 32 4 ",
     "testrun CBOW 5000 2 8 ",
     "testrun CBOW 5000 4 8 ",
     "testrun CBOW 5000 8 8 ",
     "testrun CBOW 5000 16 8 ",
-    "testrun CBOW 5000 32 8  ",
-    "testrun SkipGram 5000 2 8 ",
-    "testrun SkipGram 5000 8 8 ",
-    "testrun SkipGram 5000 8 8 ",
-    "testrun SkipGram 5000 16 8 ",
-    "testrun SkipGram 5000 16 8 "
+    "testrun CBOW 5000 32 8 ",
+  )
+  val condition2_1 = condition2.take(7)
+  val condition2_2 = condition2.drop(7)
+
+
+  val condition3 = List(
+    "testrun SkipGram 5000 2 2",
+    "testrun SkipGram 5000 4 2",
+    "testrun SkipGram 5000 8 2",
+    "testrun SkipGram 5000 16 2",
+    "testrun SkipGram 5000 32 2",
+    "testrun SkipGram 5000 2 4",
+    "testrun SkipGram 5000 4 4",
+    "testrun SkipGram 5000 8 4",
+    "testrun SkipGram 5000 16 4",
+    "testrun SkipGram 5000 32 4",
+    "testrun SkipGram 5000 2 8",
+    "testrun SkipGram 5000 4 8",
+    "testrun SkipGram 5000 8 8",
+    "testrun SkipGram 5000 16 8",
+    "testrun SkipGram 5000 32 8"
   )
 
+  val condition3_1 = condition3.take(7)
+  val condition3_2 = condition3.drop(7)
 
-  def main(args:Array[String])={
+  val condition4 = List(
+    "testrun CBOW 50000 2 2",
+    "testrun CBOW 50000 4 2",
+    "testrun CBOW 50000 8 2",
+    "testrun CBOW 50000 16 2",
+    "testrun CBOW 50000 32 2",
+    "testrun CBOW 50000 2 4",
+    "testrun CBOW 50000 4 4",
+    "testrun CBOW 50000 8 4",
+    "testrun CBOW 50000 16 4",
+    "testrun CBOW 50000 32 4",
+    "testrun CBOW 50000 2 8",
+    "testrun CBOW 50000 4 8",
+    "testrun CBOW 50000 8 8",
+    "testrun CBOW 50000 16 8",
+    "testrun CBOW 50000 32 8",
+  )
+  val condition4_1 = condition4.take(7)
+  val condition4_2 = condition4.drop(7)
+
+
+  val condition5 = List(
+    "testrun SkipGram 50000 2 2",
+    "testrun SkipGram 50000 4 2",
+    "testrun SkipGram 5000 8 2",
+    "testrun SkipGram 50000 16 2",
+    "testrun SkipGram 50000 32 2",
+    "testrun SkipGram 50000 2 4",
+    "testrun SkipGram 50000 4 4",
+    "testrun SkipGram 50000 8 4",
+    "testrun SkipGram 50000 16 4",
+    "testrun SkipGram 50000 32 4",
+    "testrun SkipGram 50000 2 8",
+    "testrun SkipGram 50000 4 8",
+    "testrun SkipGram 50000 8 8",
+    "testrun SkipGram 50000 16 8",
+    "testrun SkipGram 50000 32 8"
+  )
+
+  val condition5_1 = condition5.take(7)
+  val condition5_2 = condition5.drop(7)
+
+
+
+  def main(args:Array[String]){
     val jarfile = args(0)
     val result_path = "result/"
 
-    //    val objectname  = args(0)
-    val lnum = 5000
+    // /    val objectname  = args(0)
+
     //args(1).toInt
     //val n = args(2).toInt
-    val condition = List(condition2)
+    val condition = List(condition2_1,condition2_2,condition3_1,condition3_2)
+    val lnum = condition(0)(0).split(" ")(2).toInt /10
+    println(lnum)
+   
+    for(l <- condition){
+      var resultlist = List[String]()
+      var flist = List[String]()
+      for(c <- l){
+        val c2 = c.replaceAll(" ","_")
+        val data = "-%tm%<td-%<tHh" format new Date
+        val repath = result_path+c2+"-"+data+"/"
+        println(repath)
+        process.Process("mkdir "+repath).run
+        Thread.sleep(100)
+        //実行だけ
+        //  process.Process("java -cp "+assembla+" "+objectname+" "+c).run
 
-    var resultlist = List[String]()
-    var flist = List[String]()
-    for(c <- condition2){
-      val c2 = c.replaceAll(" ","_")
-      val data = "-%tm%<td-%<tHh" format new Date
-      val repath = result_path+c2+"-"+data+"/"
-      println(repath)
-      process.Process("mkdir "+repath).run
-      Thread.sleep(100)
-      //実行だけ
-      //  process.Process("java -cp "+assembla+" "+objectname+" "+c).run
+        //リダイレクト
+        (
+          process.Process("java -cp "+jarfile+" "+c) #> new File(repath+c2+".txt")
+        ).run
 
-      //リダイレクト
-      (
-        process.Process("java -cp "+jarfile+" "+c) #> new File(repath+c2+".txt")
-      ).run
-
-      resultlist :+= repath+c2+".txt"
-      flist :+= c2+".txt"
-      Thread.sleep(100)
-      //println("java -cp "+assembla+" "+objectname+" "+c+" & 2> "+repath+c2+".txt\n")
-    }
-
-
-    Thread.sleep(3000)
-    var counter = new Array[Int](resultlist.size)
-    var sum = 0
-    while(sum < 100 * flist.size){
-      sum = 0
-      for(i <- 0 until  resultlist.size){
-        var text = process.Process("cat "+resultlist(i)).lineStream.toArray
-        counter(i) += text.size
+        resultlist :+= repath+c2+".txt"
+        flist :+= c2+".txt"
+        Thread.sleep(100)
+     
       }
 
 
-      Thread.sleep(200)
-      println("now...")
-      for(i <- 0 until counter.size){
-        val persent = counter(i).toDouble/lnum * 100 //%
-        val paint = (persent.toDouble / 4).toInt
+      Thread.sleep(3000)
+      var counter = new Array[Int](resultlist.size)
+      var sum = 0
+      while(sum < 100 * flist.size){
+        sum = 0
 
-        print(String.format("%45s",flist(i)))
-        print(" : ")
-        for(j <- 0 to 25){
-          if(j < paint) print("#")
-          else print(" ")
+        Thread.sleep(1000)
+        for(i <- 0 until  resultlist.size){
+          var text = process.Process("cat "+resultlist(i)).lineStream.toArray
+          counter(i) += text.filter(_.contains("ep")).size
+          //println(counter(i))
         }
-        println("| "+persent.toString+"%")
-        sum += persent.toInt
-      }
-      println()
 
-      counter = new Array[Int](resultlist.size)
+
+        Thread.sleep(1000)
+        println("now...")
+        for(i <- 0 until counter.size){
+          val persent = counter(i).toDouble/lnum * 100 //%
+          val paint = (persent.toDouble / 4).toInt
+
+          print(String.format("%35s",flist(i)))
+          print(" : ")
+          for(j <- 0 to 25){
+            if(j < paint) print("#")
+            else print(" ")
+          }
+          println("| "+persent.toString+"%")
+          sum += persent.toInt
+        }
+        println()
+
+        counter = new Array[Int](resultlist.size)
+      }
     }
 
+    Thread.sleep(200)
+   // process.Process("pkill -KILL java").run
   }
 }

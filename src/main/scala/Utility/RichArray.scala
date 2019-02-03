@@ -11,7 +11,15 @@ object RichArray {
     def * (y:Array[Float]) = Range(0, x.size).map(i => x(i) * y(i)).toArray
     def / (y:Array[Float]) = Range(0, x.size).map(i => x(i) / y(i)).toArray
     def dot(y:Array[Float]) = (x * y).sum
+    def == (y:Array[Float]) = {
+      var d = true
+      Range(0, x.size).map{i =>
+        if(x(i) == y(i)) d &= true
+        else d &= false
+      }
 
+      d
+    }
     def transpose(height:Int, width:Int) = {
       val output = Array.ofDim[Float](height*width)
       for(i <- 0 until width)

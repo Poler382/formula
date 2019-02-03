@@ -1,0 +1,1 @@
+ep:    0  count: 1.340817   crossEntropy: 161.03719860315323  perplexity: 1.0514963877499433  time: 41.444

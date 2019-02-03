@@ -20,14 +20,13 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   def load_word_count(path:String)={
     //単語をスペース区切りで出てきた単語を保存していく
     val words = scala.io.Source.fromFile(path).getLines.map(_.split(" ")).toArray.flatten
-
     var word = List[String]()
     for(w <- words){
       if(!word.contains(w)){
         word ::= w
       }
     }
-    word.sorted
+    word.sorted:+ "<EOS>" :+ "<UNK>"
   }
 
   def forward(Contexts:Array[Int])={//数字のリストを受け取る(targetの周辺単語)

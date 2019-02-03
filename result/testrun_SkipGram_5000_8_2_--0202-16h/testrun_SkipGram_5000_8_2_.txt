@@ -1,0 +1,111 @@
+ep:    0  count: 0.44470796 crossEntropy: 161.90983406454325  perplexity: 1.0242912037160603  time:  2.229
+success perplexity_skipGram_Sat_Feb_02_16:51:13_JST_2019
+ep:   10  count: 0.44322562 crossEntropy:  1616.931040290743  perplexity:  1.024258296644771  time:   1.03
+ep:   20  count: 0.45211977 crossEntropy:  1613.057028952986  perplexity: 1.0241994784662687  time:   1.02
+ep:   30  count: 0.4773199  crossEntropy:  1609.036924507469  perplexity: 1.0241384457624987  time:  1.033
+ep:   40  count: 0.4995553  crossEntropy:  1604.591304384172  perplexity:  1.024070957169739  time:  1.084
+ep:   50  count: 0.9487104  crossEntropy: 1599.4648875258863  perplexity: 1.0239931389789276  time:  1.224
+ep:   60  count: 2.088645   crossEntropy: 1593.4208657816052  perplexity:  1.023901399287918  time:  1.361
+ep:   70  count: 2.6638007  crossEntropy: 1586.2603402025998  perplexity: 1.0237927232863697  time:   1.01
+ep:   80  count: 3.2107916  crossEntropy:  1577.823655769229  perplexity: 1.0236646936977591  time:  1.284
+ep:   90  count: 3.336792   crossEntropy: 1567.9861472547054  perplexity: 1.0235154263406145  time:   1.29
+ep:  100  count: 3.6703234  crossEntropy:  1556.652493249625  perplexity:   1.02334348451851  time:  0.964
+success perplexity_skipGram_Sat_Feb_02_16:53:07_JST_2019
+ep:  110  count: 4.65461    crossEntropy: 1543.7553815282881  perplexity: 1.0231478587594631  time:  1.464
+ep:  120  count: 5.9012747  crossEntropy:  1529.260092869401  perplexity: 1.0229280361934892  time:  1.454
+ep:  130  count: 6.1517935  crossEntropy: 1513.1684177964926  perplexity:  1.022684059577611  time:  1.505
+ep:  140  count: 6.1191816  crossEntropy: 1495.5187144130468  perplexity: 1.0224165275694093  time:  1.332
+ep:  150  count: 6.1606874  crossEntropy: 1476.3868022970855  perplexity: 1.0221266074736877  time:  1.735
+ep:  160  count: 6.1755114  crossEntropy: 1455.8879027441144  perplexity: 1.0218160636315248  time:  1.844
+ep:  170  count: 6.255559   crossEntropy: 1434.1777160950005  perplexity: 1.0214872725225284  time:  1.836
+ep:  180  count: 6.206641   crossEntropy:  1411.450247488916  perplexity: 1.0211431884783755  time:  2.237
+ep:  190  count: 6.0895348  crossEntropy:  1387.932752136141  perplexity: 1.0207872657872803  time:  2.083
+success Emvedding/SkipGram_skip_vec_89x8_W1_Sat_Feb_02_16:56:02_JST_2019Acc_4202.0.txt
+ep:  200  count: 6.2288766  crossEntropy:  1363.879214387387  perplexity: 1.0204233587587412  time:  1.899
+success perplexity_skipGram_Sat_Feb_02_16:56:03_JST_2019
+ep:  210  count: 6.3682184  crossEntropy: 1339.5634948313236  perplexity: 1.0200556170303232  time:  1.629
+ep:  220  count: 6.3074417  crossEntropy: 1315.2715990617871  perplexity: 1.0196883679364608  time:  2.132
+ep:  230  count: 6.2718644  crossEntropy: 1291.2917369902134  perplexity: 1.0193259659058305  time:  2.121
+ep:  240  count: 6.2852063  crossEntropy: 1267.9019253998995  perplexity: 1.0189726052545804  time:  2.959
+ep:  250  count: 6.27483    crossEntropy: 1245.3566753901541  perplexity: 1.0186321197259847  time:  2.695
+ep:  260  count: 6.1962647  crossEntropy:  1223.875126797706  perplexity: 1.0183078044014198  time:   3.35
+ep:  270  count: 6.1962647  crossEntropy: 1203.6324722003192  perplexity: 1.0180022876393602  time:  2.304
+ep:  280  count: 6.383042   crossEntropy: 1184.7550860475749  perplexity: 1.0177174590927618  time:  2.899
+ep:  290  count: 6.2852063  crossEntropy:  1167.318571884185  perplexity: 1.0174544417233877  time:  2.443
+ep:  300  count: 6.1666174  crossEntropy: 1151.3487109858543  perplexity: 1.0172136074099636  time:  3.808
+success perplexity_skipGram_Sat_Feb_02_17:00:26_JST_2019
+ep:  310  count: 6.1666174  crossEntropy: 1136.8261193502694  perplexity: 1.0169946482068508  time:   3.21
+ep:  320  count: 6.1933     crossEntropy: 1123.6946311648935  perplexity: 1.0167967034468344  time:  2.511
+ep:  330  count: 6.3207827  crossEntropy: 1111.8720955792814  perplexity: 1.0166185228671434  time:  3.871
+ep:  340  count: 6.596502   crossEntropy: 1101.2613078970462  perplexity: 1.0164586314501438  time:  3.111
+ep:  350  count: 6.762526   crossEntropy:  1091.759267596528  perplexity: 1.0163154688249532  time:  3.291
+ep:  360  count: 7.054551   crossEntropy: 1083.2635402921587  perplexity:    1.0161874849025  time:  4.031
+ep:  370  count: 7.795731   crossEntropy: 1075.6759694237262  perplexity:  1.016073195531616  time:  3.262
+ep:  380  count: 7.970649   crossEntropy: 1068.9042139723897  perplexity:  1.015971205406076  time:  3.923
+ep:  390  count: 7.9795437  crossEntropy:  1062.862126097083  perplexity: 1.0158802135233713  time:  3.082
+success Emvedding/SkipGram_skip_vec_89x8_W1_Sat_Feb_02_17:05:55_JST_2019Acc_4956.0.txt
+ep:  400  count: 7.3465757  crossEntropy: 1057.4696122556925  perplexity: 1.0157990108971253  time:  4.408
+success perplexity_skipGram_Sat_Feb_02_17:05:58_JST_2019
+ep:  410  count: 7.7868366  crossEntropy: 1052.6524485237896  perplexity:  1.015726477611478  time:  3.527
+ep:  420  count: 8.190039   crossEntropy:  1048.342211149633  perplexity: 1.0156615816380758  time:  2.849
+ep:  430  count: 7.951379   crossEntropy:  1044.476288633421  perplexity:  1.015603378903528  time:  4.062
+ep:  440  count: 8.427217   crossEntropy: 1040.9979911539704  perplexity: 1.0155510148418132  time:  4.172
+ep:  450  count: 8.923807   crossEntropy: 1037.8564372230321  perplexity: 1.0155037226094292  time:  3.373
+ep:  460  count: 8.78743    crossEntropy:  1035.006511952728  perplexity:   1.01546082239316  time:  4.341
+ep:  470  count: 8.477616   crossEntropy:  1032.408533245325  perplexity: 1.0154217163333306  time:  4.149
+ep:  480  count: 8.419805   crossEntropy: 1030.0279100704938  perplexity: 1.0153858833387048  time:    4.7
+ep:  490  count: 8.419805   crossEntropy:  1027.834696950391  perplexity:   1.01535287234788  time:  5.229
+ep:  500  count: 8.419805   crossEntropy:  1025.803108729422  perplexity: 1.0153222950001903  time:  3.889
+success perplexity_skipGram_Sat_Feb_02_17:12:27_JST_2019
+ep:  510  count: 8.273051   crossEntropy: 1023.9110529236495  perplexity:  1.015293818577075  time:  4.071
+ep:  520  count: 9.160984   crossEntropy: 1022.1396358348429  perplexity: 1.0152671585532493  time:  4.824
+ep:  530  count: 9.160984   crossEntropy: 1020.4727498404682  perplexity: 1.0152420723733033  time:   3.54
+ep:  540  count: 9.160984   crossEntropy: 1018.8967124857008  perplexity:  1.015218354010724  time:  5.001
+ep:  550  count: 9.160984   crossEntropy: 1017.3998815231025  perplexity: 1.0151958281671525  time:  4.877
+ep:  560  count: 9.12096    crossEntropy: 1015.9723618198186  perplexity:  1.015174345855944  time:  4.371
+ep:  570  count: 9.128372   crossEntropy:  1014.605762232095  perplexity:  1.015153780738981  time:  5.367
+ep:  580  count: 9.116513   crossEntropy: 1013.2929723467678  perplexity: 1.0151340257634651  time:  5.313
+ep:  590  count: 9.116513   crossEntropy: 1012.0279502756894  perplexity: 1.0151149899658471  time:  4.667
+success Emvedding/SkipGram_skip_vec_89x8_W1_Sat_Feb_02_17:20:12_JST_2019Acc_6150.0.txt
+ep:  600  count: 9.116513   crossEntropy: 1010.8055727239698  perplexity: 1.0150965962134892  time:  7.129
+success perplexity_skipGram_Sat_Feb_02_17:20:17_JST_2019
+ep:  610  count: 9.116513   crossEntropy: 1009.6214814763516  perplexity: 1.0150787788929088  time:  5.199
+ep:  620  count: 9.116513   crossEntropy:  1008.471986329183  perplexity: 1.0150614824477677  time:  8.891
+ep:  630  count: 9.116513   crossEntropy: 1007.3539635445923  perplexity: 1.0150446598497675  time:  5.628
+ep:  640  count: 9.116513   crossEntropy: 1006.2647230178118  perplexity: 1.0150282705990403  time:  6.422
+ep:  650  count: 9.116513   crossEntropy: 1005.2020250586793  perplexity: 1.0150122809759226  time:  5.499
+ep:  660  count: 9.116513   crossEntropy: 1004.1639406150207  perplexity: 1.0149966619372026  time:  4.991
+ep:  670  count: 9.080936   crossEntropy: 1003.1488325446844  perplexity: 1.0149813888338681  time:  5.368
+ep:  680  count: 9.072043   crossEntropy: 1002.1552999969572  perplexity: 1.0149664405738719  time:  5.361
+ep:  690  count: 9.072043   crossEntropy: 1001.1821467783302  perplexity: 1.0149517991458517  time:  5.017
+ep:  700  count: 9.072043   crossEntropy:  1000.228350546211  perplexity: 1.0149374491553638  time:   6.48
+success perplexity_skipGram_Sat_Feb_02_17:30:32_JST_2019
+ep:  710  count: 8.6480875  crossEntropy:  999.2930293083191  perplexity:   1.01492337732064  time:  4.662
+ep:  720  count: 8.597688   crossEntropy:  998.3754148716107  perplexity: 1.0149095720729493  time:  5.861
+ep:  730  count: 8.720723   crossEntropy:   997.474834988825  perplexity: 1.0148960232878534  time:  6.157
+ep:  740  count: 8.867476   crossEntropy:   996.590684665367  perplexity:  1.014882721853418  time:   5.76
+ep:  750  count: 8.879336   crossEntropy:  995.7224232750013  perplexity: 1.0148696596267295  time:  6.792
+ep:  760  count: 8.879336   crossEntropy:  994.8695817319676  perplexity:  1.014856829541709  time:  5.876
+ep:  770  count: 8.84376    crossEntropy:  994.0316783720627  perplexity: 1.0148442243435722  time:    6.7
+ep:  780  count: 8.476133   crossEntropy:  993.2082937471569  perplexity: 1.0148318377139915  time:  6.348
+ep:  790  count: 8.471687   crossEntropy:  992.3990164743736  perplexity: 1.0148196634564202  time:  4.892
+success Emvedding/SkipGram_skip_vec_89x8_W1_Sat_Feb_02_17:41:26_JST_2019Acc_5732.0.txt
+ep:  800  count: 8.496887   crossEntropy:  991.6034265970811  perplexity: 1.0148076952457676  time:  5.978
+success perplexity_skipGram_Sat_Feb_02_17:41:31_JST_2019
+ep:  810  count: 8.425734   crossEntropy:  990.8211531676352  perplexity: 1.0147959274946088  time:   8.53
+ep:  820  count: 8.419805   crossEntropy:  990.0517775323242  perplexity: 1.0147843538982673  time:  8.457
+ep:  830  count: 8.419805   crossEntropy:  989.2949260175228  perplexity:  1.014772968829085  time:  7.789
+ep:  840  count: 8.419805   crossEntropy:  988.5501874256879  perplexity: 1.0147617660953128  time:  6.687
+ep:  850  count: 8.419805   crossEntropy:     987.8171877563  perplexity: 1.0147507400651021  time:  7.678
+ep:  860  count: 8.419805   crossEntropy:  987.0955258859321  perplexity: 1.0147398846989582  time:  8.121
+ep:  870  count: 8.419805   crossEntropy:  986.3848051382229  perplexity: 1.0147291940246246  time:  7.339
+ep:  880  count: 8.430181   crossEntropy:  985.6846655802801  perplexity: 1.0147186626228664  time:  7.678
+ep:  890  count: 8.434628   crossEntropy:  984.9947004867718  perplexity: 1.0147082843709154  time:  7.627
+ep:  900  count: 8.434628   crossEntropy:  984.3145602839068  perplexity: 1.0146980540059682  time:  7.166
+success perplexity_skipGram_Sat_Feb_02_17:54:08_JST_2019
+ep:  910  count: 8.434628   crossEntropy:  983.6438703108579  perplexity: 1.0146879658881578  time: 13.746
+ep:  920  count: 8.434628   crossEntropy:  982.9822887312621  perplexity: 1.0146780148716212  time:  7.752
+ep:  930  count: 8.434628   crossEntropy:  982.3294785153121  perplexity: 1.0146681958830497  time:  9.745
+ep:  940  count: 8.434628   crossEntropy:  981.6851299153641  perplexity: 1.0146585042597318  time:  7.237
+ep:  950  count: 8.434628   crossEntropy:  981.0489383274689  perplexity:  1.014648935416548  time:  6.711
+ep:  960  count: 8.434628   crossEntropy:   980.420644570142  perplexity: 1.0146394854517788  time:  8.541

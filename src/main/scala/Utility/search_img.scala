@@ -19,8 +19,8 @@ object Search_img{
     val list = namelist.map(load_img(_))
     println("let's search")
     val ch = Array.ofDim[Float](tmp.size)
-    for(n <- 0 until list){//一つの画像
-      val img = list(n) )//一つの画像
+    for(n <- 0 until list.size){//一つの画像
+      val img = list(n)//一つの画像
       print(s"${namelist(n)}>")
       for(i <- 0 until img.size;j <- 0 until img(0).size){
         print(".")

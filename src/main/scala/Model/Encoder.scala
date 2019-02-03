@@ -1,6 +1,4 @@
 package Seq2Seq
-
-
 class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
   import Utilty.RichArray._
   import Utilty.ML._
@@ -15,10 +13,10 @@ class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     var Drop_Unit = new Stack[Dropout]()
 
     //  DLDLD こんな感じ
-    Drop_Unit.push(new Dropout(0.5f))
+    Drop_Unit.push(new Dropout(0.0f))
     Range(0,layernum).map{i =>
       LSTM_Unit.push(new LSTM2(hidden,hidden))
-      Drop_Unit.push(new Dropout(0.5f))
+      Drop_Unit.push(new Dropout(0.0f))
     }
 
     (LSTM_Unit.full.reverse,Drop_Unit.full.reverse)
@@ -56,7 +54,6 @@ class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
   }
   def update()={
     Embedding.update()
-
     LSTM_Unit.map(_.update())
     Drop_Unit.map(_.update())
   }
@@ -67,7 +64,17 @@ class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     Drop_Unit.map(_.reset())
   }
   def save(fn: String){
+    Embedding.save("biasdata/Embedding_"+fn+"_"+hidden+"x"+hidden+".txt")
+    Range(0,LSTM_Unit.size-1).map{i => LSTM_Unit(i).save("biasdata/LSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
+
   }
   def load(fn: String){
+    Embedding.load("biasdata/Embedding_"+fn+"_"+hidden+"x"+hidden+".txt")
+    Range(0,LSTM_Unit.size-1).map{i => LSTM_Unit(i).load("biasdata/LSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
+
+  }
+
+  def Embedding_load(path:String)={
+    Embedding.load(path)
   }
 }
