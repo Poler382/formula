@@ -44,8 +44,8 @@ object testrun{
   }
 
   def CBOW(epoch:Int,out:Int,Windowsize:Int)={
-    val Cbow = new CBOW("cbow_vec",91,out,Windowsize:Int)
-    var finalfn = Cbow.train("collection3.txt",epoch)
+    val Cbow = new CBOW("cbow_vec",22,out,Windowsize:Int)
+    var finalfn = Cbow.train_one("collection2.txt",epoch)
 
   }
 

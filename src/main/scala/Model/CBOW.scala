@@ -230,7 +230,7 @@ class CBOW(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
       for(i <- 0 until q.size){
         //  println("q(i) => "+q(i).mkString(" "))
 
-        val Context = Context_num(q(i),2)
+        val Context = Context_num(q(i),Windowsize)
         for(j <- 0 until Context.size){
 
           val y = forward(Context(j))
