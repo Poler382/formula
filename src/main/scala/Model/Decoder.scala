@@ -42,11 +42,14 @@ class Decoder(in: Int, hidden: Int, out: Int, layernum: Int= 1){
   }
 
   def forward(x:Array[Float])={
+
     val EM = Embedding.forward(x)
     var lstm = EM
     for(i <- 0 until layernum){
       lstm = LSTM_Unit(i).forward(Drop_Unit(i).forward(lstm))
     }
+
+
     pre_h = lstm
     forwards(outputlayer,Drop_Unit(layernum).forward(lstm))
   }

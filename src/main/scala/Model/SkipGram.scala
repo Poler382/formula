@@ -16,14 +16,77 @@ class SkipGram(title:String,xn:Int,hidden:Int,Layer_num:Int=2,Windowsize:Int=1){
   val Wout =new Linear(hidden,xn)
   val sf  = new SoftMax()
 
+  def train_one(path:String,epoch:Int)={
+    var finalpathname = ""
+    val words = vecnormal.toList
+    val q = question_load_all2_2(path,words)
+    var lossList = List[String]()
+    var Loss = 0d;var cm = 0f;var all = 0f
+    for (ep <- 0 until epoch){
+      timer.timestart()
+      for(i <- 0 until q.size){
+        val Context = Context_num(q(i),Windowsize)
+
+        for(target <- 1 until Context.size){
+          val y = forward(onehot(q(i)(target),xn),Context(target-1))
+          val t = Context(target-1).map(onehot(_,xn))//予測したであろう単語との誤差を取っていく
+
+          backward(y-t)
+
+          all += t.size
+          Range(0,t.size-1).par.map{ r =>
+            if(t(r).indexOf(t(r).max) == y(r).indexOf(y(r).max)){
+              cm+=1
+            }
+            Loss += crossEntropy(t(r),y(r))
+          }
+
+        }
+
+      }
+      if((ep % 200 == 0 && ep != 0) || (ep == epoch -1 )){
+        val p = save_Distributed_Representation(cm.toString())
+        finalpathname = p
+      }
+      update()
+      System.gc()
+      lossList ::= (math.exp(-Loss/all)).toString
+
+      if(ep % 10 == 0){
+        //        println("epoch : "+ep," count: "+cm/all*1000," Loss : "+ math.exp(-Loss),"crossEntropy : "+ -Loss," time : "+finish())
+        var str_ep =String.format("ep:%5s ",ep.toString);
+        var str_count = String.format(" count: %-10s",(cm/all*100).toString)
+        var str_CE = String.format(" crossEntropy: %18s ",(-Loss).toString)
+        var str_perplexity = String.format(" perplexity: %18s ",(lossList.head.toString))
+
+        var str_time = String.format(" time: %6s",(timer.timefinish).toString)
+
+        println(str_ep+str_count+str_CE+str_perplexity+str_time)
+        Loss = 0d
+        cm = 0f
+        all =0f
+      }
+
+      if(ep % 100 == 0 ){
+        savetxt_String(lossList,"perplexity_skipGram_"+timer.date(),"txt")
+        Win.save("biasdata/SkipGram.win.txt")
+        Wout.save("biasdata/SkipGram.wout.txt")
+      }
+
+    }
+
+    savetxt_String(lossList,"perplexity_skipGram_"+timer.date(),"txt")
+    finalpathname
+  }
+
+
+
   def train(path:String,epoch:Int)={
     var finalpathname = ""
     val words = load_word_count(path).toList
     val q = question_load_all2(path,words)
     var lossList = List[String]()
     var Loss = 0d;var cm = 0f;var all = 0f
-  //  Wout.load("biasdata/SkipGram.wout.txt")
-
     for (ep <- 0 until epoch){
       timer.timestart()
       for(i <- 0 until q.size){

@@ -50,8 +50,9 @@ object testrun{
   }
 
   def SkipGram(epoch:Int,out:Int,Windowsize:Int)={
-    val Skip = new SkipGram("skip_vec",91,out,Windowsize:Int)
-    var finalfn = Skip.train("collection3.txt",epoch)
+    val Skip = new SkipGram("skip_vec",22,out,Windowsize:Int)
+    var finalfn = Skip.train_one("collection2.txt",epoch)
+
 
   }
 

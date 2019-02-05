@@ -1,5 +1,5 @@
 package Seq2Seq
-class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
+class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
   import Utilty.RichArray._
   import Utilty.ML._
   import Utilty.Stack
@@ -16,7 +16,6 @@ class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     var backforwardDrop_Unit = new Stack[Dropout]()
 
     //  DLDLD こんな感じ
-    Drop_Unit.push(new Dropout(0.2f))
     Range(0,layernum).map{i =>
       feedforwardLSTM_Unit.push(new LSTM2(hidden,hidden/2))
       feedforwardDrop_Unit.push(new Dropout(0.2f))
@@ -51,17 +50,17 @@ class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
         feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).forward(lstm(j))))
         backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).forward(lstm(x.size-1 -j))))
       }
-      val fs = feedStack.reverse.full.toArray
+      val fs = feedStack.full.reverse.toArray
       val bs = backStack.full.toArray
-      Range(0,lstm.size).map{ i=>
-         lstm(i) = fs(i) ++ bs(i)
+      Range(0,x.size-1).map{ k=>
+        lstm(k) = fs(k) ++ bs(k)
       }
       feedStack.reset
       backStack.reset
 
     }
 
-    pre_h = lstm
+    pre_h = lstm.last
     pre_h
   }
   def setBP_d(d: Array[Float])={
@@ -71,35 +70,56 @@ class Encoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     backforwardLSTM_Unit(layernum-1).BP_d.push(d)
 
   }
-  def backward(d: Array[Float])={
+  def backward(d: Array[Array[Float]])={
     var lstm_back = d
     val feedStack = new Stack[Array[Float]]()
     val backStack = new Stack[Array[Float]]()
 
     for(i <- layernum-1 to 0 by -1){
-      lstm_back = LSTM_Unit(i).backward(Drop_Unit(i+1).backward(lstm_back))
+      for(j <- d.size -1 to 0 by -1){
+        feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).backward(lstm_back(j).take(lstm_back(j).size/2))))
+        backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).backward(lstm_back(j).drop(lstm_back(j).size/2))))
+      }
+      val fs = feedStack.full.reverse.toArray
+      val bs = backStack.full.toArray
+      Range(0,d.size).map{ k=>
+        lstm_back(k) = fs(k) ++ bs(k)
+      }
+      feedStack.reset
+      backStack.reset
+
+
     }
-    Embedding.backward(Drop_Unit(0).backward(lstm_back))
+    Embedding.backward(lstm_back)
   }
   def update()={
     Embedding.update()
-    LSTM_Unit.map(_.update())
-    Drop_Unit.map(_.update())
+    feedforwardLSTM_Unit.map(_.update())
+    feedforwardDrop_Unit.map(_.update())
+    backforwardLSTM_Unit.map(_.update())
+    backforwardDrop_Unit.map(_.update())
+
   }
   def reset(){
 
     Embedding.reset()
-    LSTM_Unit.map(_.reset())
-    Drop_Unit.map(_.reset())
+    feedforwardLSTM_Unit.map(_.reset())
+    feedforwardDrop_Unit.map(_.reset())
+    backforwardLSTM_Unit.map(_.reset())
+    backforwardDrop_Unit.map(_.reset())
+
+
   }
   def save(fn: String){
     Embedding.save("biasdata/Embedding_"+fn+"_"+hidden+"x"+hidden+".txt")
-    Range(0,LSTM_Unit.size-1).map{i => LSTM_Unit(i).save("biasdata/LSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
+    Range(0,feedforwardLSTM_Unit.size-1).map{i => feedforwardLSTM_Unit(i).save("biasdata/feedforwardLSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
+    Range(0,backforwardLSTM_Unit.size-1).map{i => backforwardLSTM_Unit(i).save("biasdata/backforwardLSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
 
   }
   def load(fn: String){
     Embedding.load("biasdata/Embedding_"+fn+"_"+hidden+"x"+hidden+".txt")
-    Range(0,LSTM_Unit.size-1).map{i => LSTM_Unit(i).load("biasdata/LSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
+    Range(0,feedforwardLSTM_Unit.size-1).map{i => feedforwardLSTM_Unit(i).load("biasdata/feedforwardLSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
+    Range(0,backforwardLSTM_Unit.size-1).map{i => backforwardLSTM_Unit(i).load("biasdata/backforwardLSTM_Unit"+hidden+"x"+hidden+"_"+i+".txt")}
 
   }
 

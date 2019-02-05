@@ -9,9 +9,9 @@ import numpy as np
 
 def plot_data(data, labels, filename,title):
     plt.figure(figsize=(12,9))
-    plt.title(filename)
-    plt.xlabel('epoch')
-    plt.ylabel('frecency')
+    plt.title(title)
+    plt.xlabel('x')
+    plt.ylabel('y')
     plt.scatter(data[:,0], data[:,1], c=["w" for _ in labels])
 
     for d, l in zip(data,labels):
