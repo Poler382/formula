@@ -1,4 +1,25 @@
 package formula
+class vercter_management(num: Int){//何このベクトルを保存したいか
+  var vecter = Array.ofDim[(Float,String)](num) //(acc,ListをmkStringにしたもの)
+
+  //必ず宣言したら呼ぶ
+  def init()={
+    for(i <- 0 until num){
+      vecter(i) = (0f,"")
+    }
+  }
+
+  def setVecter(index:Int,acc:Float,v:Array[Float])={
+    if(vecter(index)._1 <= acc){
+      //  sys.process.Process("say Stock").run
+      vecter(index) = (acc,v.mkString(",")+"\n")
+    }
+  }
+
+  def getVec() = vecter.map(_._2).toList
+
+}
+
 
 object FormulaVecter{
   import formula.protcol._
@@ -16,11 +37,33 @@ object FormulaVecter{
     //  val Embedding_path = args(1)
     val in = args(1).toInt
     val hidden = args(2).toInt
-    //    normallearn(num,in,hidden)
-    //    skiplearn(num,in,hidden)
-    Bi_directional_slearn(num,in,hidden)
-  }
+    val layernum = args(3).toInt
+    val select = args(4)
+    if(select == "normal"){
+      normallearn(num,in,hidden,layernum)
+    }else if(select == "Skip"){
+      skiplearn(num,in,hidden,layernum)
+    }
+    else if(select == "Bi"){
+      Bi_directional_slearn(num,in,hidden,layernum)
+    }else if(select == "all"){
+      normallearn(num,in,hidden,layernum)
+      skiplearn(num,in,hidden,layernum)
+      Bi_directional_slearn(num,in,hidden,layernum)
+    }else{
+      println("input nom patern")
+    }
 
+
+  }
+  var pre_acc = 0f
+  def Stack_entry(preh:String,h:String,acc:Float)={
+    if(acc >= pre_acc){
+      h
+    }else{
+      preh
+    }
+  }
   def get_in_hidden(s:String)={
     val xx = s.split("_").filter(_.contains("89x"))
     val y = xx(0).split("x").map(_.toInt)
@@ -30,44 +73,46 @@ object FormulaVecter{
     if(i < 0)  max else i
   }
 
-  def normallearn(num:Int,in:Int,hidden:Int)={
+  def normallearn(num:Int,in:Int,hidden:Int,layernum:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
     val path = "collection2.txt"
     val formula_vecter = new Stack[String]()
     val CBOWModel = new word2vec.CBOW("formula",in,hidden)
-    val Encoder = new Seq2Seq.Encoder(in,hidden,hidden,3)
-    val Decoder = new Seq2Seq.Decoder(in,hidden,in,3)
-    //
-    //出てきた物をベクトル化  var words = CBOWModel.load_word_count(path)
+
     var words = vecnormal.toList
-    val Exercises = question_load_all2_2(path,words).take(3)
+    val Exercises = question_load_all2_2(path,words).take(20)
+    val test = question_load_all2_2(path,words).drop(20).take(20)
+    val VM = new vercter_management(Exercises.size)
+    VM.init()
 
     //  Encoder.Embedding_load(Embedding_path)
     //  Decoder.Embedding_load(Embedding_path)
 
-    //  println(s"words ${words.size}")
     var XentropyList = List[Float]()
     var AccList = List[Float]()
-
-    for(epoch <- 0 until num){
+    var saveVecter = ""
+    var testVecter = ""
+    for(e <- 0 until Exercises.size){
       timer.timestart
-      var acc = 0f
-      var partacc = 0f
-      var clossentropy = 0f
+      val Encoder = new Seq2Seq.Encoder(in,hidden,hidden,layernum)
+      val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
 
-      for(e <- 0 until Exercises.size){
+      var h = Array.ofDim[Float](hidden)
+      for(epoch <- 0 until num){
+        var acc = 0f
+        var partacc = 0f
+        var clossentropy = 0f
+
         //println("\nencoder forward")
+
         val onehots = Exercises(e).map(a => onehot(a,words.size)).reverse
-        var h = Array.ofDim[Float](hidden)
+
 
         for(i <- 0 until onehots.size){
           h = Encoder.forward(onehots(i))
         }
 
-        formula_vecter.push(h.mkString(",")+"\n")
-
-        //println("\ndecoder forward")
         //式ベクトルを渡す
         Decoder.Set_pre_h(h)
 
@@ -91,91 +136,100 @@ object FormulaVecter{
           Encoder.backward(new Array[Float](hidden))
         }
 
-        Encoder.update
-        Decoder.update
-
         var inputExercises = ""
         Exercises(e).map{a => inputExercises += words(index(a,words.size-1))}
         var outputExercises = ""
         ys.reverse.map{a => outputExercises += words(index(a.indexOf(a.max),words.size-1) )}
+
+
+
+        if(inputExercises== outputExercises){
+          acc +=1f
+          //  sys.process.Process("say Hit").run
+        }
+
+        Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
+        VM.setVecter(e,partacc,h)
+        Encoder.update
+        Decoder.update
+        println(
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+        )
         if(epoch % 5  == 0){
           println("  input: " + inputExercises)
           println("predict: " + outputExercises)
         }
 
-
-        if(inputExercises== outputExercises){
-          acc +=1f
-          sys.process.Process("say Hit").run
-        }
-
-        Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
-
       }
 
+      saveVecter += h.mkString(",")+","
 
-      if(epoch % 100 == 0){
-        savetxt_Float(XentropyList,"E2D_crossEntropy_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        savetxt_Float(AccList,"E2D_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        Encoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
-        Decoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
-        savetxt_String(formula_vecter.full,"E2D_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
+      //test
+      val onehots = test(e).map(a => onehot(a,words.size)).reverse
+
+      for(i <- 0 until onehots.size){
+        h = Encoder.forward(onehots(i))
       }
-      formula_vecter.reset
-      println(
-        s"epoch ${epoch} Xentropy ${clossentropy} time:${timer.timefinish()} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises.size.toFloat} part accrate: ${partacc/Exercises.flatten.size.toFloat}"
-      )
+      testVecter += h.mkString(",")+","
+      Encoder.reset
 
-      XentropyList ::= clossentropy
-      AccList ::= acc/Exercises.size.toFloat
-      //println{s"time:${timer.timefinish()}"}
 
     }
-    savetxt_Float(XentropyList,"E2D_crossEntropy_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    savetxt_Float(AccList,"E2D_AccRate_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    Encoder.save("E2D_final_"+in+"x"+hidden)
-    Decoder.save("E2D_final_"+in+"x"+hidden)
+
+    val pathName = "txt/new/"+"E2D_EV_final_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer =  new java.io.PrintWriter(pathName)
+    writer.write(saveVecter)
+    writer.close()
+    println("success ")
+
+
+    val pathName2 = "txt/new/"+"E2D_EV_final_test_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer2 =  new java.io.PrintWriter(pathName2)
+    writer2.write(testVecter)
+    writer2.close()
+    println("success ")
 
   }
 
-  def skiplearn(num:Int,in:Int,hidden:Int)={
+  def skiplearn(num:Int,in:Int,hidden:Int,layernum:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
     val path = "collection2.txt"
     val formula_vecter = new Stack[String]()
     val CBOWModel = new word2vec.CBOW("formula",in,hidden)
-    val Encoder = new Seq2Seq.SkipConnectionEncoder(in,hidden,hidden,5)
-    val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
     //
     //出てきた物をベクトル化  var words = CBOWModel.load_word_count(path)
     var words = vecnormal.toList
-    val Exercises = question_load_all2_2(path,words).take(3)
-
+    val Exercises = question_load_all2_2(path,words).take(20)
+    val test = question_load_all2_2(path,words).drop(20).take(20)
+    val VM = new vercter_management(Exercises.size)
+    VM.init()
     //  Encoder.Embedding_load(Embedding_path)
     //  Decoder.Embedding_load(Embedding_path)
 
-    //  println(s"words ${words.size}")
     var XentropyList = List[Float]()
     var AccList = List[Float]()
+    var saveVecter = ""
+    var testVecter = ""
 
-    for(epoch <- 0 until num){
-      timer.timestart
-      var acc = 0f
-      var partacc = 0f
-      var clossentropy = 0f
+    for(e <- 0 until Exercises.size){
+      val Encoder = new Seq2Seq.SkipConnectionEncoder(in,hidden,hidden,layernum)
+      val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
+      var h = Array.ofDim[Float](hidden)
 
-      for(e <- 0 until Exercises.size){
-        //println("\nencoder forward")
+      for(epoch <- 0 until num){
+        timer.timestart
+        var acc = 0f
+        var partacc = 0f
+        var clossentropy = 0f
+
         val onehots = Exercises(e).map(a => onehot(a,words.size)).reverse
-        var h = Array.ofDim[Float](hidden)
 
         for(i <- 0 until onehots.size){
           h = Encoder.forward(onehots(i))
         }
 
         formula_vecter.push(h.mkString(",")+"\n")
-
-        //println("\ndecoder forward")
         //式ベクトルを渡す
         Decoder.Set_pre_h(h)
 
@@ -199,65 +253,75 @@ object FormulaVecter{
           Encoder.backward(new Array[Float](hidden))
         }
 
-        Encoder.update
-        Decoder.update
 
         var inputExercises = ""
         Exercises(e).map{a => inputExercises += words(index(a,words.size-1))}
         var outputExercises = ""
         ys.reverse.map{a => outputExercises += words(index(a.indexOf(a.max),words.size-1) )}
+
+        if(inputExercises== outputExercises){
+          acc +=1f
+          //    sys.process.Process("say Hit").run
+        }
+
+        Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
         if(epoch % 5  == 0){
           println("  input: " + inputExercises)
           println("predict: " + outputExercises)
         }
+        VM.setVecter(e,partacc,h)
 
-
-        if(inputExercises== outputExercises){
-          acc +=1f
-          sys.process.Process("say Hit").run
-        }
-
-        Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
-
+        Encoder.update
+        Decoder.update
+        println(
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+        )
       }
+      saveVecter += h.mkString(",") +","
 
 
-      if(epoch % 100 == 0){
-        savetxt_Float(XentropyList,"E2D_crossEntropy_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        savetxt_Float(AccList,"E2D_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        Encoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
-        Decoder.save("E2D_"+epoch+"_"+in+"x"+hidden)
-        savetxt_String(formula_vecter.full,"E2D_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
+      //test
+      var h2 = Array.ofDim[Float](hidden)
+      val onehots = test(e).map(a => onehot(a,words.size)).reverse
+
+      for(i <- 0 until onehots.size){
+        h2 = Encoder.forward(onehots(i))
       }
-      formula_vecter.reset
-      println(
-        s"epoch ${epoch} Xentropy ${clossentropy} time:${timer.timefinish()} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises.size.toFloat} part accrate: ${partacc/Exercises.flatten.size.toFloat}"
-      )
+      testVecter += h2.mkString(",") +","
 
-      XentropyList ::= clossentropy
-      AccList ::= acc/Exercises.size.toFloat
-      //println{s"time:${timer.timefinish()}"}
 
     }
-    savetxt_Float(XentropyList,"E2D_crossEntropy_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    savetxt_Float(AccList,"E2D_AccRate_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    Encoder.save("E2D_final_"+in+"x"+hidden)
-    Decoder.save("E2D_final_"+in+"x"+hidden)
+
+    val pathName = "txt/new/"+"SkipConnect_Skip_final_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer =  new java.io.PrintWriter(pathName)
+    writer.write(saveVecter)
+    writer.close()
+    println("success ")
+
+    val pathName2 = "txt/new/"+"SkipConnect_Skip_test_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer2 =  new java.io.PrintWriter(pathName2)
+    writer2.write(testVecter)
+    writer.close()
+    println("success ")
 
   }
 
-  def Bi_directional_slearn(num:Int,in:Int,hidden:Int)={
+  def Bi_directional_slearn(num:Int,in:Int,hidden:Int,layernum:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
     val path = "collection2.txt"
     val formula_vecter = new Stack[String]()
     val CBOWModel = new word2vec.CBOW("formula",in,hidden)
-    val Encoder = new Seq2Seq.BiDirectionalEncoder(in,hidden,hidden,1)
-    val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
+    //    val Encoder = new Seq2Seq.BiDirectionalEncoder(in,hidden,hidden,layernum )
+    //    val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
     //
     //出てきた物をベクトル化  var words = CBOWModel.load_word_count(path)
+
     var words = vecnormal.toList
-    val Exercises = question_load_all2_2(path,words).take(3)
+    val Exercises = question_load_all2_2(path,words).take(20)
+    val test = question_load_all2_2(path,words).drop(20).take(20)
+    val VM = new vercter_management(Exercises.size)
+    VM.init()
 
     //  Encoder.Embedding_load(Embedding_path)
     //  Decoder.Embedding_load(Embedding_path)
@@ -265,18 +329,24 @@ object FormulaVecter{
     //  println(s"words ${words.size}")
     var XentropyList = List[Float]()
     var AccList = List[Float]()
+    var saveVecter = ""
+    var testVecter = ""
 
-    for(epoch <- 0 until num){
-      timer.timestart
-      var acc = 0f
-      var partacc = 0f
-      var clossentropy = 0f
+    for(e <- 0 until Exercises.size){
+      val Encoder = new Seq2Seq.BiDirectionalEncoder(in,hidden,hidden,layernum )
+      val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
 
-      for(e <- 0 until Exercises.size){
+      var hs = Array[Float](hidden)
+      for(epoch <- 0 until num){
+        timer.timestart
+        var acc = 0f
+        var partacc = 0f
+        var clossentropy = 0f
+
+
         //println("\nencoder forward")
         val onehots = Exercises(e).map(a => onehot(a,words.size)).reverse
-        var hs = Encoder.forward(onehots)
-
+        hs = Encoder.forward(onehots)
         formula_vecter.push(hs.tail.mkString(",")+"\n")
         //println("\ndecoder forward")
         //式ベクトルを渡す
@@ -300,50 +370,53 @@ object FormulaVecter{
 
         Encoder.backward(Array.ofDim[Float](Exercises(e).size,hidden))
 
-        Encoder.update
-        Decoder.update
-
         var inputExercises = ""
         Exercises(e).map{a => inputExercises += words(index(a,words.size-1))}
         var outputExercises = ""
         ys.reverse.map{a => outputExercises += words(index(a.indexOf(a.max),words.size-1) )}
-        if(epoch % 5  == 0){
-          println("  input: " + inputExercises)
-          println("predict: " + outputExercises)
-        }
-
 
         if(inputExercises== outputExercises){
           acc +=1f
-          sys.process.Process("say Hit").run
+          //    sys.process.Process("say Hit").run
         }
 
         Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
 
+        VM.setVecter(e,partacc,hs)
+        Encoder.update
+        Decoder.update
+        println(
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+        )
+        if(epoch % 5  == 0){
+          println("  input: " + inputExercises)
+          println("predict: " + outputExercises)
+        }
       }
 
+      saveVecter += hs.mkString(",") +","
 
-      if(epoch % 100 == 0){
-        savetxt_Float(XentropyList,"BiDirection_crossEntropy_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        savetxt_Float(AccList,"BiDirection_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
-        Encoder.save("BiDirection_"+epoch+"_"+in+"x"+hidden)
-        Decoder.save("BiDirection_"+epoch+"_"+in+"x"+hidden)
-        savetxt_String(formula_vecter.full,"BiDirection_AccRate_"+in+"x"+hidden+"_"+timer.date(),"txt")
-      }
-      formula_vecter.reset
-      println(
-        s"epoch ${epoch} Xentropy ${clossentropy} time:${timer.timefinish()} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises.size.toFloat} part accrate: ${partacc/Exercises.flatten.size.toFloat}"
-      )
+      //test
+      var hs2 = Array[Float](hidden)
 
-      XentropyList ::= clossentropy
-      AccList ::= acc/Exercises.size.toFloat
-      //println{s"time:${timer.timefinish()}"}
+      val onehots = test(e).map(a => onehot(a,words.size)).reverse
+      hs2 = Encoder.forward(onehots)
+      testVecter += hs2.mkString(",") +","
 
     }
-    savetxt_Float(XentropyList,"BiDirection_crossEntropy_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    savetxt_Float(AccList,"BiDirection_AccRate_final_"+in+"x"+hidden+"_"+timer.date(),"txt")
-    Encoder.save("BiDirection_final_"+in+"x"+hidden)
-    Decoder.save("BiDirection_final_"+in+"x"+hidden)
+
+    val pathName = "txt/new/"+"BiDirection_Bi_final_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer =  new java.io.PrintWriter(pathName)
+    writer.write(saveVecter)
+    writer.close()
+    println("success ")
+
+    val pathName2 = "txt/new/"+"BiDirection_Bi_test_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer2 =  new java.io.PrintWriter(pathName2)
+    writer2.write(testVecter)
+    writer2.close()
+    println("success ")
+
 
   }
 

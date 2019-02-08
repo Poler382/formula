@@ -127,6 +127,30 @@ object runner{
   val condition6_4 = condition6.drop(6).take(2)
   val condition6_5 = condition6.drop(8)
 
+  val condition_formula = List(
+    "formula.FormulaVecter 100 22 200 1 normal",
+    "formula.FormulaVecter 100 22 200 4 normal",
+    "formula.FormulaVecter 100 22 200 8 normal",
+    "formula.FormulaVecter 100 22 500 1 normal" ,
+    "formula.FormulaVecter 100 22 500 4 normal",
+    "formula.FormulaVecter 100 22 500 8 normal" ,
+    "formula.FormulaVecter 100 22 1000 1 normal" ,
+    "formula.FormulaVecter 100 22 1000 4 normal" ,
+    "formula.FormulaVecter 100 22 1000 8 normal" ,
+    "　s" ,
+    "formula.FormulaVecter 100 22 200 4 Skip" ,
+    "formula.FormulaVecter 100 22 200 8 Skip" ,
+    "formula.FormulaVecter 100 22 500 1 Skip" ,
+    "formula.FormulaVecter 100 22 500 4 Skip" ,
+    "formula.FormulaVecter 100 22 500 8 Skip" ,
+    "formula.FormulaVecter 100 22 1000 1 Skip" ,
+    "formula.FormulaVecter 100 22 1000 4 Skip" ,
+    "formula.FormulaVecter 100 22 1000 8 Skip" ,
+    "formula.FormulaVecter 100 22 200 1 Bi" ,
+    "formula.FormulaVecter 100 22 500 1 Bi" ,
+    "formula.FormulaVecter 100 22 1000 1 Bi"
+  )
+
 
 
 
@@ -138,9 +162,9 @@ object runner{
 
     //args(1).toInt
     //val n = args(2).toInt
-    val condition = List(condition6_1,condition6_2,condition6_3,condition6_4,condition6_5)
-    val lnum = condition(0)(0).split(" ")(2).toInt /10
-    println(lnum)
+    val condition = List(condition_formula.take(8),condition_formula.drop(8))
+    val l100 = condition(0)(0).split(" ")(2).toInt /10
+    println(l100)
 
     for(l <- condition){
       var resultlist = List[String]()
@@ -184,7 +208,7 @@ object runner{
         Thread.sleep(1000)
         println("now...")
         for(i <- 0 until counter.size){
-          val persent = counter(i).toDouble/lnum * 100 //%
+          val persent = counter(i).toDouble/l100 * 100 //%
           val paint = (persent.toDouble / 4).toInt
 
           print(String.format("%35s",flist(i)))

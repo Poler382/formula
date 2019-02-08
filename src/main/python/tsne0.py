@@ -44,6 +44,8 @@ def main():
 
     lines = open(fn).readlines()
     ps0 = [x.strip().split(",") for x in lines]
+    ps0[0].pop(-1)
+    print(len(ps0[0]))
     data = np.array(ps0).reshape(innum,outnum)
 
     labellines = open(targetfn).readlines()

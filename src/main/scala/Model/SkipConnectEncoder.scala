@@ -15,7 +15,7 @@ class SkipConnectionEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     //  DLDLD こんな感じ
     Range(0,layernum).map{i =>
       LSTM_Unit.push(new LSTM2(hidden,hidden))
-      Drop_Unit.push(new Dropout(0.2f))
+      Drop_Unit.push(new Dropout(0.5f))
     }
 
     (LSTM_Unit.full.reverse,Drop_Unit.full.reverse)
