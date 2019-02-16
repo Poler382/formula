@@ -65,6 +65,7 @@ object Utilty_formula{
 
     st.map( _.map( f(_) ) ).map(_.toArray)//文字をベムトルに対応する数字列で返す
   }
+  
   def question_load_nonnum(path:String)={
     val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
     var xf = st.map(_.replace("""\frac""","f"))

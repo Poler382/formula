@@ -108,15 +108,15 @@ object runner{
   val condition5_2 = condition5.drop(7)
 
   val condition6 = List(
-    "testrun CBOW 5000 100 2",
+    "testrun CBOW 5000 30 2",
     "testrun CBOW 5000 200 2",
     "testrun CBOW 5000 400 2",
     "testrun CBOW 5000 800 2",
-    "testrun CBOW 5000 100 4",
+    "testrun CBOW 5000 30 4",
     "testrun CBOW 5000 200 4",
     "testrun CBOW 5000 400 4",
     "testrun CBOW 5000 800 4",
-    "testrun CBOW 5000 100 8",
+    "testrun CBOW 5000 30 8",
     "testrun CBOW 5000 200 8",
     "testrun CBOW 5000 400 8",
     "testrun CBOW 5000 800 8",
@@ -128,27 +128,27 @@ object runner{
   val condition6_5 = condition6.drop(8)
 
   val condition_formula = List(
-    "formula.FormulaVecter 100 22 200 1 normal",
-    "formula.FormulaVecter 100 22 200 4 normal",
-    "formula.FormulaVecter 100 22 200 8 normal",
-    "formula.FormulaVecter 100 22 500 1 normal" ,
-    "formula.FormulaVecter 100 22 500 4 normal",
-    "formula.FormulaVecter 100 22 500 8 normal" ,
-    "formula.FormulaVecter 100 22 1000 1 normal" ,
-    "formula.FormulaVecter 100 22 1000 4 normal" ,
-    "formula.FormulaVecter 100 22 1000 8 normal" ,
-    "　s" ,
-    "formula.FormulaVecter 100 22 200 4 Skip" ,
-    "formula.FormulaVecter 100 22 200 8 Skip" ,
-    "formula.FormulaVecter 100 22 500 1 Skip" ,
-    "formula.FormulaVecter 100 22 500 4 Skip" ,
-    "formula.FormulaVecter 100 22 500 8 Skip" ,
-    "formula.FormulaVecter 100 22 1000 1 Skip" ,
-    "formula.FormulaVecter 100 22 1000 4 Skip" ,
-    "formula.FormulaVecter 100 22 1000 8 Skip" ,
-    "formula.FormulaVecter 100 22 200 1 Bi" ,
-    "formula.FormulaVecter 100 22 500 1 Bi" ,
-    "formula.FormulaVecter 100 22 1000 1 Bi"
+    "formula.FormulaVecter 50 22 200 1 normal",
+    "formula.FormulaVecter 50 22 200 4 normal",
+    "formula.FormulaVecter 30 22 200 8 normal",
+    "formula.FormulaVecter 30 22 500 1 normal" ,
+    "formula.FormulaVecter 30 22 500 4 normal",
+    "formula.FormulaVecter 30 22 500 8 normal" ,
+    "formula.FormulaVecter 30 22 1000 1 normal" ,
+    "formula.FormulaVecter 30 22 1000 4 normal" ,
+    "formula.FormulaVecter 30 22 1000 8 normal" ,
+    "formula.FormulaVecter 30 22 200 1 Skip" ,
+    "formula.FormulaVecter 30 22 200 4 Skip" ,
+    "formula.FormulaVecter 30 22 200 8 Skip" ,
+    "formula.FormulaVecter 30 22 500 1 Skip" ,
+    "formula.FormulaVecter 30 22 500 4 Skip" ,
+    "formula.FormulaVecter 30 22 500 8 Skip" ,
+    "formula.FormulaVecter 30 22 1000 1 Skip" ,
+    "formula.FormulaVecter 30 22 1000 4 Skip" ,
+    "formula.FormulaVecter 30 22 1000 8 Skip" ,
+    "formula.FormulaVecter 30 22 200 1 Bi" ,
+    "formula.FormulaVecter 30 22 500 1 Bi" ,
+    "formula.FormulaVecter 30 22 1000 1 Bi"
   )
 
 
@@ -163,8 +163,8 @@ object runner{
     //args(1).toInt
     //val n = args(2).toInt
     val condition = List(condition_formula.take(8),condition_formula.drop(8))
-    val l100 = condition(0)(0).split(" ")(2).toInt /10
-    println(l100)
+    val l30 = condition(0)(0).split(" ")(2).toInt /10
+    println(100)
 
     for(l <- condition){
       var resultlist = List[String]()
@@ -194,7 +194,7 @@ object runner{
       Thread.sleep(3000)
       var counter = new Array[Int](resultlist.size)
       var sum = 0
-      while(sum < 100 * flist.size){
+      while(sum < 30 * flist.size){
         sum = 0
 
         Thread.sleep(1000)
@@ -208,7 +208,7 @@ object runner{
         Thread.sleep(1000)
         println("now...")
         for(i <- 0 until counter.size){
-          val persent = counter(i).toDouble/l100 * 100 //%
+          val persent = counter(i).toDouble/l30 * 30 //%
           val paint = (persent.toDouble / 4).toInt
 
           print(String.format("%35s",flist(i)))

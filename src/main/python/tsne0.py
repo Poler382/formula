@@ -31,30 +31,29 @@ def tsne(vectors):
     return tsne.fit_transform(vectors)
 
 def main():
-    #　入力ファイル名　入力ベクトル　出力ベクトル　出力ファイル名　出力ファイルにつけるラベル タイトル
+    #　入力ファイル名　入力ベクトル　出力ファイル名　出力ファイルにつけるラベル タイトル
     args = sys.argv
     fn = args[1]
     print(fn)
-    innum = int(args[2])
-    outnum = int(args[3])
-    outputfn = args[4]
-    targetfn = args[5] # targetとなるlabelを一行に書いてあるファイルを読む
-    title    = args[6]
+    input_vecsize = int(args[2])
+    outputfn  = args[3]
+    targetfn  = args[4] # targetとなるlabelを一行に書いてあるファイルを読む
+    title     = args[5]
     #    fn = "/Users/yuya/SourceTree/sbt/formula/Emvedding/SkipGram_formula_20x10.txt"
 
     lines = open(fn).readlines()
     ps0 = [x.strip().split(",") for x in lines]
     ps0[0].pop(-1)
-    print(len(ps0[0]))
-    data = np.array(ps0).reshape(innum,outnum)
+    inputExercises_size = int(len(ps0[0]) /  input_vecsize)
+    data = np.array(ps0).reshape(inputExercises_size,input_vecsize)
 
     labellines = open(targetfn).readlines()
     ps1 = [x.strip().split(",") for x in labellines]
 
     target =np.array(ps1[0])
 
-    plot_data(pca(data),target, "png/pca_"+outputfn+".png","pca "+title)
-    plot_data(tsne(data),target,"png/tsne_"+outputfn+".png","Tsne "+title)
+    plot_data( pca(data),target[:inputExercises_size], "png/pca_"+outputfn+".png","pca "+title)
+    plot_data(tsne(data),target[:inputExercises_size],"png/tsne_"+outputfn+".png","Tsne "+title)
 
 
 

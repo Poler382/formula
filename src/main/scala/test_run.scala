@@ -28,17 +28,9 @@ object testrun{
         SkipGram(3000,8,2)
         SkipGram(3000,16,2)
       }
-      case "easy" =>{
+      case "formula" =>{
 
-        CBOW(300,2,2)
-        CBOW(300,4,2)
-        CBOW(300,8,2)
-        CBOW(300,16,2)
 
-        SkipGram(300,2,2)
-        SkipGram(300,4,2)
-        SkipGram(300,8,2)
-        SkipGram(300,16,2)
       }
     }
   }
@@ -52,6 +44,9 @@ object testrun{
   def SkipGram(epoch:Int,out:Int,Windowsize:Int)={
     val Skip = new SkipGram("skip_vec",22,out,Windowsize:Int)
     var finalfn = Skip.train_one("collection2.txt",epoch)
+  }
+
+  def FormulaVecter()={
 
 
   }

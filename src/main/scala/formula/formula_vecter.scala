@@ -39,17 +39,18 @@ object FormulaVecter{
     val hidden = args(2).toInt
     val layernum = args(3).toInt
     val select = args(4)
+    val take = 100
     if(select == "normal"){
-      normallearn(num,in,hidden,layernum)
+      normallearnver2(num,in,hidden,layernum,take)
     }else if(select == "Skip"){
-      skiplearn(num,in,hidden,layernum)
+      skiplearn(num,in,hidden,layernum,take)
     }
     else if(select == "Bi"){
-      Bi_directional_slearn(num,in,hidden,layernum)
+      Bi_directional_slearn(num,in,hidden,layernum,take)
     }else if(select == "all"){
-      normallearn(num,in,hidden,layernum)
-      skiplearn(num,in,hidden,layernum)
-      Bi_directional_slearn(num,in,hidden,layernum)
+      normallearn(num,in,hidden,layernum,take)
+      skiplearn(num,in,hidden,layernum,take)
+      Bi_directional_slearn(num,in,hidden,layernum,take)
     }else{
       println("input nom patern")
     }
@@ -64,16 +65,12 @@ object FormulaVecter{
       preh
     }
   }
-  def get_in_hidden(s:String)={
-    val xx = s.split("_").filter(_.contains("89x"))
-    val y = xx(0).split("x").map(_.toInt)
-    (y(0)+2,y(1))
-  }
+
   def index(i:Int,max:Int)={
     if(i < 0)  max else i
   }
 
-  def normallearn(num:Int,in:Int,hidden:Int,layernum:Int)={
+  def normallearnver2(num:Int,in:Int,hidden:Int,layernum:Int,take:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
     val path = "collection2.txt"
@@ -81,8 +78,128 @@ object FormulaVecter{
     val CBOWModel = new word2vec.CBOW("formula",in,hidden)
 
     var words = vecnormal.toList
-    val Exercises = question_load_all2_2(path,words).take(20)
-    val test = question_load_all2_2(path,words).drop(20).take(20)
+    val Exercises = question_load_all2_2(path,words).take(take)
+    val test = question_load_all2_2(path,words).drop(take).take(take)
+    val VM = new vercter_management(Exercises.size)
+    VM.init()
+
+    //  Encoder.Embedding_load(Embedding_path)
+    //  Decoder.Embedding_load(Embedding_path)
+
+    var XentropyList = List[Float]()
+    var AccList = List[Float]()
+    var saveVecter = ""
+    var testVecter = ""
+
+
+    for(e <- 0 until Exercises.size){
+      timer.timestart
+      val Encoder = new Seq2Seq.Encoder(in,hidden,hidden,layernum)
+      val Decoder = new Seq2Seq.Decoder(in,hidden,in,1)
+
+      var h = Array.ofDim[Float](hidden)
+      for(epoch <- 0 until num){
+        var acc = 0f
+        var partacc = 0f
+        var clossentropy = 0f
+
+        //println("\nencoder forward")
+
+        val onehots = Exercises(e).map(a => onehot(a,words.size)).reverse
+
+
+        for(i <- 0 until onehots.size){
+          h = Encoder.forward(onehots(i))
+        }
+
+        //式ベクトルを渡す
+        Decoder.Set_pre_h(h)
+
+        //出力貯めるよう
+        val ys = Array.ofDim[Float](Exercises(e).size,in)
+        //初めの入力
+        ys(0) = Decoder.forward(onehot(words.indexOf("<EOS>"),words.size))
+
+        for(i <- 1 until ys.size){
+          ys(i) = Decoder.forward(onehots(i))
+        }
+
+        for(i <- ys.size-1 to 0 by -1){
+          //  Decoder.backward(ys(i)-onehots(i))
+          Decoder.backward(onehots(i)*ys(i).map{a => math.log(a+0.0001f).toFloat})
+          clossentropy += crossEntropy(onehots(i),ys(i))
+        }
+
+        Encoder.setBP_d(Decoder.Get_BP_d())
+
+        for(i <- onehots.size-1 to 0 by -1){
+          Encoder.backward(new Array[Float](hidden))
+        }
+
+        var inputExercises = ""
+        Exercises(e).map{a => inputExercises += words(index(a,words.size-1))}
+        var outputExercises = ""
+        ys.reverse.map{a => outputExercises += words(index(a.indexOf(a.max),words.size-1) )}
+
+
+
+        if(inputExercises== outputExercises){
+          acc +=1f
+          //  sys.process.Process("say Hit").run
+        }
+
+        Range(0,inputExercises.size).map{i => if(inputExercises(i) == outputExercises(i)) partacc +=1f }
+        VM.setVecter(e,partacc,h)
+        Encoder.update
+        Decoder.update
+        println(
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+        )
+        if(epoch % 5  == 0){
+          println("  input: " + inputExercises)
+          println("predict: " + outputExercises)
+        }
+      }
+      saveVecter += h.mkString(",")+","
+
+      if(e <= test.size){
+        val onehots = test(e).map(a => onehot(a,words.size)).reverse
+
+        for(i <- 0 until onehots.size){
+          h = Encoder.forward(onehots(i))
+        }
+        testVecter += h.mkString(",")+","
+        Encoder.reset
+      }
+
+    }
+
+    val pathName = "txt/new/"+"E2D_EV_final_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer =  new java.io.PrintWriter(pathName)
+    writer.write(saveVecter)
+    writer.close()
+    println("success ")
+
+
+    val pathName2 = "txt/new/"+"E2D_EV_final_test_"+in+"x"+hidden+"_"+layernum+"_"+timer.date()+".txt"
+    val writer2 =  new java.io.PrintWriter(pathName2)
+    writer2.write(testVecter)
+    writer2.close()
+    println("success ")
+
+  }
+
+
+  def normallearn(num:Int,in:Int,hidden:Int,layernum:Int,take:Int)={
+    //val (in,hidden) = get_in_hidden(Embedding_path)
+    println(in,hidden)
+    val path = "collection2.txt"
+    val formula_vecter = new Stack[String]()
+    val CBOWModel = new word2vec.CBOW("formula",in,hidden)
+
+    var words = vecnormal.toList
+    val Exercises = question_load_all2_2(path,words).take(take)
+    val test = question_load_all2_2(path,words).drop(take).take(10)
     val VM = new vercter_management(Exercises.size)
     VM.init()
 
@@ -191,7 +308,7 @@ object FormulaVecter{
 
   }
 
-  def skiplearn(num:Int,in:Int,hidden:Int,layernum:Int)={
+  def skiplearn(num:Int,in:Int,hidden:Int,layernum:Int,take:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
     val path = "collection2.txt"
@@ -200,8 +317,8 @@ object FormulaVecter{
     //
     //出てきた物をベクトル化  var words = CBOWModel.load_word_count(path)
     var words = vecnormal.toList
-    val Exercises = question_load_all2_2(path,words).take(20)
-    val test = question_load_all2_2(path,words).drop(20).take(20)
+    val Exercises = question_load_all2_2(path,words).take(take)
+    val test = question_load_all2_2(path,words).drop(take).take(50)
     val VM = new vercter_management(Exercises.size)
     VM.init()
     //  Encoder.Embedding_load(Embedding_path)
@@ -306,7 +423,7 @@ object FormulaVecter{
 
   }
 
-  def Bi_directional_slearn(num:Int,in:Int,hidden:Int,layernum:Int)={
+  def Bi_directional_slearn(num:Int,in:Int,hidden:Int,layernum:Int,take:Int)={
     //val (in,hidden) = get_in_hidden(Embedding_path)
     println(in,hidden)
     val path = "collection2.txt"
@@ -318,8 +435,8 @@ object FormulaVecter{
     //出てきた物をベクトル化  var words = CBOWModel.load_word_count(path)
 
     var words = vecnormal.toList
-    val Exercises = question_load_all2_2(path,words).take(20)
-    val test = question_load_all2_2(path,words).drop(20).take(20)
+    val Exercises = question_load_all2_2(path,words).take(take)
+    val test = question_load_all2_2(path,words).drop(take).take(50)
     val VM = new vercter_management(Exercises.size)
     VM.init()
 
