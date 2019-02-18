@@ -37,27 +37,33 @@ class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
   def GET_Last_h()={
     pre_h
   }
+
+
+  def BiDirectionalForward(l: Array[Array[Float]])={
+    var lstm = l
+    val feedStack = new Stack[Array[Float]]()
+    val backStack = new Stack[Array[Float]]()
+
+    for(j <- 0 until l.size){
+      feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).forward(lstm(j))))
+      backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).forward(lstm(x.size-1 -j))))
+    }
+    val fs = feedStack.full.reverse.toArray
+    val bs = backStack.full.toArray
+    Range(0,l.size-1).map{ k=>
+      lstm(k) = fs(k) ++ bs(k)
+    }
+    feedStack.reset
+    backStack.reset
+    lstm
+  }
   //入力を一気に受け取る(batchのように)
 
   def forward(x: Array[Array[Float]])={
     var EM = Embedding.forward(x)
     var lstm = EM
     for(i <- 0 until layernum){
-      val feedStack = new Stack[Array[Float]]()
-      val backStack = new Stack[Array[Float]]()
-
-      for(j <- 0 until x.size){
-        feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).forward(lstm(j))))
-        backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).forward(lstm(x.size-1 -j))))
-      }
-      val fs = feedStack.full.reverse.toArray
-      val bs = backStack.full.toArray
-      Range(0,x.size-1).map{ k=>
-        lstm(k) = fs(k) ++ bs(k)
-      }
-      feedStack.reset
-      backStack.reset
-
+      lstm = BiDirectionalForward(lstm)
     }
 
     pre_h = lstm.last
@@ -70,26 +76,34 @@ class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     backforwardLSTM_Unit(layernum-1).BP_d.push(d)
 
   }
-  def backward(d: Array[Array[Float]])={
+
+  def BiDirectionalBackward(d:Array[Array[FLoat]])={
     var lstm_back = d
+
     val feedStack = new Stack[Array[Float]]()
     val backStack = new Stack[Array[Float]]()
 
-    for(i <- layernum-1 to 0 by -1){
-      for(j <- d.size -1 to 0 by -1){
-        feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).backward(lstm_back(j).take(lstm_back(j).size/2))))
-        backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).backward(lstm_back(j).drop(lstm_back(j).size/2))))
-      }
-      val fs = feedStack.full.reverse.toArray
-      val bs = backStack.full.toArray
-      Range(0,d.size).map{ k=>
-        lstm_back(k) = fs(k) ++ bs(k)
-      }
-      feedStack.reset
-      backStack.reset
-
-
+    for(j <- d.size -1 to 0 by -1){
+      feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).backward(lstm_back(j).take(lstm_back(j).size/2))))
+      backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).backward(lstm_back(j).drop(lstm_back(j).size/2))))
     }
+    val fs = feedStack.full.reverse.toArray
+    val bs = backStack.full.toArray
+    Range(0,d.size).map{ k =>
+      lstm_back(k) = fs(k) ++ bs(k)
+    }
+    feedStack.reset
+    backStack.reset
+    lstm_back
+  }
+
+  def backward(d: Array[Array[Float]])={
+    var lstm_back = d
+
+    for(i <- layernum-1 to 0 by -1){
+      lstm_back = BiDirectionalBackward(lstm_back)
+    }
+    
     Embedding.backward(lstm_back)
   }
   def update()={

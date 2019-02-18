@@ -48,8 +48,18 @@ object FormulaVecter{
     else if(select == "Bi"){
       Bi_directional_slearn(num,in,hidden,layernum,take)
     }else if(select == "all"){
-      normallearn(num,in,hidden,layernum,take)
-      skiplearn(num,in,hidden,layernum,take)
+      normallearn2(num,22,200,1,take)
+      normallearn2(num,22,200,4,take)
+      normallearn2(num,22,400,1,take)
+      normallearn2(num,22,400,4,take)
+
+      skiplearn(num,22,200,1,take)
+      skiplearn(num,22,200,4,take)
+      skiplearn(num,22,400,1,take)
+      skiplearn(num,22,400,4,take)
+
+
+
       Bi_directional_slearn(num,in,hidden,layernum,take)
     }else{
       println("input nom patern")
@@ -360,7 +370,9 @@ object FormulaVecter{
         }
 
         for(i <- ys.size-1 to 0 by -1){
-          Decoder.backward(ys(i)-onehots(i))
+          //Decoder.backward(ys(i)-onehots(i))
+          Decoder.backward(onehots(i)*ys(i).map{a => math.log(a+0.0001f).toFloat})
+
           clossentropy += crossEntropy(onehots(i),ys(i))
         }
 
@@ -479,7 +491,9 @@ object FormulaVecter{
         }
 
         for(i <- ys.size-1 to 0 by -1){
-          Decoder.backward(ys(i)-onehots(i))
+        //  Decoder.backward(ys(i)-onehots(i))
+          Decoder.backward(onehots(i)*ys(i).map{a => math.log(a+0.0001f).toFloat})
+
           clossentropy += crossEntropy(onehots(i),ys(i))
         }
 
