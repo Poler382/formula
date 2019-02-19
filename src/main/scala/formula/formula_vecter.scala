@@ -47,20 +47,28 @@ object FormulaVecter{
     }
     else if(select == "Bi"){
       Bi_directional_slearn(num,in,hidden,layernum,take)
-    }else if(select == "all"){
-      normallearn2(num,22,200,1,take)
-      normallearn2(num,22,200,4,take)
-      normallearn2(num,22,400,1,take)
-      normallearn2(num,22,400,4,take)
+    }
+    else if(select == "all"){
+
+      normallearnver2(num,22,200,1,take)
+      normallearnver2(num,22,200,4,take)
+      normallearnver2(num,22,400,1,take)
+      normallearnver2(num,22,400,4,take)
+      normallearnver2(num,22,800,1,take)
+      normallearnver2(num,22,800,4,take)
 
       skiplearn(num,22,200,1,take)
       skiplearn(num,22,200,4,take)
       skiplearn(num,22,400,1,take)
       skiplearn(num,22,400,4,take)
+      skiplearn(num,22,800,1,take)
+      skiplearn(num,22,800,4,take)
 
 
+      Bi_directional_slearn(num,22,200,1,take)
+      Bi_directional_slearn(num,22,400,1,take)
+      Bi_directional_slearn(num,22,800,1,take)
 
-      Bi_directional_slearn(num,in,hidden,layernum,take)
     }else{
       println("input nom patern")
     }
@@ -163,7 +171,7 @@ object FormulaVecter{
         Encoder.update
         Decoder.update
         println(
-          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} part accrate: ${partacc/Exercises(e).size.toFloat}　predict: ${outputExercises} input:${inputExercises}"
         )
         if(epoch % 5  == 0){
           println("  input: " + inputExercises)
@@ -280,7 +288,7 @@ object FormulaVecter{
         Encoder.update
         Decoder.update
         println(
-          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} part accrate: ${partacc/Exercises(e).size.toFloat}　predict: ${outputExercises} input:${inputExercises}"
         )
         if(epoch % 5  == 0){
           println("  input: " + inputExercises)
@@ -403,7 +411,7 @@ object FormulaVecter{
         Encoder.update
         Decoder.update
         println(
-          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} part accrate: ${partacc/Exercises(e).size.toFloat}　predict: ${outputExercises} input:${inputExercises}"
         )
       }
       saveVecter += h.mkString(",") +","
@@ -517,22 +525,25 @@ object FormulaVecter{
         Encoder.update
         Decoder.update
         println(
-          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} accrate: ${acc/Exercises(e).size.toFloat} part accrate: ${partacc/Exercises(e).size.toFloat}"
+          s"epoch ${epoch} Xentropy ${clossentropy} perprexy: ${math.exp(clossentropy)} part accrate: ${partacc/Exercises(e).size.toFloat}　predict: ${outputExercises} input:${inputExercises}"
         )
-        if(epoch % 5  == 0){
-          println("  input: " + inputExercises)
-          println("predict: " + outputExercises)
-        }
+
       }
 
       saveVecter += hs.mkString(",") +","
 
-      //test
-      var hs2 = Array[Float](hidden)
+      if(e < test.size){
+        //test
+        var hs2 = Array[Float](hidden)
 
-      val onehots = test(e).map(a => onehot(a,words.size)).reverse
-      hs2 = Encoder.forward(onehots)
-      testVecter += hs2.mkString(",") +","
+        val onehots = test(e).map(a => onehot(a,words.size)).reverse
+        hs2 = Encoder.forward(onehots)
+        testVecter += hs2.mkString(",") +","
+
+
+
+      }
+
 
     }
 

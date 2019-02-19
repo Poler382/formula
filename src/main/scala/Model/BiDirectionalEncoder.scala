@@ -39,18 +39,18 @@ class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
   }
 
 
-  def BiDirectionalForward(l: Array[Array[Float]])={
-    var lstm = l
+  def BiDirectionalForward(x: Array[Array[Float]],i:Int)={
+    var lstm = x.clone
     val feedStack = new Stack[Array[Float]]()
     val backStack = new Stack[Array[Float]]()
 
-    for(j <- 0 until l.size){
+    for(j <- 0 until x.size){
       feedStack.push(feedforwardDrop_Unit(i).forward(feedforwardLSTM_Unit(i).forward(lstm(j))))
       backStack.push(backforwardDrop_Unit(i).forward(backforwardLSTM_Unit(i).forward(lstm(x.size-1 -j))))
     }
     val fs = feedStack.full.reverse.toArray
     val bs = backStack.full.toArray
-    Range(0,l.size-1).map{ k=>
+    Range(0,x.size-1).map{ k=>
       lstm(k) = fs(k) ++ bs(k)
     }
     feedStack.reset
@@ -63,7 +63,7 @@ class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     var EM = Embedding.forward(x)
     var lstm = EM
     for(i <- 0 until layernum){
-      lstm = BiDirectionalForward(lstm)
+      lstm = BiDirectionalForward(lstm,i)
     }
 
     pre_h = lstm.last
@@ -77,7 +77,7 @@ class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
 
   }
 
-  def BiDirectionalBackward(d:Array[Array[FLoat]])={
+  def BiDirectionalBackward(d:Array[Array[Float]],i:Int)={
     var lstm_back = d
 
     val feedStack = new Stack[Array[Float]]()
@@ -101,9 +101,9 @@ class BiDirectionalEncoder(in: Int,hidden: Int,out: Int,layernum: Int=1){
     var lstm_back = d
 
     for(i <- layernum-1 to 0 by -1){
-      lstm_back = BiDirectionalBackward(lstm_back)
+      lstm_back = BiDirectionalBackward(lstm_back,i)
     }
-    
+
     Embedding.backward(lstm_back)
   }
   def update()={
