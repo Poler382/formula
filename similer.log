@@ -1,0 +1,1860 @@
+txt/new/2_6_handout/BiDirection_Bi_final_22x1000_1_Wed_Feb_06_06:54:20_JST_2019.txt
+(BiDirection,22x1000,[I@1372ed45,1)
+ input: x-3=7 predict: 771{7
+ input: x-3=7 predict: x7777
+ input: x-3=7 predict: 7-777
+ input: x-3=7 predict: x-7=7
+ input: x-3=7 predict: x-377
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.9997734 
+5x-7=4 > 0.038947914 
+5x+10=1 > 0.038894806 
+5x-9=10 > 0.038846277 
+7.2x-4=2.2x+9 > 0.010487251 
+(BiDirection,22x1000,[I@63355449,1)
+ input: f{4}{3}x-9=-10 predict: 444}1}}()+{9(f
+ input: f{4}{3}x-9=-10 predict: 444}}3}==x{39=
+ input: f{4}{3}x-9=-10 predict: 4}4}}}}x=x9-0=
+ input: f{4}{3}x-9=-10 predict: f{4}{}}}--=-00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x===-00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-00
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9=-10
+input -> f{4}{3}x-9=-10
+f{3}{7}x-3=-5 > 0.9999632 
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.99993575 
+f{3}{7}x+2=f{6}{7} > 0.9999357 
+f{x-5}{4}+6=f{5}{2} > 0.9999325 
+f{2x+1}{5}=f{x-5}{4} > 0.9999273 
+(BiDirection,22x1000,[I@9353778,1)
+ input: 0.1x=0.5x-1.6 predict: 0007{-75749.7
+ input: 0.1x=0.5x-1.6 predict: 000010.5.x..0
+ input: 0.1x=0.5x-1.6 predict: 0..xx0.5x....
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.5.1..6
+ input: 0.1x=0.5x-1.6 predict: 0.0x=0.5x1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-..6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-..6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.9999254 
+x+5=8 > 0.005331255 
+-f{9}{8}x-4=-3x > -0.009895174 
+-10x-5=8 > -0.010107546 
+-f{4}{7}x+3=-f{1}{7}x > -0.0101345405 
+(BiDirection,22x1000,[I@6a28ffa4,1)
+ input: 2(x+5)=6 predict: 4<EOS><EOS>-5x{-
+ input: 2(x+5)=6 predict: +=x556==
+ input: 2(x+5)=6 predict: (((556==
+ input: 2(x+5)=6 predict: (((+5)=6
+ input: 2(x+5)=6 predict: 2((55)=6
+ input: 2(x+5)=6 predict: 2(x+5)66
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+0.8x-(0.01x-2)=0.03x-2 > 0.054757893 
+-4x+9=1 > 0.030778404 
+-10x-5=8 > 0.030419663 
+-f{4}{7}x+3=-f{1}{7}x > 0.030395705 
+-f{9}{8}x-4=-3x > 0.030304186 
+(BiDirection,22x1000,[I@48ae9b55,1)
+ input: -4(x+5)=6 predict: 44<EOS><EOS>-5x}<EOS>
+ input: -4(x+5)=6 predict: 44(((5)4-
+ input: -4(x+5)=6 predict: 44((55==4
+ input: -4(x+5)=6 predict: 44((+5)==
+ input: -4(x+5)=6 predict: 44(x55)=6
+ input: -4(x+5)=6 predict: 44(x+5)=6
+ input: -4(x+5)=6 predict: 44(x+5)=6
+ input: -4(x+5)=6 predict: 44(x+5)=6
+ input: -4(x+5)=6 predict: 44(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.9999033 
+-f{4}{7}x+3=-f{1}{7}x > 0.99990094 
+-10x-5=8 > 0.999886 
+-f{9}{8}x-4=-3x > 0.9998853 
+3x-4=-5x+5 > 0.031926513 
+txt/new/2_6_handout/BiDirection_Bi_final_22x500_1_Wed_Feb_06_06:26:57_JST_2019.txt
+(BiDirection,22x500,[I@1700915,1)
+ input: x-3=7 predict: ){x<EOS>4
+ input: x-3=7 predict: -xxxx
+ input: x-3=7 predict: --x7x
+ input: x-3=7 predict: -xx=7
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: --x=7
+ input: x-3=7 predict: xxx77
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.9999731 
+5x-7=4 > 0.08769508 
+5x-9=10 > 0.0876671 
+5x+10=1 > 0.087610476 
+7.2x-4=2.2x+9 > 0.024959242 
+(BiDirection,22x500,[I@21de60b4,1)
+ input: f{4}{3}x-9=-10 predict: ==0+-x+0(8<EOS>(9(
+ input: f{4}{3}x-9=-10 predict: -003fx30--x--0
+ input: f{4}{3}x-9=-10 predict: f=0ffx}-x09-90
+ input: f{4}{3}x-9=-10 predict: ff0ffx}---{-10
+ input: f{4}{3}x-9=-10 predict: ff{f}x}-----00
+ input: f{4}{3}x-9=-10 predict: ff-}f9}---9-00
+ input: f{4}{3}x-9=-10 predict: f{{}fx}---9-00
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-00
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--9--00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--00
+ input: f{4}{3}x-9=-10 predict: f{4}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}x----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9--10
+input -> f{4}{3}x-9=-10
+f{3}{7}x-3=-5 > 0.9999958 
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.9999934 
+f{7}{2}x+9=6 > 0.9999921 
+f{x-5}{4}+6=f{5}{2} > 0.99999195 
+f{2x+1}{5}=f{x-5}{4} > 0.9999908 
+(BiDirection,22x500,[I@c267ef4,1)
+ input: 0.1x=0.5x-1.6 predict: }30}x}69333x5
+ input: 0.1x=0.5x-1.6 predict: 10-.66655506x
+ input: 0.1x=0.5x-1.6 predict: 10100000-01.5
+ input: 0.1x=0.5x-1.6 predict: 001=x00---1x5
+ input: 0.1x=0.5x-1.6 predict: 1.1x00.5011.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5-11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.99999374 
+7.2x-4=2.2x+9 > 0.05125433 
+5x-7=4 > -0.0052865595 
+5x-9=10 > -0.0054984926 
+5x+10=1 > -0.0056551313 
+(BiDirection,22x500,[I@30ee2816,1)
+ input: 2(x+5)=6 predict: }}).9{<EOS>3
+ input: 2(x+5)=6 predict: 2+)++)6x
+ input: 2(x+5)=6 predict: ++)+56x)
+ input: 2(x+5)=6 predict: ++)666x6
+ input: 2(x+5)=6 predict: 2()++666
+ input: 2(x+5)=6 predict: 2(6x+)66
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(++5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+0.8x-(0.01x-2)=0.03x-2 > 0.05376342 
+3x-4=-5x+5 > 0.027142124 
+3(x-4)=7x-10 > 0.027122606 
+3(2x-1)=9 > 0.02698605 
+3.6+x=-1.4 > 0.0269299 
+(BiDirection,22x500,[I@31d7b7bf,1)
+ input: -4(x+5)=6 predict: 5(}).<UNK>7x7
+ input: -4(x+5)=6 predict: ((((65xx+
+ input: -4(x+5)=6 predict: ((+)(66x6
+ input: -4(x+5)=6 predict: -(+(66566
+ input: -4(x+5)=6 predict: --(+6+)66
+ input: -4(x+5)=6 predict: -((x65)66
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((++5)66
+ input: -4(x+5)=6 predict: -(((+5))6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)66
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-f{9}{8}x-4=-3x > 0.99998415 
+-10x-5=8 > 0.9999834 
+-4x+9=1 > 0.9999829 
+-f{4}{7}x+3=-f{1}{7}x > 0.9999825 
+3(2x-1)=9 > 0.04576244 
+txt/new/2_6_handout/E2D_EV_final_22x200_1_Wed_Feb_06_06:17:39_JST_2019.txt
+(E2D,22x200,[I@635eaaf1,1)
+ input: x-3=7 predict: 3==(3
+ input: x-3=7 predict: -=333
+ input: x-3=7 predict: 77333
+ input: x-3=7 predict: x3333
+ input: x-3=7 predict: x7333
+ input: x-3=7 predict: x-=73
+ input: x-3=7 predict: x-333
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.63249105 
+-4x+9=1 > 0.51575977 
+3x-4=-5x+5 > 0.46359363 
+5x-7=4 > 0.37445745 
+-10x-5=8 > 0.34664097 
+(E2D,22x200,[I@3d74bf60,1)
+ input: f{4}{3}x-9=-10 predict: +207-{8<UNK>77({(3
+ input: f{4}{3}x-9=-10 predict: 0-x3-33{{{x=1}
+ input: f{4}{3}x-9=-10 predict: 0-03{=x-{{{}33
+ input: f{4}{3}x-9=-10 predict: 0--3-x3-{{3-x{
+ input: f{4}{3}x-9=-10 predict: --43={3-{{{-x{
+ input: f{4}{3}x-9=-10 predict: 00-3-=3-{{x-x3
+ input: f{4}{3}x-9=-10 predict: 4-}}-=xx-x=-10
+ input: f{4}{3}x-9=-10 predict: {-433{}x{{=1=0
+ input: f{4}{3}x-9=-10 predict: =}}}-{}x{{=-x0
+ input: f{4}{3}x-9=-10 predict: {{4}{{}x-xx-}}
+ input: f{4}{3}x-9=-10 predict: --{}{{}--{{-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}------0
+ input: f{4}{3}x-9=-10 predict: {{}}{{}x-{=--}
+ input: f{4}{3}x-9=-10 predict: {{4}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}3{3}x-{=--{
+ input: f{4}{3}x-9=-10 predict: {{}}{{}x-{x-1}
+ input: f{4}{3}x-9=-10 predict: {{}}{{}--==--0
+ input: f{4}{3}x-9=-10 predict: {{}}{-}--{=--0
+ input: f{4}{3}x-9=-10 predict: {{}}{{}------0
+ input: f{4}{3}x-9=-10 predict: {{4{{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}x--=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{-}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=--0
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}---=-1-
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}------0
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=--0
+input -> f{4}{3}x-9=-10
+f{3}{7}x-3=-5 > 0.7850381 
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.7721911 
+f{2x+1}{5}=f{x-5}{4} > 0.76056147 
+f{3}{7}x+2=f{6}{7} > 0.7463832 
+f{x-5}{4}+6=f{5}{2} > 0.6864292 
+(E2D,22x200,[I@4f209819,1)
+ input: 0.1x=0.5x-1.6 predict: <UNK><UNK>1<UNK>{6<UNK>2<UNK><UNK>3<UNK>3
+ input: 0.1x=0.5x-1.6 predict: 101xx6--x6106
+ input: 0.1x=0.5x-1.6 predict: 1.1xx000x610-
+ input: 0.1x=0.5x-1.6 predict: 00xxx60xx610x
+ input: 0.1x=0.5x-1.6 predict: 00xx100-x6006
+ input: 0.1x=0.5x-1.6 predict: 101xx000x6106
+ input: 0.1x=0.5x-1.6 predict: 001xx00xx1.06
+ input: 0.1x=0.5x-1.6 predict: 00xxx00-x1106
+ input: 0.1x=0.5x-1.6 predict: 00xx=00xx1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1106
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.6x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xxx106
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx00xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xx10.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x10.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx...6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx-..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1..
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00..x.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11..
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.6520523 
+5x+10=1 > 0.2675685 
+-10x-5=8 > 0.2635844 
+5x-9=10 > 0.23685867 
+3.6+x=-1.4 > 0.21152465 
+(E2D,22x200,[I@15eb5ee5,1)
+ input: 2(x+5)=6 predict: xx(((8(3
+ input: 2(x+5)=6 predict: xx((25((
+ input: 2(x+5)=6 predict: xx((2x((
+ input: 2(x+5)=6 predict: xxx(6(((
+ input: 2(x+5)=6 predict: x(((=6x6
+ input: 2(x+5)=6 predict: x(((5=((
+ input: 2(x+5)=6 predict: xxxx5)x6
+ input: 2(x+5)=6 predict: xxx+55x6
+ input: 2(x+5)=6 predict: x(x+(5=6
+ input: 2(x+5)=6 predict: 2xx())=6
+ input: 2(x+5)=6 predict: 2(x++)(6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+3(2x-1)=9 > 0.35038313 
+7.2x-4=2.2x+9 > 0.2327334 
+-10x-5=8 > 0.18016028 
+3(x-4)=7x-10 > 0.14790037 
+-4x+9=1 > 0.13934354 
+(E2D,22x200,[I@2145b572,1)
+ input: -4(x+5)=6 predict: <UNK>0x(((8(3
+ input: -4(x+5)=6 predict: 6xx(((=((
+ input: -4(x+5)=6 predict: 6xx((45x6
+ input: -4(x+5)=6 predict: x44(((5(6
+ input: -4(x+5)=6 predict: -4x((=5x6
+ input: -4(x+5)=6 predict: -4xx()6=6
+ input: -4(x+5)=6 predict: 444x((5=(
+ input: -4(x+5)=6 predict: -44((()((
+ input: -4(x+5)=6 predict: -44x())(6
+ input: -4(x+5)=6 predict: -xxx(5)=(
+ input: -4(x+5)=6 predict: -44x+5)((
+ input: -4(x+5)=6 predict: -44x+)=x6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -44x+))x6
+ input: -4(x+5)=6 predict: -44x(5)=6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.5840845 
+-10x-5=8 > 0.42375866 
+-f{4}{7}x+3=-f{1}{7}x > 0.3361272 
+-f{9}{8}x-4=-3x > 0.33137092 
+3(2x-1)=9 > 0.26606593 
+txt/new/2_6_handout/E2D_EV_final_22x200_4_Wed_Feb_06_06:19:53_JST_2019.txt
+(E2D,22x200,[I@39529185,4)
+ input: x-3=7 predict: 3==(3
+ input: x-3=7 predict: -=333
+ input: x-3=7 predict: 77333
+ input: x-3=7 predict: x3333
+ input: x-3=7 predict: x7333
+ input: x-3=7 predict: x-=73
+ input: x-3=7 predict: x-333
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+5x-7=4 > 0.54198825 
+3.6+x=-1.4 > 0.5128153 
+3(x-4)=7x-10 > 0.4354707 
+5x-9=10 > 0.42997533 
+3x-4=-5x+5 > 0.40712854 
+(E2D,22x200,[I@72f926e6,4)
+ input: f{4}{3}x-9=-10 predict: +207-{8<UNK>77({(3
+ input: f{4}{3}x-9=-10 predict: 0-x3-33{{{x=1}
+ input: f{4}{3}x-9=-10 predict: 0-03{=x-{{{}33
+ input: f{4}{3}x-9=-10 predict: 0--3-x3-{{3-x{
+ input: f{4}{3}x-9=-10 predict: --43={3-{{{-x{
+ input: f{4}{3}x-9=-10 predict: 00-3-=3-{{x-x3
+ input: f{4}{3}x-9=-10 predict: 4-}}-=xx-x=-10
+ input: f{4}{3}x-9=-10 predict: {-433{}x{{=1=0
+ input: f{4}{3}x-9=-10 predict: =}}}-{}x{{=-x0
+ input: f{4}{3}x-9=-10 predict: {{4}{{}x-xx-}}
+ input: f{4}{3}x-9=-10 predict: --{}{{}--{{-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}------0
+ input: f{4}{3}x-9=-10 predict: {{}}{{}x-{=--}
+ input: f{4}{3}x-9=-10 predict: {{4}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}3{3}x-{=--{
+ input: f{4}{3}x-9=-10 predict: {{}}{{}x-{x-1}
+ input: f{4}{3}x-9=-10 predict: {{}}{{}--==--0
+ input: f{4}{3}x-9=-10 predict: {{}}{-}--{=--0
+ input: f{4}{3}x-9=-10 predict: {{}}{{}------0
+ input: f{4}{3}x-9=-10 predict: {{4{{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}x--=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{-}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=--0
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}---=-1-
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}------0
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=--0
+input -> f{4}{3}x-9=-10
+f{3}{7}x-3=-5 > 0.5422475 
+f{3}{7}x+2=f{6}{7} > 0.5099867 
+f{7}{2}x+9=6 > 0.41349775 
+f{x-5}{4}+6=f{5}{2} > 0.41288218 
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.40129977 
+(E2D,22x200,[I@3daa422a,4)
+ input: 0.1x=0.5x-1.6 predict: <UNK><UNK>1<UNK>{6<UNK>2<UNK><UNK>3<UNK>3
+ input: 0.1x=0.5x-1.6 predict: 101xx6--x6106
+ input: 0.1x=0.5x-1.6 predict: 1.1xx000x610-
+ input: 0.1x=0.5x-1.6 predict: 00xxx60xx6106
+ input: 0.1x=0.5x-1.6 predict: 00xx100-x6006
+ input: 0.1x=0.5x-1.6 predict: 101xx000x6106
+ input: 0.1x=0.5x-1.6 predict: 001xx00xx1.06
+ input: 0.1x=0.5x-1.6 predict: 00xxx00-x1106
+ input: 0.1x=0.5x-1.6 predict: 00xx=00xx1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1106
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.6x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xxx106
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx00xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xx10.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x10.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx...6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx-..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1..
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00..x.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11..
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+input -> 0.1x=0.5x-1.6
+5x+10=1 > 0.58841765 
+-10x-5=8 > 0.4436729 
+x+5=8 > 0.4008802 
+3.6+x=-1.4 > 0.36578417 
+0.8x-(0.01x-2)=0.03x-2 > 0.36264732 
+(E2D,22x200,[I@31c88ec8,4)
+ input: 2(x+5)=6 predict: xx(((8(3
+ input: 2(x+5)=6 predict: xx((25((
+ input: 2(x+5)=6 predict: xx((2x((
+ input: 2(x+5)=6 predict: xxx(6(((
+ input: 2(x+5)=6 predict: x(((=6x6
+ input: 2(x+5)=6 predict: x(((5=((
+ input: 2(x+5)=6 predict: xxxx5)x6
+ input: 2(x+5)=6 predict: xxx+55x6
+ input: 2(x+5)=6 predict: x(x+(5=6
+ input: 2(x+5)=6 predict: 2xx())=6
+ input: 2(x+5)=6 predict: 2(x++)(6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+3.6+x=-1.4 > 0.5942565 
+5x+10=1 > 0.48992863 
+-4x+9=1 > 0.48576206 
+-10x-5=8 > 0.4486919 
+3(2x-1)=9 > 0.44568402 
+(E2D,22x200,[I@1cbbffcd,4)
+ input: -4(x+5)=6 predict: <UNK>0x(((8(3
+ input: -4(x+5)=6 predict: 6xx(((=((
+ input: -4(x+5)=6 predict: 6xx((45x6
+ input: -4(x+5)=6 predict: x44(((5(6
+ input: -4(x+5)=6 predict: -4x((=5x6
+ input: -4(x+5)=6 predict: -4xx()6=6
+ input: -4(x+5)=6 predict: 444x((5=(
+ input: -4(x+5)=6 predict: -44((()((
+ input: -4(x+5)=6 predict: -44x())(6
+ input: -4(x+5)=6 predict: -xxx(5)=(
+ input: -4(x+5)=6 predict: -44x+5)(6
+ input: -4(x+5)=6 predict: -44x+)=x6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -44x+))x6
+ input: -4(x+5)=6 predict: -44x(5)=6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+3(x-4)=7x-10 > 0.47201797 
+3x-4=-5x+5 > 0.4246915 
+3(2x-1)=9 > 0.41776437 
+3.6+x=-1.4 > 0.41684836 
+-4x+9=1 > 0.405431 
+txt/new/2_6_handout/E2D_EV_final_22x500_1_Wed_Feb_06_06:28:21_JST_2019.txt
+(E2D,22x500,[I@27ce24aa,1)
+ input: x-3=7 predict: ){xxx
+ input: x-3=7 predict: -xxxx
+ input: x-3=7 predict: --x7x
+ input: x-3=7 predict: -xxx7
+ input: x-3=7 predict: x-x77
+ input: x-3=7 predict: --xx7
+ input: x-3=7 predict: xxx=7
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.5041102 
+5x-7=4 > 0.43090042 
+3x-4=-5x+5 > 0.4022961 
+-4x+9=1 > 0.36580664 
+-10x-5=8 > 0.3566242 
+(E2D,22x500,[I@481a996b,1)
+ input: f{4}{3}x-9=-10 predict: ==0+-x+0(8<EOS>(9x
+ input: f{4}{3}x-9=-10 predict: -003fx30--x-1x
+ input: f{4}{3}x-9=-10 predict: f=0ffx}-x09-9x
+ input: f{4}{3}x-9=-10 predict: ff0ffx}---{-1x
+ input: f{4}{3}x-9=-10 predict: ff{f}x}-----9x
+ input: f{4}{3}x-9=-10 predict: ff-}f9}---9-1-
+ input: f{4}{3}x-9=-10 predict: f{{}fx}---x-1x
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}}}}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}x----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9--10
+input -> f{4}{3}x-9=-10
+f{2x+1}{5}=f{x-5}{4} > 0.6799136 
+f{3}{7}x+2=f{6}{7} > 0.66871506 
+f{3}{7}x-3=-5 > 0.63221306 
+f{7}{2}x+9=6 > 0.62045336 
+f{x-5}{4}+6=f{5}{2} > 0.6126618 
+(E2D,22x500,[I@3d51f06e,1)
+ input: 0.1x=0.5x-1.6 predict: }30}x}69300xx
+ input: 0.1x=0.5x-1.6 predict: 10-.66655500-
+ input: 0.1x=0.5x-1.6 predict: 10100000-00.x
+ input: 0.1x=0.5x-1.6 predict: 001=x00---1xx
+ input: 0.1x=0.5x-1.6 predict: 1.1x00.5011.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5--1.x
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.x
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x11.x
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.x
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.6608256 
+-10x-5=8 > 0.26563585 
+7.2x-4=2.2x+9 > 0.10729176 
+5x+10=1 > 0.07186547 
+5x-7=4 > 0.06983195 
+(E2D,22x500,[I@7ed7259e,1)
+ input: 2(x+5)=6 predict: }}).<UNK>7xx
+ input: 2(x+5)=6 predict: 2+)+5)6x
+ input: 2(x+5)=6 predict: ++)+56x)
+ input: 2(x+5)=6 predict: ++)666x6
+ input: 2(x+5)=6 predict: 2()++6xx
+ input: 2(x+5)=6 predict: 2((x5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(++5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+3(2x-1)=9 > 0.34267813 
+3(x-4)=7x-10 > 0.26543015 
+x+5=8 > 0.14327708 
+7.2x-4=2.2x+9 > 0.09497703 
+5x-7=4 > 0.09321747 
+(E2D,22x500,[I@28eaa59a,1)
+ input: -4(x+5)=6 predict: 5(}).<UNK>7xx
+ input: -4(x+5)=6 predict: ((((65xxx
+ input: -4(x+5)=6 predict: ((+)(55xx
+ input: -4(x+5)=6 predict: -(+(665x6
+ input: -4(x+5)=6 predict: -((+65)x6
+ input: -4(x+5)=6 predict: -(((65)66
+ input: -4(x+5)=6 predict: -4(x+5)=x
+ input: -4(x+5)=6 predict: -((++5)xx
+ input: -4(x+5)=6 predict: -(((+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.6462116 
+-f{4}{7}x+3=-f{1}{7}x > 0.5339517 
+-10x-5=8 > 0.52086926 
+-f{9}{8}x-4=-3x > 0.4385273 
+3(2x-1)=9 > 0.22972853 
+txt/new/2_6_handout/E2D_EV_final_22x500_4_Wed_Feb_06_06:43:57_JST_2019.txt
+(E2D,22x500,[I@3427b02d,4)
+ input: x-3=7 predict: ){xxx
+ input: x-3=7 predict: -xxxx
+ input: x-3=7 predict: --x7x
+ input: x-3=7 predict: -xxx7
+ input: x-3=7 predict: x-x77
+ input: x-3=7 predict: --xx7
+ input: x-3=7 predict: xxx=7
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+5x-7=4 > 0.63509744 
+3(x-4)=7x-10 > 0.35428092 
+3x-4=-5x+5 > 0.32140106 
+5x-9=10 > 0.31671238 
+7.2x-4=2.2x+9 > 0.30203113 
+(E2D,22x500,[I@647e447,4)
+ input: f{4}{3}x-9=-10 predict: ==0+-x+0(8<EOS>(9x
+ input: f{4}{3}x-9=-10 predict: -003fx30--x-1x
+ input: f{4}{3}x-9=-10 predict: f=0ffx}-x09-9}
+ input: f{4}{3}x-9=-10 predict: ff0ffx}---{-1x
+ input: f{4}{3}x-9=-10 predict: ff{f}x}-----9x
+ input: f{4}{3}x-9=-10 predict: ff-}f9}---9-1-
+ input: f{4}{3}x-9=-10 predict: f{{}fx}---x-1x
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}}}}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}x-9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}x----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}x-9--10
+input -> f{4}{3}x-9=-10
+-f{4}{7}x+3=-f{1}{7}x > 0.526642 
+-f{9}{8}x-4=-3x > 0.5013254 
+f{3}{7}x+2=f{6}{7} > 0.48038918 
+f{3}{7}x-3=-5 > 0.44904423 
+f{x-5}{4}+6=f{5}{2} > 0.43042234 
+(E2D,22x500,[I@41fbdac4,4)
+ input: 0.1x=0.5x-1.6 predict: }30}x}69300xx
+ input: 0.1x=0.5x-1.6 predict: 10-.66655500-
+ input: 0.1x=0.5x-1.6 predict: 10100000-00.x
+ input: 0.1x=0.5x-1.6 predict: 001=x00---1xx
+ input: 0.1x=0.5x-1.6 predict: 1.1x00.5011.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5--1.x
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.x
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x11.x
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.x
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.44048625 
+5x+10=1 > 0.40037552 
+-10x-5=8 > 0.38001946 
+7.2x-4=2.2x+9 > 0.34014693 
+5x-9=10 > 0.30816618 
+(E2D,22x500,[I@3c407114,4)
+ input: 2(x+5)=6 predict: }}).<UNK>7xx
+ input: 2(x+5)=6 predict: 2+)+5)6x
+ input: 2(x+5)=6 predict: ++)+56x)
+ input: 2(x+5)=6 predict: ++)666x6
+ input: 2(x+5)=6 predict: 2()++6xx
+ input: 2(x+5)=6 predict: 2((x5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(++5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+x+5=8 > 0.40354547 
+-4x+9=1 > 0.35677424 
+5x+10=1 > 0.3399427 
+3x-4=-5x+5 > 0.32587215 
+5x-9=10 > 0.30948675 
+(E2D,22x500,[I@35ef1869,4)
+ input: -4(x+5)=6 predict: 5(}).<UNK>7xx
+ input: -4(x+5)=6 predict: ((((65xxx
+ input: -4(x+5)=6 predict: ((+)(55xx
+ input: -4(x+5)=6 predict: -(+(665x6
+ input: -4(x+5)=6 predict: -((+65)x6
+ input: -4(x+5)=6 predict: -(((65)66
+ input: -4(x+5)=6 predict: -4(x+5)=x
+ input: -4(x+5)=6 predict: -((++5)xx
+ input: -4(x+5)=6 predict: -(((+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.45976484 
+3(2x-1)=9 > 0.44838655 
+3(x-4)=7x-10 > 0.44507775 
+3x-4=-5x+5 > 0.41550732 
+5x+10=1 > 0.39120623 
+txt/new/2_6_handout/SkipConnect_Skip_final_22x200_1_Wed_Feb_06_06:19:41_JST_2019.txt
+(SkipConnect,22x200,[I@c33b74f,1)
+ input: x-3=7 predict: 3==(6
+ input: x-3=7 predict: --333
+ input: x-3=7 predict: x7377
+ input: x-3=7 predict: x=33-
+ input: x-3=7 predict: x7377
+ input: x-3=7 predict: x-=77
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x73=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.9992102 
+5x-7=4 > 0.103900485 
+5x-9=10 > 0.10103803 
+5x+10=1 > 0.10090397 
+0.8x-(0.01x-2)=0.03x-2 > 0.056252494 
+(SkipConnect,22x200,[I@7193666c,1)
+ input: f{4}{3}x-9=-10 predict: +207-{8<UNK>77({x3
+ input: f{4}{3}x-9=-10 predict: 0-x3-33{{xx=1x
+ input: f{4}{3}x-9=-10 predict: 0-03{=x-{{{}x3
+ input: f{4}{3}x-9=-10 predict: 0--3-x3-{{3-x0
+ input: f{4}{3}x-9=-10 predict: --43={3-{{{-xx
+ input: f{4}{3}x-9=-10 predict: 00-3-=3-{{x-x0
+ input: f{4}{3}x-9=-10 predict: =-}}-=xx-x=-10
+ input: f{4}{3}x-9=-10 predict: {-433{}x{{=1x0
+ input: f{4}{3}x-9=-10 predict: =}}}-{}x{{=-x0
+ input: f{4}{3}x-9=-10 predict: {{4}{{}x-xx-10
+ input: f{4}{3}x-9=-10 predict: --{}{{}--{=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}x-{=-10
+ input: f{4}{3}x-9=-10 predict: {{4}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}3{3}x-{=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}--{x-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}--==--0
+ input: f{4}{3}x-9=-10 predict: {{}}{-}--{=--0
+ input: f{4}{3}x-9=-10 predict: {{}}{{}------0
+ input: f{4}{3}x-9=-10 predict: {{4{{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}x--=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{-}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=--0
+input -> f{4}{3}x-9=-10
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.9995322 
+f{7}{2}x+9=6 > 0.99950767 
+f{2x+1}{5}=f{x-5}{4} > 0.99944717 
+f{3}{7}x-3=-5 > 0.9994374 
+f{3}{7}x+2=f{6}{7} > 0.99936974 
+(SkipConnect,22x200,[I@20deea7f,1)
+ input: 0.1x=0.5x-1.6 predict: <UNK><UNK>1<UNK>{6<UNK>2<UNK><UNK>3<UNK>(
+ input: 0.1x=0.5x-1.6 predict: 101xx6--x6106
+ input: 0.1x=0.5x-1.6 predict: 1.1xx000x660-
+ input: 0.1x=0.5x-1.6 predict: 00xxx60xx6106
+ input: 0.1x=0.5x-1.6 predict: 00xx100-x6006
+ input: 0.1x=0.5x-1.6 predict: 101xx000x6606
+ input: 0.1x=0.5x-1.6 predict: 001xx00xx1.06
+ input: 0.1x=0.5x-1.6 predict: 00xxx00-x-106
+ input: 0.1x=0.5x-1.6 predict: 00xx=00-x1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1106
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.6x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xxx166
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx00xx11.6
+ input: 0.1x=0.5x-1.6 predict: ..1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xx10.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x10.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx...6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx-..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx...6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00..x.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.99956876 
+7.2x-4=2.2x+9 > 0.15331809 
+5x+10=1 > 0.06821839 
+5x-9=10 > 0.06796204 
+5x-7=4 > 0.06795898 
+(SkipConnect,22x200,[I@3835c46,1)
+ input: 2(x+5)=6 predict: xx((3383
+ input: 2(x+5)=6 predict: xx((25(2
+ input: 2(x+5)=6 predict: xx((2xxx
+ input: 2(x+5)=6 predict: xxx(6(x)
+ input: 2(x+5)=6 predict: x(((=6x6
+ input: 2(x+5)=6 predict: x(((5=x6
+ input: 2(x+5)=6 predict: xxxx5)x6
+ input: 2(x+5)=6 predict: xxx+55x6
+ input: 2(x+5)=6 predict: xxx+56=6
+ input: 2(x+5)=6 predict: 2xx())=6
+ input: 2(x+5)=6 predict: 2(x++)x6
+ input: 2(x+5)=6 predict: 2((+=)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x++)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+-10x-5=8 > 0.07233458 
+-f{9}{8}x-4=-3x > 0.07110687 
+-f{4}{7}x+3=-f{1}{7}x > 0.06979919 
+-4x+9=1 > 0.06909512 
+7.2x-4=2.2x+9 > 0.06274002 
+(SkipConnect,22x200,[I@1dde4cb2,1)
+ input: -4(x+5)=6 predict: <UNK>0x(((8((
+ input: -4(x+5)=6 predict: 6xx(((+((
+ input: -4(x+5)=6 predict: 6xx((45x+
+ input: -4(x+5)=6 predict: x44(((5(-
+ input: -4(x+5)=6 predict: -4x((=546
+ input: -4(x+5)=6 predict: -4xx()==6
+ input: -4(x+5)=6 predict: 444x((5=(
+ input: -4(x+5)=6 predict: -44(+()x6
+ input: -4(x+5)=6 predict: -44x())=6
+ input: -4(x+5)=6 predict: -xxx(5)=6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -44x+)=(6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -44x+))=6
+ input: -4(x+5)=6 predict: -44x(5)=6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.99952376 
+-10x-5=8 > 0.9993909 
+-f{9}{8}x-4=-3x > 0.9993892 
+-f{4}{7}x+3=-f{1}{7}x > 0.9993443 
+3(2x-1)=9 > 0.10688299 
+txt/new/2_6_handout/SkipConnect_Skip_final_22x200_4_Wed_Feb_06_06:22:39_JST_2019.txt
+(SkipConnect,22x200,[I@7714e963,4)
+ input: x-3=7 predict: 3==(6
+ input: x-3=7 predict: -=3x3
+ input: x-3=7 predict: x7377
+ input: x-3=7 predict: x-33-
+ input: x-3=7 predict: x7377
+ input: x-3=7 predict: x-=77
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x73=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-337
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.9875939 
+5x-7=4 > 0.12746142 
+5x-9=10 > 0.117053255 
+5x+10=1 > 0.11581019 
+7.2x-4=2.2x+9 > 0.062106866 
+(SkipConnect,22x200,[I@20ce78ec,4)
+ input: f{4}{3}x-9=-10 predict: +207-{8<UNK>77({x3
+ input: f{4}{3}x-9=-10 predict: 0-x3-33{{xx=1x
+ input: f{4}{3}x-9=-10 predict: 0-03{=x-{{{}x3
+ input: f{4}{3}x-9=-10 predict: 0--3-x3-{{3-x{
+ input: f{4}{3}x-9=-10 predict: --43={3-{{{-xx
+ input: f{4}{3}x-9=-10 predict: 00-3-=3-{{x-x0
+ input: f{4}{3}x-9=-10 predict: =-}}-=xx-x=-10
+ input: f{4}{3}x-9=-10 predict: {-433{}x{{=100
+ input: f{4}{3}x-9=-10 predict: =}}}-{}x{{=-x0
+ input: f{4}{3}x-9=-10 predict: {{4}{{}x-xx-10
+ input: f{4}{3}x-9=-10 predict: --{}{{}--{=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}x-{=-10
+ input: f{4}{3}x-9=-10 predict: {{4}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}3{3}x-{=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}--{x-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}--==--0
+ input: f{4}{3}x-9=-10 predict: {{}}{-}--{=--0
+ input: f{4}{3}x-9=-10 predict: {{}}{{}------0
+ input: f{4}{3}x-9=-10 predict: {{4{{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}x--=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{-}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{{}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}-----10
+ input: f{4}{3}x-9=-10 predict: {{}}{3}---=--0
+input -> f{4}{3}x-9=-10
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.9925888 
+f{7}{2}x+9=6 > 0.99215454 
+f{2x+1}{5}=f{x-5}{4} > 0.99121284 
+f{3}{7}x-3=-5 > 0.9911232 
+f{3}{7}x+2=f{6}{7} > 0.9899465 
+(SkipConnect,22x200,[I@393671df,4)
+ input: 0.1x=0.5x-1.6 predict: <UNK><UNK>1<UNK>{6<UNK>2<UNK><UNK>3<UNK>(
+ input: 0.1x=0.5x-1.6 predict: 101xx6--x6106
+ input: 0.1x=0.5x-1.6 predict: 1.1xx000x660-
+ input: 0.1x=0.5x-1.6 predict: 00xxx60xx6106
+ input: 0.1x=0.5x-1.6 predict: 00xx100-x6006
+ input: 0.1x=0.5x-1.6 predict: 101xx000x6606
+ input: 0.1x=0.5x-1.6 predict: 001xx00xx1.06
+ input: 0.1x=0.5x-1.6 predict: 00xxx00-x-106
+ input: 0.1x=0.5x-1.6 predict: 00xx=00-x1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1106
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.6x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xxx166
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x1106
+ input: 0.1x=0.5x-1.6 predict: 0.1xx00xx11.6
+ input: 0.1x=0.5x-1.6 predict: ..1xx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xx10.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x10.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx...6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx-..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx1..6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx...6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00..x.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx.1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.0x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.xxx0.xx11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.xx11.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.99327874 
+7.2x-4=2.2x+9 > 0.14797597 
+5x+10=1 > 0.06948129 
+3(x-4)=7x-10 > 0.06899708 
+5x-7=4 > 0.06783435 
+(SkipConnect,22x200,[I@56620197,4)
+ input: 2(x+5)=6 predict: xx(((383
+ input: 2(x+5)=6 predict: xx((25(2
+ input: 2(x+5)=6 predict: xx((2xxx
+ input: 2(x+5)=6 predict: xxx(6(()
+ input: 2(x+5)=6 predict: x(((=6x6
+ input: 2(x+5)=6 predict: x(((5=x6
+ input: 2(x+5)=6 predict: xxxx5)x6
+ input: 2(x+5)=6 predict: xxx+55x6
+ input: 2(x+5)=6 predict: xxx+56=6
+ input: 2(x+5)=6 predict: 2xx())x6
+ input: 2(x+5)=6 predict: 2(x++)=6
+ input: 2(x+5)=6 predict: 2((+=)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x++)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5==6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+-10x-5=8 > 0.06543746 
+7.2x-4=2.2x+9 > 0.06363101 
+-f{9}{8}x-4=-3x > 0.061529033 
+-f{4}{7}x+3=-f{1}{7}x > 0.056455687 
+-4x+9=1 > 0.054030705 
+(SkipConnect,22x200,[I@6eda5c9,4)
+ input: -4(x+5)=6 predict: <UNK>0x(((8((
+ input: -4(x+5)=6 predict: 6xx(((+((
+ input: -4(x+5)=6 predict: 6xx((45x-
+ input: -4(x+5)=6 predict: x44(((5(-
+ input: -4(x+5)=6 predict: -4x((=546
+ input: -4(x+5)=6 predict: -4xx()==6
+ input: -4(x+5)=6 predict: 444x((5=(
+ input: -4(x+5)=6 predict: -44((()x6
+ input: -4(x+5)=6 predict: -44x())=6
+ input: -4(x+5)=6 predict: -xxx(5)=6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -44x+)=(6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -44x+))=6
+ input: -4(x+5)=6 predict: -44x(5)=6
+ input: -4(x+5)=6 predict: -44x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.9925555 
+-10x-5=8 > 0.9905317 
+-f{9}{8}x-4=-3x > 0.99049413 
+-f{4}{7}x+3=-f{1}{7}x > 0.9898074 
+3(x-4)=7x-10 > 0.12222159 
+txt/new/2_6_handout/SkipConnect_Skip_final_22x500_1_Wed_Feb_06_06:35:09_JST_2019.txt
+(SkipConnect,22x500,[I@55b7a4e0,1)
+ input: x-3=7 predict: ){x<EOS>4
+ input: x-3=7 predict: -xxxx
+ input: x-3=7 predict: --x7x
+ input: x-3=7 predict: -xx=7
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: --x=7
+ input: x-3=7 predict: xxx77
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.9985129 
+5x-9=10 > 0.08639299 
+5x+10=1 > 0.08614361 
+5x-7=4 > 0.08450132 
+7.2x-4=2.2x+9 > 0.022682244 
+(SkipConnect,22x500,[I@5f058f00,1)
+ input: f{4}{3}x-9=-10 predict: ==0+-x+0(8<EOS>(9(
+ input: f{4}{3}x-9=-10 predict: -003fx30--x--0
+ input: f{4}{3}x-9=-10 predict: f=0ffx}-x09-90
+ input: f{4}{3}x-9=-10 predict: ff0ffx}---{-10
+ input: f{4}{3}x-9=-10 predict: ff{f}x}-----00
+ input: f{4}{3}x-9=-10 predict: ff-}f9}---9-00
+ input: f{4}{3}x-9=-10 predict: f{{}fx}---9-00
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-00
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--9--00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--00
+ input: f{4}{3}x-9=-10 predict: f{4}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}x----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9--10
+input -> f{4}{3}x-9=-10
+f{7}{2}x+9=6 > 0.99893767 
+f{x-5}{4}+6=f{5}{2} > 0.9988778 
+f{2x+1}{5}=f{x-5}{4} > 0.99882036 
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.9987397 
+f{3}{7}x-3=-5 > 0.998687 
+(SkipConnect,22x500,[I@192d43ce,1)
+ input: 0.1x=0.5x-1.6 predict: }30}x}69333x5
+ input: 0.1x=0.5x-1.6 predict: 10-.66655506x
+ input: 0.1x=0.5x-1.6 predict: 10100000-01.5
+ input: 0.1x=0.5x-1.6 predict: 001=x00---1x5
+ input: 0.1x=0.5x-1.6 predict: 1.1x00.5011.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5-11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.9989714 
+7.2x-4=2.2x+9 > 0.048562393 
+5x+10=1 > -0.0023969454 
+5x-7=4 > -0.0034068115 
+5x-9=10 > -0.0037735393 
+(SkipConnect,22x500,[I@72057ecf,1)
+ input: 2(x+5)=6 predict: }}).9{<EOS>x
+ input: 2(x+5)=6 predict: 2+)++)6x
+ input: 2(x+5)=6 predict: ++)+56x)
+ input: 2(x+5)=6 predict: ++)666x6
+ input: 2(x+5)=6 predict: 2()++666
+ input: 2(x+5)=6 predict: 2(6x+)66
+ input: 2(x+5)=6 predict: 2(xx5)=6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(++5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+0.8x-(0.01x-2)=0.03x-2 > 0.053192772 
+3(x-4)=7x-10 > 0.030962994 
+3(2x-1)=9 > 0.02977163 
+3x-4=-5x+5 > 0.029094115 
+3.6+x=-1.4 > 0.026403673 
+(SkipConnect,22x500,[I@1afd44cb,1)
+ input: -4(x+5)=6 predict: 5(}).<UNK>7x7
+ input: -4(x+5)=6 predict: ((((65xx+
+ input: -4(x+5)=6 predict: ((+)(66x6
+ input: -4(x+5)=6 predict: -(+(66566
+ input: -4(x+5)=6 predict: --(+6+)66
+ input: -4(x+5)=6 predict: -((x65)66
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((++5)66
+ input: -4(x+5)=6 predict: -(((+5))6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)66
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.9988102 
+-f{4}{7}x+3=-f{1}{7}x > 0.9986133 
+-10x-5=8 > 0.9985031 
+-f{9}{8}x-4=-3x > 0.9984847 
+3(2x-1)=9 > 0.042862155 
+txt/new/2_6_handout/SkipConnect_Skip_final_22x500_4_Wed_Feb_06_06:47:59_JST_2019.txt
+(SkipConnect,22x500,[I@6973b51b,4)
+ input: x-3=7 predict: ){x<EOS>9
+ input: x-3=7 predict: -xxxx
+ input: x-3=7 predict: --x3x
+ input: x-3=7 predict: -xx=7
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: --x=7
+ input: x-3=7 predict: xxx77
+ input: x-3=7 predict: x-x=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+ input: x-3=7 predict: x-3=7
+input -> x-3=7
+x+5=8 > 0.9761915 
+5x-9=10 > 0.08869101 
+5x+10=1 > 0.08693643 
+5x-7=4 > 0.08161699 
+3(2x-1)=9 > 0.029998895 
+(SkipConnect,22x500,[I@1ab3a8c8,4)
+ input: f{4}{3}x-9=-10 predict: ==0+-x+0(8<EOS>(9(
+ input: f{4}{3}x-9=-10 predict: -003fx30--x--0
+ input: f{4}{3}x-9=-10 predict: f=0ffx}-x09-90
+ input: f{4}{3}x-9=-10 predict: ff0ffx}---{-10
+ input: f{4}{3}x-9=-10 predict: ff{f}x}-----00
+ input: f{4}{3}x-9=-10 predict: ff-}f9}---0-00
+ input: f{4}{3}x-9=-10 predict: f{{}fx}---9-00
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--99-00
+ input: f{4}{3}x-9=-10 predict: f{{}{x}--9--00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----00
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--99-10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}---=-10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--00
+ input: f{4}{3}x-9=-10 predict: f{4}{3}---=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9=-10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{4}{}}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{}}-----10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}--9--10
+ input: f{4}{3}x-9=-10 predict: f{{}{3}x----10
+ input: f{4}{3}x-9=-10 predict: f{4}{3}--9--10
+input -> f{4}{3}x-9=-10
+f{7}{2}x+9=6 > 0.98354775 
+f{x-5}{4}+6=f{5}{2} > 0.9826198 
+f{2x+1}{5}=f{x-5}{4} > 0.9814349 
+f{x+1}{3}+f{2x+1}{2}=f{3x-4}{2} > 0.9804949 
+f{3}{7}x-3=-5 > 0.9795759 
+(SkipConnect,22x500,[I@43195e57,4)
+ input: 0.1x=0.5x-1.6 predict: }30}x}69333x5
+ input: 0.1x=0.5x-1.6 predict: 10-.66655506x
+ input: 0.1x=0.5x-1.6 predict: 10100000-01.x
+ input: 0.1x=0.5x-1.6 predict: 001=x00---1x5
+ input: 0.1x=0.5x-1.6 predict: 1.1x00.5011.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5-11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x11.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1xx0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x00.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+ input: 0.1x=0.5x-1.6 predict: 0.1x=0.5x-1.6
+input -> 0.1x=0.5x-1.6
+0.8x-(0.01x-2)=0.03x-2 > 0.98391217 
+7.2x-4=2.2x+9 > 0.041647438 
+5x+10=1 > 0.0113574555 
+5x-9=10 > 0.004513708 
+5x-7=4 > 0.0034504072 
+(SkipConnect,22x500,[I@333291e3,4)
+ input: 2(x+5)=6 predict: }}).9{<EOS>x
+ input: 2(x+5)=6 predict: 2+)++)6x
+ input: 2(x+5)=6 predict: ++)+56x)
+ input: 2(x+5)=6 predict: ++)666x6
+ input: 2(x+5)=6 predict: 2()++666
+ input: 2(x+5)=6 predict: 2(6x+)66
+ input: 2(x+5)=6 predict: 2(x65==6
+ input: 2(x+5)=6 predict: 2((+5)=6
+ input: 2(x+5)=6 predict: 2(++5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+ input: 2(x+5)=6 predict: 2(x+5)=6
+input -> 2(x+5)=6
+0.8x-(0.01x-2)=0.03x-2 > 0.05081703 
+3(x-4)=7x-10 > 0.04603839 
+3(2x-1)=9 > 0.04321651 
+3x-4=-5x+5 > 0.03703344 
+3.6+x=-1.4 > 0.027438302 
+(SkipConnect,22x500,[I@479d31f3,4)
+ input: -4(x+5)=6 predict: 5(}).<UNK>7x6
+ input: -4(x+5)=6 predict: ((((65xxx
+ input: -4(x+5)=6 predict: ((+)(66x6
+ input: -4(x+5)=6 predict: -(+(66566
+ input: -4(x+5)=6 predict: --(+6+)66
+ input: -4(x+5)=6 predict: -((x65)66
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((++5)66
+ input: -4(x+5)=6 predict: -(((+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -((x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)66
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+ input: -4(x+5)=6 predict: -4(x+5)=6
+input -> -4(x+5)=6
+-4x+9=1 > 0.9815212 
+-f{4}{7}x+3=-f{1}{7}x > 0.97842187 
+-10x-5=8 > 0.97658247 
+-f{9}{8}x-4=-3x > 0.97653407 
+5x-9=10 > 0.04998351 

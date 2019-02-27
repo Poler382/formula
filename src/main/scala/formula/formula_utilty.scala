@@ -8,6 +8,11 @@ object Utilty_formula{
     R(a) = 1f
     R
   }
+
+  def index(i:Int,max:Int)={
+    if(i < 0)  max else i
+  }
+
   def load()={
     val raw = scala.io.Source.fromFile(data_path).getLines.toArray.drop(2).map(_.split(","))
     val name = raw.map(_(0).trim())
@@ -65,7 +70,7 @@ object Utilty_formula{
 
     st.map( _.map( f(_) ) ).map(_.toArray)//文字をベムトルに対応する数字列で返す
   }
-  
+
   def question_load_nonnum(path:String)={
     val st = scala.io.Source.fromFile(path).getLines.toArray.map(_.replace(" ","")).toArray
     var xf = st.map(_.replace("""\frac""","f"))

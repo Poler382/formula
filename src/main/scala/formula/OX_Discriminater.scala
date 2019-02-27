@@ -176,7 +176,15 @@ object  OX_Discriminater {
       }
       val (loss,count) = learning(network,Collect_ans,blackimg2,h,w)
       val train_time =timer.timefinish
-      println(s"train => epoch: ${ep} loss: ${loss} count: ${count} / ${fn.size} Acc: ${count/fn.size} time: ${train_time}")
+      //  println(s"train => epoch: ${ep} loss: ${loss} count: ${count} / ${fn.size} Acc: ${count/fn.size} time: ${train_time}")
+      var str_ep =String.format("ep:%3s ",ep.toString)
+      var str_loss = String.format(" loss: %-10s",loss.toString)
+      var str_acc = String.format(" acc: %-10s",(count/fn.size).toString)
+      var str_time  = String.format(s" time: %5s",train_time.toString)
+
+      println(s"train => "+str_ep + str_acc + str_loss + str_time)
+
+
 
       //test
       timer.timestart
@@ -191,7 +199,15 @@ object  OX_Discriminater {
       System.gc()
       val test_time =timer.timefinish
 
-      println(s"test  => epoch: ${ep} loss: ${testLOSS} count: ${testCOUNT} / ${fn_test.size} Acc: ${testCOUNT/fn_test.size} time: ${test_time}")
+    //  println(s"test  => epoch: ${ep} loss: ${testLOSS} count: ${testCOUNT} / ${fn_test.size} Acc: ${testCOUNT/fn_test.size} time: ${test_time}")
+      var str_tep =String.format("ep:%3s ",ep.toString)
+      var str_tloss = String.format(" loss: %-10s",testLOSS.toString)
+      var str_tacc = String.format(" acc: %-10s",(testCOUNT/ fn_test.size).toString)
+      var str_ttime  = String.format(s" time: %5s",test_time.toString)
+
+      println(s"test => "+str_tep + str_tacc + str_tloss +str_ttime)
+
+
 
       if(ep % 50 == 0 || ep == epoch-1){
         saves(network,networkmode)
