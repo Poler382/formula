@@ -12,7 +12,8 @@ object  SimilerVecter {
   import word2vec._
   var words = vecnormal.toList
   def main(args: Array[String]): Unit = {
-    val load_vecter_pathlist = sys.process.Process("ls txt/lastrun/").lineStream.toArray.map(a => "txt/lastrun/"+a).toArray
+    val load_vecter_pathlist = Array("txt/lastrun/"+args(0))
+          //sys.process.Process("ls txt/lastrun/").lineStream.toArray.map(a => "txt/lastrun/"+a).toArray.filter(_.contains("Skip"))
     for(load_vecter_path <- load_vecter_pathlist){
       println(load_vecter_path)
       val size = load_vecter_path.split("_").toArray.filter(_.contains("22x")).toArray
